@@ -53,10 +53,9 @@
             this.ServiceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ServiceBtn.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ServiceBtn.ForeColor = System.Drawing.Color.White;
-            this.ServiceBtn.Location = new System.Drawing.Point(338, 0);
-            this.ServiceBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ServiceBtn.Location = new System.Drawing.Point(246, 0);
             this.ServiceBtn.Name = "ServiceBtn";
-            this.ServiceBtn.Size = new System.Drawing.Size(169, 100);
+            this.ServiceBtn.Size = new System.Drawing.Size(123, 67);
             this.ServiceBtn.TabIndex = 0;
             this.ServiceBtn.Text = "Services";
             this.ServiceBtn.UseVisualStyleBackColor = false;
@@ -72,9 +71,8 @@
             this.AboutusBtn.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutusBtn.ForeColor = System.Drawing.Color.White;
             this.AboutusBtn.Location = new System.Drawing.Point(0, 0);
-            this.AboutusBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AboutusBtn.Name = "AboutusBtn";
-            this.AboutusBtn.Size = new System.Drawing.Size(169, 100);
+            this.AboutusBtn.Size = new System.Drawing.Size(123, 67);
             this.AboutusBtn.TabIndex = 1;
             this.AboutusBtn.Text = "About Us";
             this.AboutusBtn.UseVisualStyleBackColor = false;
@@ -90,10 +88,9 @@
             this.ContactBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ContactBtn.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContactBtn.ForeColor = System.Drawing.Color.White;
-            this.ContactBtn.Location = new System.Drawing.Point(169, 0);
-            this.ContactBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ContactBtn.Location = new System.Drawing.Point(123, 0);
             this.ContactBtn.Name = "ContactBtn";
-            this.ContactBtn.Size = new System.Drawing.Size(169, 100);
+            this.ContactBtn.Size = new System.Drawing.Size(123, 67);
             this.ContactBtn.TabIndex = 2;
             this.ContactBtn.Text = "Contact";
             this.ContactBtn.UseVisualStyleBackColor = false;
@@ -107,9 +104,8 @@
             this.panel1.Controls.Add(this.AboutusBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2248, 100);
+            this.panel1.Size = new System.Drawing.Size(1040, 67);
             this.panel1.TabIndex = 3;
             // 
             // label2
@@ -119,10 +115,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label2.Location = new System.Drawing.Point(110, 272);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(84, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 65);
+            this.label2.Size = new System.Drawing.Size(99, 45);
             this.label2.TabIndex = 5;
             this.label2.Text = "Login";
             // 
@@ -133,10 +128,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(485, 272);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(301, 123);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(204, 65);
+            this.label1.Size = new System.Drawing.Size(143, 45);
             this.label1.TabIndex = 6;
             this.label1.Text = "Sign Up";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -145,19 +139,17 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.panel2.Location = new System.Drawing.Point(102, 341);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(78, 169);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(150, 6);
+            this.panel2.Size = new System.Drawing.Size(109, 4);
             this.panel2.TabIndex = 7;
             // 
             // panel4
             // 
             this.panel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.panel4.Location = new System.Drawing.Point(471, 341);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Location = new System.Drawing.Point(291, 169);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(236, 6);
+            this.panel4.Size = new System.Drawing.Size(172, 4);
             this.panel4.TabIndex = 8;
             // 
             // panel3
@@ -168,9 +160,10 @@
             this.panel3.Controls.Add(this.label2);
             this.panel3.Controls.Add(this.panel2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1239, 100);
+            this.panel3.Location = new System.Drawing.Point(468, 67);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1009, 1087);
+            this.panel3.Size = new System.Drawing.Size(572, 586);
             this.panel3.TabIndex = 9;
             // 
             // panel5
@@ -180,20 +173,20 @@
             this.panel5.Controls.Add(this.panel1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(2248, 1187);
+            this.panel5.Size = new System.Drawing.Size(1040, 653);
             this.panel5.TabIndex = 10;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(2248, 1187);
+            this.ClientSize = new System.Drawing.Size(1040, 653);
             this.Controls.Add(this.panel5);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
