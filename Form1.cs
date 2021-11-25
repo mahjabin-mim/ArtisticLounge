@@ -12,7 +12,7 @@ namespace Gallery
 {
     public partial class Form1 : Form
     {
-        
+        private bool showPass = false;
         public Form1()
         {
            
@@ -61,6 +61,22 @@ namespace Gallery
 
             
             
+        }
+
+        private void showPassBtn_Click(object sender, EventArgs e)
+        {
+            
+            if (!showPass)
+            {
+                showPassBtn.Image = Properties.Resources.open;
+                showPass = true;  
+
+            }
+            else
+            {
+                showPassBtn.Image = Properties.Resources.hidden__1_;
+                showPass = false;
+            }
         }
     }
 }

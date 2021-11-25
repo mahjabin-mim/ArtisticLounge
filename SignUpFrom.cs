@@ -12,6 +12,7 @@ namespace Gallery
 {
     public partial class SignUpFrom : Form
     {
+        private bool showPass = false;
         public SignUpFrom()
         {
             InitializeComponent();
@@ -34,6 +35,22 @@ namespace Gallery
         private void SignUpFrom_Load(object sender, EventArgs e)
         {
             signupRightPanel.Parent = signupPictureBox;
+        }
+
+        private void showPassBtn_Click(object sender, EventArgs e)
+        {
+
+            if (!showPass)
+            {
+                showPassBtn.Image = Properties.Resources.open;
+                showPass = true;
+
+            }
+            else
+            {
+                showPassBtn.Image = Properties.Resources.hidden__1_;
+                showPass = false;
+            }
         }
     }
 }

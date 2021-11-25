@@ -74,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SignUpFrom.resx">
       <DependentUpon>SignUpFrom.cs</DependentUpon>
@@ -91,6 +92,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\hidden %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
