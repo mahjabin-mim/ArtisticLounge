@@ -44,14 +44,17 @@ namespace Gallery
             this.ServiceBtn = new System.Windows.Forms.Button();
             this.ContactBtn = new System.Windows.Forms.Button();
             this.AboutusBtn = new System.Windows.Forms.Button();
+            this.showPassBtn = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.signupRightPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.signupPictureBox)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.showPassBtn)).BeginInit();
             this.SuspendLayout();
             // 
             // signupRightPanel
             // 
             this.signupRightPanel.BackColor = System.Drawing.Color.Transparent;
+            this.signupRightPanel.Controls.Add(this.showPassBtn);
             this.signupRightPanel.Controls.Add(this.signupPass);
             this.signupRightPanel.Controls.Add(this.signupEmail);
             this.signupRightPanel.Controls.Add(this.signupName);
@@ -69,6 +72,7 @@ namespace Gallery
             // 
             // signupPass
             // 
+            this.signupPass.BackColor = System.Drawing.Color.Transparent;
             this.signupPass.BorderRadius = 12;
             this.signupPass.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.signupPass.DefaultText = "";
@@ -95,9 +99,11 @@ namespace Gallery
             this.signupPass.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.signupPass.Size = new System.Drawing.Size(386, 38);
             this.signupPass.TabIndex = 17;
+            this.signupPass.UseSystemPasswordChar = true;
             // 
             // signupEmail
             // 
+            this.signupEmail.BackColor = System.Drawing.Color.Transparent;
             this.signupEmail.BorderRadius = 12;
             this.signupEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.signupEmail.DefaultText = "";
@@ -127,6 +133,7 @@ namespace Gallery
             // 
             // signupName
             // 
+            this.signupName.BackColor = System.Drawing.Color.Transparent;
             this.signupName.BorderRadius = 12;
             this.signupName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.signupName.DefaultText = "";
@@ -167,7 +174,7 @@ namespace Gallery
             this.signUpBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.signUpBtn.DisabledState.Parent = this.signUpBtn;
             this.signUpBtn.FillColor = System.Drawing.Color.Navy;
-            this.signUpBtn.Font = new System.Drawing.Font("Comic Sans MS", 14.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUpBtn.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpBtn.ForeColor = System.Drawing.Color.White;
             this.signUpBtn.HoverState.Parent = this.signUpBtn;
             this.signUpBtn.Location = new System.Drawing.Point(197, 410);
@@ -185,11 +192,11 @@ namespace Gallery
             this.signUpLabel.AutoSize = true;
             this.signUpLabel.BackColor = System.Drawing.Color.Transparent;
             this.signUpLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.signUpLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUpLabel.Font = new System.Drawing.Font("Segoe UI Variable Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.signUpLabel.Location = new System.Drawing.Point(292, 103);
             this.signUpLabel.Name = "signUpLabel";
-            this.signUpLabel.Size = new System.Drawing.Size(118, 38);
+            this.signUpLabel.Size = new System.Drawing.Size(120, 37);
             this.signUpLabel.TabIndex = 10;
             this.signUpLabel.Text = "Sign Up";
             // 
@@ -208,11 +215,11 @@ namespace Gallery
             this.loginLabel.AutoSize = true;
             this.loginLabel.BackColor = System.Drawing.Color.Transparent;
             this.loginLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginLabel.Font = new System.Drawing.Font("Comic Sans MS", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginLabel.Font = new System.Drawing.Font("Segoe UI Variable Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginLabel.ForeColor = System.Drawing.Color.White;
             this.loginLabel.Location = new System.Drawing.Point(101, 103);
             this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(82, 38);
+            this.loginLabel.Size = new System.Drawing.Size(90, 37);
             this.loginLabel.TabIndex = 9;
             this.loginLabel.Text = "Login";
             this.loginLabel.Click += new System.EventHandler(this.loginLabel_Click);
@@ -258,7 +265,7 @@ namespace Gallery
             this.ServiceBtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.ServiceBtn.FlatAppearance.BorderSize = 0;
             this.ServiceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ServiceBtn.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ServiceBtn.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ServiceBtn.ForeColor = System.Drawing.Color.White;
             this.ServiceBtn.Location = new System.Drawing.Point(246, 0);
             this.ServiceBtn.Name = "ServiceBtn";
@@ -275,7 +282,7 @@ namespace Gallery
             this.ContactBtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.ContactBtn.FlatAppearance.BorderSize = 0;
             this.ContactBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ContactBtn.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContactBtn.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContactBtn.ForeColor = System.Drawing.Color.White;
             this.ContactBtn.Location = new System.Drawing.Point(123, 0);
             this.ContactBtn.Name = "ContactBtn";
@@ -291,7 +298,7 @@ namespace Gallery
             this.AboutusBtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.AboutusBtn.FlatAppearance.BorderSize = 0;
             this.AboutusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AboutusBtn.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AboutusBtn.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutusBtn.ForeColor = System.Drawing.Color.White;
             this.AboutusBtn.Location = new System.Drawing.Point(0, 0);
             this.AboutusBtn.Name = "AboutusBtn";
@@ -299,6 +306,23 @@ namespace Gallery
             this.AboutusBtn.TabIndex = 1;
             this.AboutusBtn.Text = "About Us";
             this.AboutusBtn.UseVisualStyleBackColor = false;
+            // 
+            // showPassBtn
+            // 
+            this.showPassBtn.BackColor = System.Drawing.Color.Transparent;
+            this.showPassBtn.FillColor = System.Drawing.Color.Transparent;
+            this.showPassBtn.Image = ((System.Drawing.Image)(resources.GetObject("showPassBtn.Image")));
+            this.showPassBtn.ImageRotate = 0F;
+            this.showPassBtn.Location = new System.Drawing.Point(434, 332);
+            this.showPassBtn.Name = "showPassBtn";
+            this.showPassBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.showPassBtn.ShadowDecoration.Parent = this.showPassBtn;
+            this.showPassBtn.Size = new System.Drawing.Size(20, 25);
+            this.showPassBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.showPassBtn.TabIndex = 19;
+            this.showPassBtn.TabStop = false;
+            this.showPassBtn.UseTransparentBackground = true;
+            this.showPassBtn.Click += new System.EventHandler(this.showPassBtn_Click);
             // 
             // SignUpFrom
             // 
@@ -315,6 +339,7 @@ namespace Gallery
             this.signupRightPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.signupPictureBox)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.showPassBtn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -335,5 +360,6 @@ namespace Gallery
         private System.Windows.Forms.Button ContactBtn;
         private System.Windows.Forms.Button AboutusBtn;
         private Guna.UI2.WinForms.Guna2TextBox signupPass;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox showPassBtn;
     }
 }
