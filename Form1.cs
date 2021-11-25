@@ -8,48 +8,59 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ArtisticLounge
+namespace Gallery
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
+           
+        
             InitializeComponent();
+            
         }
 
-        private void AboutusBtn_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            ServiceBtn.FlatStyle = FlatStyle.Flat;
-            ContactBtn.FlatStyle = FlatStyle.Flat;
-
-            AboutusBtn.FlatStyle = FlatStyle.System;
+            panel2.Parent = pictureBox1;
         }
 
-        private void ServiceBtn_Click(object sender, EventArgs e)
+        private void loginLabel_Click(object sender, EventArgs e)
         {
-            ServiceBtn.FlatStyle = FlatStyle.System;
+            // changing sign up color
+            signUpLabel.ForeColor = Color.White;
+            signUpUnderPanel.BackColor = Color.Transparent;
 
-            ContactBtn.FlatStyle = FlatStyle.Flat;
-            AboutusBtn.FlatStyle = FlatStyle.Flat;
+            //hide signup options
+           
+
+            //show login options
+            loginEmail.Visible = true;
+            loginPass.Visible = true;
+            loginBtn.Visible = true;
+
+            //change login color
+            loginLabel.ForeColor = Color.FromArgb(1, 0, 0, 192);
+            loginUnderPanel.BackColor = Color.Navy;
         }
 
-        private void ContactBtn_Click(object sender, EventArgs e)
+        private void signUpLabel_Click(object sender, EventArgs e)
         {
-            ServiceBtn.FlatStyle = FlatStyle.Flat;
+            this.Hide();
 
-            ContactBtn.FlatStyle = FlatStyle.System;
+            SignUpFrom signUpFrom = new SignUpFrom();
+            signUpFrom.StartPosition = FormStartPosition.Manual;
+            signUpFrom.Location = this.Location;
 
-            AboutusBtn.FlatStyle = FlatStyle.Flat;
-        }
+            signUpFrom.ShowDialog();
 
-        private void label1_Click(object sender, EventArgs e)
-        {
+            this.Close();
 
-        }
+            
 
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
+            
+            
         }
     }
 }

@@ -1,0 +1,13 @@
+C:\Users\abir1\Desktop\Gallery\bin\Debug\Gallery.exe.config
+C:\Users\abir1\Desktop\Gallery\bin\Debug\Gallery.exe
+C:\Users\abir1\Desktop\Gallery\bin\Debug\Gallery.pdb
+C:\Users\abir1\Desktop\Gallery\bin\Debug\Guna.UI2.dll
+C:\Users\abir1\Desktop\Gallery\obj\Debug\Gallery.csproj.AssemblyReference.cache
+C:\Users\abir1\Desktop\Gallery\obj\Debug\Gallery.Form1.resources
+C:\Users\abir1\Desktop\Gallery\obj\Debug\Gallery.Properties.Resources.resources
+C:\Users\abir1\Desktop\Gallery\obj\Debug\Gallery.csproj.GenerateResource.cache
+C:\Users\abir1\Desktop\Gallery\obj\Debug\Gallery.csproj.CoreCompileInputs.cache
+C:\Users\abir1\Desktop\Gallery\obj\Debug\Gallery.csproj.CopyComplete
+C:\Users\abir1\Desktop\Gallery\obj\Debug\Gallery.exe
+C:\Users\abir1\Desktop\Gallery\obj\Debug\Gallery.pdb
+C:\Users\abir1\Desktop\Gallery\obj\Debug\Gallery.SignUpFrom.resources
