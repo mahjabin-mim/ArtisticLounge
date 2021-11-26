@@ -78,5 +78,15 @@ namespace Gallery
                 showPass = false;
             }
         }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainForm m = new MainForm();
+            m.StartPosition = FormStartPosition.Manual;
+            m.Location = this.Location;
+            m.ShowDialog();
+            this.Close();
+        }
     }
 }

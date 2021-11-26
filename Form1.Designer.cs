@@ -62,10 +62,9 @@ namespace Gallery
             this.panel2.Controls.Add(this.loginLabel);
             this.panel2.Controls.Add(this.loginUnderPanel);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(508, 67);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(699, 100);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(563, 560);
+            this.panel2.Size = new System.Drawing.Size(774, 840);
             this.panel2.TabIndex = 15;
             // 
             // showPassBtn
@@ -73,11 +72,12 @@ namespace Gallery
             this.showPassBtn.FillColor = System.Drawing.Color.Transparent;
             this.showPassBtn.Image = ((System.Drawing.Image)(resources.GetObject("showPassBtn.Image")));
             this.showPassBtn.ImageRotate = 0F;
-            this.showPassBtn.Location = new System.Drawing.Point(436, 269);
+            this.showPassBtn.Location = new System.Drawing.Point(600, 404);
+            this.showPassBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.showPassBtn.Name = "showPassBtn";
             this.showPassBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.showPassBtn.ShadowDecoration.Parent = this.showPassBtn;
-            this.showPassBtn.Size = new System.Drawing.Size(20, 25);
+            this.showPassBtn.Size = new System.Drawing.Size(28, 38);
             this.showPassBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.showPassBtn.TabIndex = 17;
             this.showPassBtn.TabStop = false;
@@ -103,10 +103,10 @@ namespace Gallery
             this.loginPass.HoverState.Parent = this.loginPass;
             this.loginPass.IconLeft = ((System.Drawing.Image)(resources.GetObject("loginPass.IconLeft")));
             this.loginPass.IconLeftSize = new System.Drawing.Size(22, 22);
-            this.loginPass.Location = new System.Drawing.Point(78, 263);
-            this.loginPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.loginPass.Location = new System.Drawing.Point(107, 394);
+            this.loginPass.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.loginPass.Name = "loginPass";
-            this.loginPass.Padding = new System.Windows.Forms.Padding(10);
+            this.loginPass.Padding = new System.Windows.Forms.Padding(14, 15, 14, 15);
             this.loginPass.PasswordChar = '\0';
             this.loginPass.PlaceholderText = "Password";
             this.loginPass.SelectedText = "";
@@ -114,7 +114,7 @@ namespace Gallery
             this.loginPass.ShadowDecoration.Enabled = true;
             this.loginPass.ShadowDecoration.Parent = this.loginPass;
             this.loginPass.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.loginPass.Size = new System.Drawing.Size(386, 38);
+            this.loginPass.Size = new System.Drawing.Size(531, 57);
             this.loginPass.TabIndex = 1;
             this.loginPass.UseSystemPasswordChar = true;
             // 
@@ -136,10 +136,10 @@ namespace Gallery
             this.loginEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.loginEmail.HoverState.Parent = this.loginEmail;
             this.loginEmail.IconLeft = ((System.Drawing.Image)(resources.GetObject("loginEmail.IconLeft")));
-            this.loginEmail.Location = new System.Drawing.Point(78, 204);
-            this.loginEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.loginEmail.Location = new System.Drawing.Point(107, 306);
+            this.loginEmail.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.loginEmail.Name = "loginEmail";
-            this.loginEmail.Padding = new System.Windows.Forms.Padding(10);
+            this.loginEmail.Padding = new System.Windows.Forms.Padding(14, 15, 14, 15);
             this.loginEmail.PasswordChar = '\0';
             this.loginEmail.PlaceholderText = "Email";
             this.loginEmail.SelectedText = "";
@@ -147,7 +147,7 @@ namespace Gallery
             this.loginEmail.ShadowDecoration.Enabled = true;
             this.loginEmail.ShadowDecoration.Parent = this.loginEmail;
             this.loginEmail.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.loginEmail.Size = new System.Drawing.Size(386, 38);
+            this.loginEmail.Size = new System.Drawing.Size(531, 57);
             this.loginEmail.TabIndex = 0;
             // 
             // loginBtn
@@ -163,17 +163,17 @@ namespace Gallery
             this.loginBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.loginBtn.DisabledState.Parent = this.loginBtn;
             this.loginBtn.FillColor = System.Drawing.Color.Navy;
-            this.loginBtn.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.White;
             this.loginBtn.HoverState.Parent = this.loginBtn;
-            this.loginBtn.Location = new System.Drawing.Point(197, 337);
-            this.loginBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.loginBtn.Location = new System.Drawing.Point(271, 506);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.ShadowDecoration.BorderRadius = 10;
             this.loginBtn.ShadowDecoration.Parent = this.loginBtn;
-            this.loginBtn.Size = new System.Drawing.Size(154, 51);
+            this.loginBtn.Size = new System.Drawing.Size(212, 76);
             this.loginBtn.TabIndex = 16;
             this.loginBtn.Text = "Login";
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // signUpLabel
             // 
@@ -181,11 +181,12 @@ namespace Gallery
             this.signUpLabel.AutoSize = true;
             this.signUpLabel.BackColor = System.Drawing.Color.Transparent;
             this.signUpLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.signUpLabel.Font = new System.Drawing.Font("Segoe UI Variable Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signUpLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.signUpLabel.ForeColor = System.Drawing.Color.White;
-            this.signUpLabel.Location = new System.Drawing.Point(292, 103);
+            this.signUpLabel.Location = new System.Drawing.Point(402, 154);
+            this.signUpLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.signUpLabel.Name = "signUpLabel";
-            this.signUpLabel.Size = new System.Drawing.Size(120, 37);
+            this.signUpLabel.Size = new System.Drawing.Size(160, 44);
             this.signUpLabel.TabIndex = 10;
             this.signUpLabel.Text = "Sign Up";
             this.signUpLabel.Click += new System.EventHandler(this.signUpLabel_Click);
@@ -195,9 +196,10 @@ namespace Gallery
             this.signUpUnderPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.signUpUnderPanel.BackColor = System.Drawing.Color.Transparent;
             this.signUpUnderPanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.signUpUnderPanel.Location = new System.Drawing.Point(273, 149);
+            this.signUpUnderPanel.Location = new System.Drawing.Point(375, 224);
+            this.signUpUnderPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.signUpUnderPanel.Name = "signUpUnderPanel";
-            this.signUpUnderPanel.Size = new System.Drawing.Size(172, 4);
+            this.signUpUnderPanel.Size = new System.Drawing.Size(236, 6);
             this.signUpUnderPanel.TabIndex = 12;
             // 
             // loginLabel
@@ -206,11 +208,12 @@ namespace Gallery
             this.loginLabel.AutoSize = true;
             this.loginLabel.BackColor = System.Drawing.Color.Transparent;
             this.loginLabel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginLabel.Font = new System.Drawing.Font("Segoe UI Variable Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.loginLabel.Location = new System.Drawing.Point(101, 103);
+            this.loginLabel.Location = new System.Drawing.Point(139, 154);
+            this.loginLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.loginLabel.Name = "loginLabel";
-            this.loginLabel.Size = new System.Drawing.Size(90, 37);
+            this.loginLabel.Size = new System.Drawing.Size(117, 44);
             this.loginLabel.TabIndex = 9;
             this.loginLabel.Text = "Login";
             this.loginLabel.Click += new System.EventHandler(this.loginLabel_Click);
@@ -219,9 +222,10 @@ namespace Gallery
             // 
             this.loginUnderPanel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.loginUnderPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.loginUnderPanel.Location = new System.Drawing.Point(89, 149);
+            this.loginUnderPanel.Location = new System.Drawing.Point(122, 224);
+            this.loginUnderPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginUnderPanel.Name = "loginUnderPanel";
-            this.loginUnderPanel.Size = new System.Drawing.Size(109, 4);
+            this.loginUnderPanel.Size = new System.Drawing.Size(150, 6);
             this.loginUnderPanel.TabIndex = 11;
             // 
             // pictureBox1
@@ -229,10 +233,9 @@ namespace Gallery
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 67);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 100);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1071, 560);
+            this.pictureBox1.Size = new System.Drawing.Size(1473, 840);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -245,8 +248,9 @@ namespace Gallery
             this.panel1.Controls.Add(this.AboutusBtn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1071, 67);
+            this.panel1.Size = new System.Drawing.Size(1473, 100);
             this.panel1.TabIndex = 13;
             // 
             // ServiceBtn
@@ -256,11 +260,12 @@ namespace Gallery
             this.ServiceBtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.ServiceBtn.FlatAppearance.BorderSize = 0;
             this.ServiceBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ServiceBtn.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ServiceBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ServiceBtn.ForeColor = System.Drawing.Color.White;
-            this.ServiceBtn.Location = new System.Drawing.Point(246, 0);
+            this.ServiceBtn.Location = new System.Drawing.Point(338, 0);
+            this.ServiceBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ServiceBtn.Name = "ServiceBtn";
-            this.ServiceBtn.Size = new System.Drawing.Size(123, 67);
+            this.ServiceBtn.Size = new System.Drawing.Size(169, 100);
             this.ServiceBtn.TabIndex = 0;
             this.ServiceBtn.Text = "Services";
             this.ServiceBtn.UseVisualStyleBackColor = false;
@@ -273,11 +278,12 @@ namespace Gallery
             this.ContactBtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.ContactBtn.FlatAppearance.BorderSize = 0;
             this.ContactBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ContactBtn.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContactBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContactBtn.ForeColor = System.Drawing.Color.White;
-            this.ContactBtn.Location = new System.Drawing.Point(123, 0);
+            this.ContactBtn.Location = new System.Drawing.Point(169, 0);
+            this.ContactBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ContactBtn.Name = "ContactBtn";
-            this.ContactBtn.Size = new System.Drawing.Size(123, 67);
+            this.ContactBtn.Size = new System.Drawing.Size(169, 100);
             this.ContactBtn.TabIndex = 2;
             this.ContactBtn.Text = "Contact";
             this.ContactBtn.UseVisualStyleBackColor = false;
@@ -289,23 +295,25 @@ namespace Gallery
             this.AboutusBtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
             this.AboutusBtn.FlatAppearance.BorderSize = 0;
             this.AboutusBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AboutusBtn.Font = new System.Drawing.Font("Segoe UI Variable Display", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AboutusBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutusBtn.ForeColor = System.Drawing.Color.White;
             this.AboutusBtn.Location = new System.Drawing.Point(0, 0);
+            this.AboutusBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AboutusBtn.Name = "AboutusBtn";
-            this.AboutusBtn.Size = new System.Drawing.Size(123, 67);
+            this.AboutusBtn.Size = new System.Drawing.Size(169, 100);
             this.AboutusBtn.TabIndex = 1;
             this.AboutusBtn.Text = "About Us";
             this.AboutusBtn.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1071, 627);
+            this.ClientSize = new System.Drawing.Size(1473, 940);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

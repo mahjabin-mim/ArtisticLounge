@@ -52,5 +52,20 @@ namespace Gallery
                 showPass = false;
             }
         }
+
+        private void ServiceBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ContactBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AboutusBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
