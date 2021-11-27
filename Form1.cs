@@ -24,6 +24,7 @@ namespace Gallery
         private void Form1_Load(object sender, EventArgs e)
         {
             panel2.Parent = pictureBox1;
+            ArtisticLounge.FlatAppearance.MouseOverBackColor = Color.Transparent;
         }
 
         private void loginLabel_Click(object sender, EventArgs e)

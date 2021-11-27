@@ -49,7 +49,7 @@ namespace Gallery
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            ArtisticLounge.FlatAppearance.MouseOverBackColor = Color.Transparent;
             //.................... test code.............
 
             mainPanel.Controls.Clear();

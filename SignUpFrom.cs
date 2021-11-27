@@ -35,6 +35,7 @@ namespace Gallery
         private void SignUpFrom_Load(object sender, EventArgs e)
         {
             signupRightPanel.Parent = signupPictureBox;
+            ArtisticLounge.FlatAppearance.MouseOverBackColor = Color.Transparent;
         }
 
         private void showPassBtn_Click(object sender, EventArgs e)
