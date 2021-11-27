@@ -42,10 +42,10 @@
             // 
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(17, 9);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(186, 116);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(281, 185);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -54,18 +54,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(10, 128);
+            this.label1.Location = new System.Drawing.Point(-4, 191);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(105, 38);
             this.label1.TabIndex = 1;
             this.label1.Text = "Galaxy";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(12, 166);
+            this.label2.Location = new System.Drawing.Point(3, 238);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 28);
             this.label2.TabIndex = 2;
@@ -85,7 +86,7 @@
             this.buyNowBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buyNowBtn.ForeColor = System.Drawing.Color.White;
             this.buyNowBtn.HoverState.Parent = this.buyNowBtn;
-            this.buyNowBtn.Location = new System.Drawing.Point(48, 197);
+            this.buyNowBtn.Location = new System.Drawing.Point(82, 313);
             this.buyNowBtn.Name = "buyNowBtn";
             this.buyNowBtn.ShadowDecoration.Parent = this.buyNowBtn;
             this.buyNowBtn.Size = new System.Drawing.Size(111, 37);
@@ -99,10 +100,10 @@
             this.guna2Panel1.Controls.Add(this.buyNowBtn);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.label2);
-            this.guna2Panel1.Location = new System.Drawing.Point(3, 3);
+            this.guna2Panel1.Location = new System.Drawing.Point(3, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(221, 253);
+            this.guna2Panel1.Size = new System.Drawing.Size(287, 368);
             this.guna2Panel1.TabIndex = 4;
             // 
             // ArtCard
@@ -110,9 +111,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(10, 10, 3, 3);
+            this.Margin = new System.Windows.Forms.Padding(20, 45, 3, 3);
             this.Name = "ArtCard";
-            this.Size = new System.Drawing.Size(227, 257);
+            this.Size = new System.Drawing.Size(290, 371);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();

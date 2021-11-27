@@ -12,6 +12,7 @@ namespace Gallery
 {
     public partial class MainForm : Form
     {
+        private bool isCollapsed = false;
         public MainForm()
         {
             InitializeComponent();
@@ -53,7 +54,9 @@ namespace Gallery
             //.................... test code.............
 
             mainPanel.Controls.Clear();
-           
+
+            dropDownPanel.Height = 0;
+
             mainPanel.Dock = DockStyle.Fill;
 
             ArtCard[] artCards = new ArtCard[30];
@@ -72,6 +75,40 @@ namespace Gallery
         private void MainFlowPanel_Paint(object sender, PaintEventArgs e)
         {
            
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void categoryBtn_Click(object sender, EventArgs e)
+        {
+
+            dropDonwTimer.Start();
+        }
+
+        private void dropDonwTimer_Tick(object sender, EventArgs e)
+        {
+            if (isCollapsed)
+            {
+                dropDownPanel.Height += 10;
+
+                if(dropDownPanel.Size == dropDownPanel.MaximumSize)
+                {
+                    dropDonwTimer.Stop();
+                    isCollapsed = false;
+                }
+            }
+            else
+            {
+                dropDownPanel.Height -= 10;
+                if(dropDownPanel.Size == dropDownPanel.MinimumSize)
+                {
+                    dropDonwTimer.Stop();
+                    isCollapsed = true;
+                }
+            }
         }
     }
 }

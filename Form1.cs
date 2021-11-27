@@ -53,6 +53,7 @@ namespace Gallery
             SignUpFrom signUpFrom = new SignUpFrom();
             signUpFrom.StartPosition = FormStartPosition.Manual;
             signUpFrom.Location = this.Location;
+            signUpFrom.Size = this.Size;
 
             signUpFrom.ShowDialog();
 
@@ -86,6 +87,8 @@ namespace Gallery
             MainForm m = new MainForm();
             m.StartPosition = FormStartPosition.Manual;
             m.Location = this.Location;
+            m.Size = this.Size;
+
             m.ShowDialog();
             this.Close();
         }
