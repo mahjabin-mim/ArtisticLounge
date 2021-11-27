@@ -49,8 +49,24 @@ namespace Gallery
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            MainFlowPanel.Parent = MainFormPanelBg;
-            MainFlowPanel.BackColor = Color.Transparent;
+
+            //.................... test code.............
+
+            mainPanel.Controls.Clear();
+           
+            mainPanel.Dock = DockStyle.Fill;
+
+            ArtCard[] artCards = new ArtCard[30];
+
+            for (int i = 0; i < artCards.Length; i++)
+            {
+                artCards[i] = new ArtCard();
+
+                mainPanel.Controls.Add(artCards[i]);
+            }
+
+            //....................
+          
         }
 
         private void MainFlowPanel_Paint(object sender, PaintEventArgs e)

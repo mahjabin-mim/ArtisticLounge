@@ -39,3 +39,6 @@ C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.csproj.CopyComplete
 C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.exe
 C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.pdb
 C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.MainForm.resources
+C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.csproj.SuggestedBindingRedirects.cache
+C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.MainForm.resources
+C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.ArtCard.resources
