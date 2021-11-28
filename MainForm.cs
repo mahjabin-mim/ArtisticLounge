@@ -110,5 +110,33 @@ namespace Gallery
                 }
             }
         }
+
+        private void guna2PictureBox1_Click_2(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            ProfileForm profileForm = new ProfileForm();
+            profileForm.StartPosition = FormStartPosition.Manual;
+            profileForm.Location = this.Location;
+            profileForm.Size = this.Size;
+
+            profileForm.ShowDialog();
+
+            this.Close();
+        }
+
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Form1 form1 = new Form1();
+            form1.StartPosition = FormStartPosition.Manual;
+            form1.Location = this.Location;
+            form1.Size = this.Size;
+
+            form1.ShowDialog();
+
+            this.Close();
+        }
     }
 }
