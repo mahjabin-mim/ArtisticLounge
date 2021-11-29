@@ -44,3 +44,5 @@ C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.MainForm.resources
 C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.ArtCard.resources
 C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.ArtCard.resources
 C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.ProfileForm.resources
+C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.ProfileForm.resources
+C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.ArtOnStockCard.resources

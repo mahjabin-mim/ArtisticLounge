@@ -118,7 +118,13 @@ namespace Gallery
             ProfileForm profileForm = new ProfileForm();
             profileForm.StartPosition = FormStartPosition.Manual;
             profileForm.Location = this.Location;
-            profileForm.Size = this.Size;
+
+            if(this.Size.Height >= profileForm.MinimumSize.Height &&
+                this.Size.Width >= profileForm.MaximumSize.Width)
+            {
+                profileForm.Size = this.Size;
+            }
+            
 
             profileForm.ShowDialog();
 
@@ -133,6 +139,8 @@ namespace Gallery
             form1.StartPosition = FormStartPosition.Manual;
             form1.Location = this.Location;
             form1.Size = this.Size;
+
+            
 
             form1.ShowDialog();
 
