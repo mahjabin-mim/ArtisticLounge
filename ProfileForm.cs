@@ -12,6 +12,7 @@ namespace Gallery
 {
     public partial class ProfileForm : Form
     {
+        
         public ProfileForm()
         {
             InitializeComponent();
@@ -29,16 +30,27 @@ namespace Gallery
             //.................... test code.............
 
             userDashFlow.Controls.Clear();
-
-            Label label = new Label();
-            label.Text = "On Stock";
-            label.TextAlign = ContentAlignment.MiddleLeft;
-            userDashFlow.Controls.Add(label);
-
-
-            userDashFlow.Height = 0;
-
             userDashFlow.Dock = DockStyle.Fill;
+
+            Label stockLabel = new Label();
+
+
+            stockLabel.BackColor = System.Drawing.Color.Transparent;
+            stockLabel.Font = new System.Drawing.Font("Segoe UI Emoji", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            stockLabel.ForeColor = System.Drawing.Color.Navy;
+
+            stockLabel.Margin =  new System.Windows.Forms.Padding(3, 10, 3, 0);
+
+            stockLabel.Name = "stockLabel";
+            stockLabel.TabIndex = 0;
+            stockLabel.Text = "On Stock";
+            stockLabel.AutoSize = false;
+            stockLabel.Size = new Size(1368, 30);
+            stockLabel.Dock = DockStyle.Top;
+          
+
+            userDashFlow.Controls.Add(stockLabel);
+           
 
             ArtOnStockCard[] artCards = new ArtOnStockCard[10];
 
@@ -49,24 +61,36 @@ namespace Gallery
                 userDashFlow.Controls.Add(artCards[i]);
             }
 
-/*
-            Label label2 = new Label();
-            label2.Text = "On Stock";
-            label2.TextAlign = ContentAlignment.MiddleLeft;
-            label2.Text = "Solt items";
+            //...............sold items
+            Label soldLabel = new Label();
 
-            userDashFlow.Controls.Add(label2);
+            soldLabel.BackColor = System.Drawing.Color.Transparent;
+            soldLabel.Font = new System.Drawing.Font("Segoe UI Emoji", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            soldLabel.ForeColor = System.Drawing.Color.Navy;
+
+            soldLabel.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
+
+            soldLabel.Name = "stockLabel";
+            soldLabel.TabIndex = 0;
+            soldLabel.Text = "Sold items";
+            soldLabel.AutoSize = false;
+            soldLabel.Size = new Size(1368, 30);
+            soldLabel.Dock = DockStyle.Top;
+
+
+            userDashFlow.Controls.Add(soldLabel);
 
             for (int i = 5; i < 10; i++)
             {
                 artCards[i] = new ArtOnStockCard();
 
                 userDashFlow.Controls.Add(artCards[i]);
-            }*/
+            }
 
-            //....................
 
         }
+
+        
 
         private void EditProfileBtn_Click(object sender, EventArgs e)
         {

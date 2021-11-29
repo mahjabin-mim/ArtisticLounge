@@ -21,5 +21,10 @@ namespace Gallery
         {
 
         }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

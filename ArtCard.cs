@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Guna.UI2;
 
 namespace Gallery
 {
@@ -18,6 +19,10 @@ namespace Gallery
         public string title { get; set; }
         public string price { get; set; }
 
+        public Form parentForm { get; set; }
+
+        
+
         public ArtCard()
         {
             InitializeComponent();
@@ -26,6 +31,27 @@ namespace Gallery
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void buyNowBtn_Click(object sender, EventArgs e)
+        {
+            parentForm.Hide();
+
+            BuyForm buyForm = new BuyForm();
+
+            buyForm.StartPosition = FormStartPosition.Manual;
+            buyForm.Location = parentForm.Location;
+
+            if (parentForm.Size.Height >= buyForm.MinimumSize.Height &&
+                parentForm.Size.Width >= buyForm.MaximumSize.Width)
+            {
+                buyForm.Size = parentForm.Size;
+            }
+
+
+            buyForm.ShowDialog();
+
+            parentForm.Close();
         }
     }
 }

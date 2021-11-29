@@ -239,6 +239,7 @@
             this.EditProfileBtn.BorderRadius = 10;
             this.EditProfileBtn.BorderThickness = 2;
             this.EditProfileBtn.CheckedState.Parent = this.EditProfileBtn;
+            this.EditProfileBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EditProfileBtn.CustomImages.Parent = this.EditProfileBtn;
             this.EditProfileBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.EditProfileBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;

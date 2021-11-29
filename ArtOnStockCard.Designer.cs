@@ -88,6 +88,7 @@
             this.DeleteBtn.Size = new System.Drawing.Size(138, 37);
             this.DeleteBtn.TabIndex = 3;
             this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
             // 
             // label1
             // 

@@ -90,7 +90,7 @@
             this.logoutBtn.DisabledState.Parent = this.logoutBtn;
             this.logoutBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.logoutBtn.FillColor = System.Drawing.Color.Transparent;
-            this.logoutBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutBtn.ForeColor = System.Drawing.Color.Black;
             this.logoutBtn.HoverState.Parent = this.logoutBtn;
             this.logoutBtn.Image = ((System.Drawing.Image)(resources.GetObject("logoutBtn.Image")));
@@ -135,7 +135,7 @@
             this.otherBtn.DisabledState.Parent = this.otherBtn;
             this.otherBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.otherBtn.FillColor = System.Drawing.Color.Transparent;
-            this.otherBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.otherBtn.ForeColor = System.Drawing.Color.Black;
             this.otherBtn.HoverState.Parent = this.otherBtn;
             this.otherBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -162,7 +162,7 @@
             this.compositionBtn.DisabledState.Parent = this.compositionBtn;
             this.compositionBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.compositionBtn.FillColor = System.Drawing.Color.Transparent;
-            this.compositionBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compositionBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.compositionBtn.ForeColor = System.Drawing.Color.Black;
             this.compositionBtn.HoverState.Parent = this.compositionBtn;
             this.compositionBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -189,7 +189,7 @@
             this.vectorBtn.DisabledState.Parent = this.vectorBtn;
             this.vectorBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.vectorBtn.FillColor = System.Drawing.Color.Transparent;
-            this.vectorBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vectorBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vectorBtn.ForeColor = System.Drawing.Color.Black;
             this.vectorBtn.HoverState.Parent = this.vectorBtn;
             this.vectorBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -216,7 +216,7 @@
             this.fineArt.DisabledState.Parent = this.fineArt;
             this.fineArt.Dock = System.Windows.Forms.DockStyle.Top;
             this.fineArt.FillColor = System.Drawing.Color.Transparent;
-            this.fineArt.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fineArt.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fineArt.ForeColor = System.Drawing.Color.Black;
             this.fineArt.HoverState.Parent = this.fineArt;
             this.fineArt.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -243,7 +243,7 @@
             this.categoryBtn.DisabledState.Parent = this.categoryBtn;
             this.categoryBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.categoryBtn.FillColor = System.Drawing.Color.Transparent;
-            this.categoryBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoryBtn.ForeColor = System.Drawing.Color.Black;
             this.categoryBtn.HoverState.Parent = this.categoryBtn;
             this.categoryBtn.Image = ((System.Drawing.Image)(resources.GetObject("categoryBtn.Image")));
@@ -272,7 +272,7 @@
             this.homeBtn.DisabledState.Parent = this.homeBtn;
             this.homeBtn.Dock = System.Windows.Forms.DockStyle.Top;
             this.homeBtn.FillColor = System.Drawing.Color.Transparent;
-            this.homeBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.homeBtn.ForeColor = System.Drawing.Color.Black;
             this.homeBtn.HoverState.Parent = this.homeBtn;
             this.homeBtn.Image = ((System.Drawing.Image)(resources.GetObject("homeBtn.Image")));

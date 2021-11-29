@@ -92,6 +92,7 @@
             this.buyNowBtn.Size = new System.Drawing.Size(111, 37);
             this.buyNowBtn.TabIndex = 3;
             this.buyNowBtn.Text = "Buy now";
+            this.buyNowBtn.Click += new System.EventHandler(this.buyNowBtn_Click);
             // 
             // guna2Panel1
             // 

@@ -64,12 +64,40 @@ namespace Gallery
             for (int i = 0; i < artCards.Length; i++)
             {
                 artCards[i] = new ArtCard();
+                artCards[i].parentForm = this;
+                
 
                 mainPanel.Controls.Add(artCards[i]);
+
+                
             }
 
             //....................
           
+        }
+
+        void CardBtnClick(object sender , EventArgs e)
+        {
+            ArtCard artCard = (ArtCard)sender;
+
+            this.Hide();
+
+            BuyForm buyForm = new BuyForm();
+
+            buyForm.StartPosition = FormStartPosition.Manual;
+            buyForm.Location = this.Location;
+
+            if (this.Size.Height >= buyForm.MinimumSize.Height &&
+                this.Size.Width >= buyForm.MaximumSize.Width)
+            {
+                buyForm.Size = this.Size;
+            }
+
+
+            buyForm.ShowDialog();
+
+            this.Close();
+
         }
 
         private void MainFlowPanel_Paint(object sender, PaintEventArgs e)

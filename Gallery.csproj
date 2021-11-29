@@ -61,6 +61,12 @@
     <Compile Include="ArtOnStockCard.Designer.cs">
       <DependentUpon>ArtOnStockCard.cs</DependentUpon>
     </Compile>
+    <Compile Include="BuyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuyForm.Designer.cs">
+      <DependentUpon>BuyForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ArtOnStockCard.resx">
       <DependentUpon>ArtOnStockCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuyForm.resx">
+      <DependentUpon>BuyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
