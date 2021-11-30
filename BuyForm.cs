@@ -37,5 +37,22 @@ namespace Gallery
 
             this.Close();
         }
+
+        private void buyArtleftPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void proceedBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PaymentForm paymentForm = new PaymentForm();
+            paymentForm.StartPosition = FormStartPosition.Manual;
+            paymentForm.Location = this.Location;
+            paymentForm.Size = this.Size;
+
+            paymentForm.ShowDialog();
+            this.Close();
+        }
     }
 }

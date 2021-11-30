@@ -45,6 +45,19 @@ namespace Gallery
         {
             ContactFormPanel.Parent = ContactFormBG;
             ContactFormPanel.BackColor = Color.FromArgb(100,0,0,0);
+
+            //MessageBoxPanel.Parent = ContactFormBG;
+            //MessageBoxPanel.BackColor = Color.FromArgb(100, 0, 0, 0);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginEmail_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
