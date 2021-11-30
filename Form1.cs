@@ -92,5 +92,30 @@ namespace Gallery
             m.ShowDialog();
             this.Close();
         }
+
+        private void AboutUsBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutUsForm aboutUsForm = new AboutUsForm();
+            aboutUsForm.StartPosition = FormStartPosition.Manual;
+            aboutUsForm.Location = this.Location;
+            aboutUsForm.Size = this.Size;
+
+            aboutUsForm.ShowDialog();
+            this.Close();
+
+        }
+
+        private void ContactBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ContactForm contactForm = new ContactForm();
+            contactForm.StartPosition = FormStartPosition.Manual;
+            contactForm.Location = this.Location;
+            contactForm.Size = this.Size;
+
+            contactForm.ShowDialog();
+            this.Close();
+        }
     }
 }

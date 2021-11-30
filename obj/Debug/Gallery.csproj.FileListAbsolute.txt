@@ -47,3 +47,7 @@ C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.ProfileForm.resources
 C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.ProfileForm.resources
 C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.ArtOnStockCard.resources
 C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.BuyForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.ArtOnStockCard.resources
+C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.BuyForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.AboutUsForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.ContactForm.resources

@@ -24,5 +24,18 @@ namespace Gallery
 
             this.buyArtrightPanel.BackColor = Color.FromArgb(100, 0, 0, 0);
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MainForm mainForm = new MainForm();
+            mainForm.StartPosition = FormStartPosition.Manual;
+            mainForm.Location = this.Location;
+
+            mainForm.ShowDialog();
+
+            this.Close();
+        }
     }
 }

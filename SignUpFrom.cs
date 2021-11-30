@@ -68,5 +68,17 @@ namespace Gallery
         {
 
         }
+
+        private void signUpBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Form1 form1 = new Form1();
+            form1.StartPosition = FormStartPosition.Manual;
+            form1.Location = this.Location;
+
+            form1.ShowDialog();
+            this.Close();
+        }
     }
 }
