@@ -109,11 +109,11 @@ namespace Gallery
             this.Hide();
 
             MainForm mainForm = new MainForm();
-            mainForm.StartPosition = FormStartPosition.Manual;
-            mainForm.Location = this.Location;
+          /*  mainForm.StartPosition = FormStartPosition.Manual;
+            mainForm.Location = this.Location;*/
 
 
-
+/*
             if (this.WindowState == FormWindowState.Maximized)
             {
                 mainForm.WindowState = FormWindowState.Maximized;
@@ -121,7 +121,7 @@ namespace Gallery
             else
             {
                 mainForm.Size = this.Size;
-            }
+            }*/
 
 
             mainForm.ShowDialog();
@@ -134,8 +134,8 @@ namespace Gallery
             this.Hide();
 
             EditProfileForm editProfileForm = new EditProfileForm();
-            editProfileForm.StartPosition = FormStartPosition.Manual;
-            editProfileForm.Location = this.Location;
+           /* editProfileForm.StartPosition = FormStartPosition.Manual;
+            editProfileForm.Location = this.Location;*/
 
             editProfileForm.ShowDialog();
 

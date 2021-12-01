@@ -85,8 +85,8 @@ namespace Gallery
         {
             this.Hide();
             MainForm m = new MainForm();
-            m.StartPosition = FormStartPosition.Manual;
-            m.Location = this.Location;
+          //  m.StartPosition = FormStartPosition.Manual;
+          //  m.Location = this.Location;
             //m.Size = this.Size;
 
             m.ShowDialog();

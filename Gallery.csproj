@@ -160,6 +160,7 @@
     <EmbeddedResource Include="SignUpFrom.resx">
       <DependentUpon>SignUpFrom.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Assets\art1.webp" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -185,6 +186,96 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\ihbvZL7s_400x400.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\LandingBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\lavatory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\location %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Logo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\mail %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\options.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\p.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\art.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\art2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\art3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\art4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\art5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\art6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\call.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\edit %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\edit %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\gmail.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

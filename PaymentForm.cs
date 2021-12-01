@@ -40,8 +40,8 @@ namespace Gallery
             this.Hide();
 
             BuyForm buyForm = new BuyForm();
-            buyForm.StartPosition = FormStartPosition.Manual;
-            buyForm.Location = this.Location;
+     /*       buyForm.StartPosition = FormStartPosition.Manual;
+            buyForm.Location = this.Location;*/
 
 
             buyForm.ShowDialog();

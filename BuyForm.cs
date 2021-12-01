@@ -30,8 +30,8 @@ namespace Gallery
             this.Hide();
 
             MainForm mainForm = new MainForm();
-            mainForm.StartPosition = FormStartPosition.Manual;
-            mainForm.Location = this.Location;
+           /* mainForm.StartPosition = FormStartPosition.Manual;
+            mainForm.Location = this.Location;*/
 
             mainForm.ShowDialog();
 
@@ -47,8 +47,8 @@ namespace Gallery
         {
             this.Hide();
             PaymentForm paymentForm = new PaymentForm();
-            paymentForm.StartPosition = FormStartPosition.Manual;
-            paymentForm.Location = this.Location;
+           /* paymentForm.StartPosition = FormStartPosition.Manual;
+            paymentForm.Location = this.Location;*/
             //paymentForm.Size = this.Size;
 
             paymentForm.ShowDialog();

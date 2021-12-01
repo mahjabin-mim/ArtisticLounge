@@ -50,8 +50,8 @@ namespace Gallery
             this.Hide();
 
             ProfileForm profileForm = new ProfileForm();
-            profileForm.StartPosition = FormStartPosition.Manual;
-            profileForm.Location = this.Location;
+           /* profileForm.StartPosition = FormStartPosition.Manual;
+            profileForm.Location = this.Location;*/
 
             profileForm.ShowDialog();
 
