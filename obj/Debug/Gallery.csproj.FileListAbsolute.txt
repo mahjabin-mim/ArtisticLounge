@@ -52,3 +52,4 @@ C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.BuyForm.resources
 C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.AboutUsForm.resources
 C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.ContactForm.resources
 C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.PaymentForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.EditProfileForm.resources

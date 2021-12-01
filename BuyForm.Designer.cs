@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BuyForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ServicesBtn = new System.Windows.Forms.Button();
             this.ContactBtn = new System.Windows.Forms.Button();
             this.AboutUsBtn = new System.Windows.Forms.Button();
@@ -37,10 +38,10 @@
             this.buyArtrightPanel = new System.Windows.Forms.Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.proceedBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.userName = new System.Windows.Forms.Label();
             this.addressTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.phoneTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.emailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.userName = new System.Windows.Forms.Label();
             this.buyArtleftPanel = new System.Windows.Forms.Panel();
             this.priceLabel = new System.Windows.Forms.Label();
             this.codeLabel = new System.Windows.Forms.Label();
@@ -50,13 +51,12 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.artNameLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.buyFormBg = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.buyArtrightPanel.SuspendLayout();
             this.buyArtleftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.buyFormBg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,6 +74,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1720, 100);
             this.panel1.TabIndex = 18;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(88, 82);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // ServicesBtn
             // 
@@ -213,20 +224,6 @@
             this.proceedBtn.Text = "Proceed to pay";
             this.proceedBtn.Click += new System.EventHandler(this.proceedBtn_Click);
             // 
-            // userName
-            // 
-            this.userName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.userName.AutoSize = true;
-            this.userName.BackColor = System.Drawing.Color.Transparent;
-            this.userName.Font = new System.Drawing.Font("Segoe UI", 14.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userName.ForeColor = System.Drawing.Color.White;
-            this.userName.Location = new System.Drawing.Point(246, 118);
-            this.userName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.userName.Name = "userName";
-            this.userName.Size = new System.Drawing.Size(229, 46);
-            this.userName.TabIndex = 0;
-            this.userName.Text = "Baymax Mim";
-            // 
             // addressTextBox
             // 
             this.addressTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -316,6 +313,20 @@
             this.emailTextBox.ShadowDecoration.Parent = this.emailTextBox;
             this.emailTextBox.Size = new System.Drawing.Size(535, 70);
             this.emailTextBox.TabIndex = 1;
+            // 
+            // userName
+            // 
+            this.userName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.userName.AutoSize = true;
+            this.userName.BackColor = System.Drawing.Color.Transparent;
+            this.userName.Font = new System.Drawing.Font("Segoe UI", 14.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userName.ForeColor = System.Drawing.Color.White;
+            this.userName.Location = new System.Drawing.Point(246, 118);
+            this.userName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.userName.Name = "userName";
+            this.userName.Size = new System.Drawing.Size(229, 46);
+            this.userName.TabIndex = 0;
+            this.userName.Text = "Baymax Mim";
             // 
             // buyArtleftPanel
             // 
@@ -429,17 +440,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 82);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
             // buyFormBg
             // 
             this.buyFormBg.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -462,6 +462,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buyFormBg);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1744, 1070);
             this.MinimumSize = new System.Drawing.Size(1744, 1070);
             this.Name = "BuyForm";
@@ -469,12 +470,12 @@
             this.Text = "BuyForm";
             this.Load += new System.EventHandler(this.BuyForm_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.buyArtrightPanel.ResumeLayout(false);
             this.buyArtrightPanel.PerformLayout();
             this.buyArtleftPanel.ResumeLayout(false);
             this.buyArtleftPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.buyFormBg)).EndInit();
             this.ResumeLayout(false);
 

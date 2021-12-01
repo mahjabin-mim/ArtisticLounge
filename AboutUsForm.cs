@@ -41,7 +41,7 @@ namespace Gallery
             ContactForm contactForm = new ContactForm();
             contactForm.StartPosition = FormStartPosition.Manual;
             contactForm.Location = this.Location;
-            contactForm.Size = this.Size;
+            //contactForm.Size = this.Size;
 
             contactForm.ShowDialog();
             this.Close();

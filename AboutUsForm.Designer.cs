@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutUsForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BackToMainForm = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ServicesBtn = new System.Windows.Forms.Button();
             this.ContactBtn = new System.Windows.Forms.Button();
             this.AboutUsBtn = new System.Windows.Forms.Button();
@@ -38,14 +40,12 @@
             this.AboutUsGroupBox = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.AboutUsFormBG = new System.Windows.Forms.PictureBox();
-            this.BackToMainForm = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BackToMainForm)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.AboutUsPanel.SuspendLayout();
             this.AboutUsGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AboutUsFormBG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BackToMainForm)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,6 +63,34 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1473, 100);
             this.panel1.TabIndex = 16;
+            // 
+            // BackToMainForm
+            // 
+            this.BackToMainForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackToMainForm.Dock = System.Windows.Forms.DockStyle.Right;
+            this.BackToMainForm.Image = ((System.Drawing.Image)(resources.GetObject("BackToMainForm.Image")));
+            this.BackToMainForm.ImageRotate = 0F;
+            this.BackToMainForm.Location = new System.Drawing.Point(1373, 0);
+            this.BackToMainForm.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
+            this.BackToMainForm.Name = "BackToMainForm";
+            this.BackToMainForm.Padding = new System.Windows.Forms.Padding(15);
+            this.BackToMainForm.ShadowDecoration.Parent = this.BackToMainForm;
+            this.BackToMainForm.Size = new System.Drawing.Size(100, 100);
+            this.BackToMainForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.BackToMainForm.TabIndex = 15;
+            this.BackToMainForm.TabStop = false;
+            this.BackToMainForm.Click += new System.EventHandler(this.BackToMainForm_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 15);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(88, 82);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
             // 
             // ServicesBtn
             // 
@@ -178,34 +206,6 @@
             this.AboutUsFormBG.TabIndex = 17;
             this.AboutUsFormBG.TabStop = false;
             // 
-            // BackToMainForm
-            // 
-            this.BackToMainForm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BackToMainForm.Dock = System.Windows.Forms.DockStyle.Right;
-            this.BackToMainForm.Image = ((System.Drawing.Image)(resources.GetObject("BackToMainForm.Image")));
-            this.BackToMainForm.ImageRotate = 0F;
-            this.BackToMainForm.Location = new System.Drawing.Point(1373, 0);
-            this.BackToMainForm.Margin = new System.Windows.Forms.Padding(3, 3, 10, 3);
-            this.BackToMainForm.Name = "BackToMainForm";
-            this.BackToMainForm.Padding = new System.Windows.Forms.Padding(15);
-            this.BackToMainForm.ShadowDecoration.Parent = this.BackToMainForm;
-            this.BackToMainForm.Size = new System.Drawing.Size(100, 100);
-            this.BackToMainForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BackToMainForm.TabIndex = 15;
-            this.BackToMainForm.TabStop = false;
-            this.BackToMainForm.Click += new System.EventHandler(this.BackToMainForm_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 15);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 82);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            // 
             // AboutUsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -214,17 +214,18 @@
             this.Controls.Add(this.AboutUsPanel);
             this.Controls.Add(this.AboutUsFormBG);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1497, 1004);
             this.MinimumSize = new System.Drawing.Size(1497, 1004);
             this.Name = "AboutUsForm";
             this.Text = "AboutUsForm";
             this.Load += new System.EventHandler(this.AboutUsForm_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BackToMainForm)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.AboutUsPanel.ResumeLayout(false);
             this.AboutUsGroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AboutUsFormBG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BackToMainForm)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

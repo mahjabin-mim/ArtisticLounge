@@ -30,53 +30,53 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaymentForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ServicesBtn = new System.Windows.Forms.Button();
             this.ContactBtn = new System.Windows.Forms.Button();
             this.AboutUsBtn = new System.Windows.Forms.Button();
             this.ArtisticLounge = new System.Windows.Forms.Button();
             this.paymentPanel = new System.Windows.Forms.Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.proceedBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.userName = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.guna2CustomRadioButton2 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.guna2CustomRadioButton1 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.MobileLabel2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.ProfileAllInfoPanel = new System.Windows.Forms.Panel();
             this.EmailLabel = new System.Windows.Forms.Label();
-            this.MobileLabel = new System.Windows.Forms.Label();
             this.LocationLabel = new System.Windows.Forms.Label();
             this.GenderLabel = new System.Windows.Forms.Label();
-            this.MobileLabel2 = new System.Windows.Forms.Label();
+            this.MobileLabel = new System.Windows.Forms.Label();
             this.EmailPanel = new System.Windows.Forms.Panel();
             this.EmailLabel2 = new System.Windows.Forms.Label();
             this.LocationPanel = new System.Windows.Forms.Panel();
             this.LocationLabel2 = new System.Windows.Forms.Label();
             this.GenderPanel = new System.Windows.Forms.Panel();
             this.GenderLabel2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.artNameLabel = new System.Windows.Forms.Label();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.artistNameLabel = new System.Windows.Forms.Label();
-            this.categoryLabel = new System.Windows.Forms.Label();
-            this.codeLabel = new System.Windows.Forms.Label();
-            this.priceLabel = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.guna2CustomRadioButton2 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.proceedBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.userName = new System.Windows.Forms.Label();
             this.buyArtleftPanel = new System.Windows.Forms.Panel();
-            this.guna2CustomRadioButton1 = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.priceLabel = new System.Windows.Forms.Label();
+            this.codeLabel = new System.Windows.Forms.Label();
+            this.categoryLabel = new System.Windows.Forms.Label();
+            this.artistNameLabel = new System.Windows.Forms.Label();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.artNameLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.paymentPanel.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.ProfileAllInfoPanel.SuspendLayout();
             this.EmailPanel.SuspendLayout();
             this.LocationPanel.SuspendLayout();
             this.GenderPanel.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.buyArtleftPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -93,17 +93,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1720, 100);
             this.panel1.TabIndex = 19;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 12);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 82);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
             // 
             // ServicesBtn
             // 
@@ -199,131 +188,57 @@
             this.paymentPanel.Size = new System.Drawing.Size(979, 906);
             this.paymentPanel.TabIndex = 21;
             // 
-            // guna2Button1
+            // guna2CustomRadioButton1
             // 
-            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.Navy;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(236, 666);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(248, 68);
-            this.guna2Button1.TabIndex = 5;
-            this.guna2Button1.Text = "Back ";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.guna2CustomRadioButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomRadioButton1.CheckedState.BorderThickness = 0;
+            this.guna2CustomRadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomRadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton1.CheckedState.Parent = this.guna2CustomRadioButton1;
+            this.guna2CustomRadioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(319, 186);
+            this.guna2CustomRadioButton1.Name = "guna2CustomRadioButton1";
+            this.guna2CustomRadioButton1.ShadowDecoration.Parent = this.guna2CustomRadioButton1;
+            this.guna2CustomRadioButton1.Size = new System.Drawing.Size(30, 30);
+            this.guna2CustomRadioButton1.TabIndex = 29;
+            this.guna2CustomRadioButton1.Text = "guna2CustomRadioButton1";
+            this.guna2CustomRadioButton1.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton1.UncheckedState.BorderThickness = 2;
+            this.guna2CustomRadioButton1.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton1.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton1.UncheckedState.Parent = this.guna2CustomRadioButton1;
+            this.guna2CustomRadioButton1.UseTransparentBackground = true;
             // 
-            // proceedBtn
+            // panel3
             // 
-            this.proceedBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.proceedBtn.BackColor = System.Drawing.Color.Transparent;
-            this.proceedBtn.BorderColor = System.Drawing.Color.Transparent;
-            this.proceedBtn.BorderRadius = 10;
-            this.proceedBtn.CheckedState.Parent = this.proceedBtn;
-            this.proceedBtn.CustomImages.Parent = this.proceedBtn;
-            this.proceedBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.proceedBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.proceedBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.proceedBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.proceedBtn.DisabledState.Parent = this.proceedBtn;
-            this.proceedBtn.FillColor = System.Drawing.Color.Navy;
-            this.proceedBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.proceedBtn.ForeColor = System.Drawing.Color.White;
-            this.proceedBtn.HoverState.Parent = this.proceedBtn;
-            this.proceedBtn.Location = new System.Drawing.Point(492, 666);
-            this.proceedBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.proceedBtn.Name = "proceedBtn";
-            this.proceedBtn.ShadowDecoration.Parent = this.proceedBtn;
-            this.proceedBtn.Size = new System.Drawing.Size(248, 68);
-            this.proceedBtn.TabIndex = 4;
-            this.proceedBtn.Text = "Confirm order";
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.Controls.Add(this.MobileLabel2);
+            this.panel3.Location = new System.Drawing.Point(414, 558);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(336, 38);
+            this.panel3.TabIndex = 28;
             // 
-            // userName
+            // MobileLabel2
             // 
-            this.userName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.userName.AutoSize = true;
-            this.userName.BackColor = System.Drawing.Color.Transparent;
-            this.userName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userName.ForeColor = System.Drawing.Color.White;
-            this.userName.Location = new System.Drawing.Point(222, 120);
-            this.userName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.userName.Name = "userName";
-            this.userName.Size = new System.Drawing.Size(330, 38);
-            this.userName.TabIndex = 0;
-            this.userName.Text = "Select Payment Method";
+            this.MobileLabel2.AutoSize = true;
+            this.MobileLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.MobileLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MobileLabel2.ForeColor = System.Drawing.Color.White;
+            this.MobileLabel2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MobileLabel2.Location = new System.Drawing.Point(199, 0);
+            this.MobileLabel2.Name = "MobileLabel2";
+            this.MobileLabel2.Size = new System.Drawing.Size(137, 38);
+            this.MobileLabel2.TabIndex = 16;
+            this.MobileLabel2.Text = "949.00 TK";
             // 
-            // label1
+            // panel2
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(366, 179);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 37);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Pay with card";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(366, 231);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(204, 37);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Mobile banking";
-            // 
-            // guna2CustomRadioButton2
-            // 
-            this.guna2CustomRadioButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton2.CheckedState.BorderThickness = 0;
-            this.guna2CustomRadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton2.CheckedState.Parent = this.guna2CustomRadioButton2;
-            this.guna2CustomRadioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2CustomRadioButton2.Location = new System.Drawing.Point(319, 238);
-            this.guna2CustomRadioButton2.Name = "guna2CustomRadioButton2";
-            this.guna2CustomRadioButton2.ShadowDecoration.Parent = this.guna2CustomRadioButton2;
-            this.guna2CustomRadioButton2.Size = new System.Drawing.Size(30, 30);
-            this.guna2CustomRadioButton2.TabIndex = 9;
-            this.guna2CustomRadioButton2.Text = "guna2CustomRadioButton2";
-            this.guna2CustomRadioButton2.UncheckedState.BorderColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton2.UncheckedState.BorderThickness = 2;
-            this.guna2CustomRadioButton2.UncheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton2.UncheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton2.UncheckedState.Parent = this.guna2CustomRadioButton2;
-            this.guna2CustomRadioButton2.UseTransparentBackground = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox1.Location = new System.Drawing.Point(229, 301);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(170, 41);
-            this.checkBox1.TabIndex = 11;
-            this.checkBox1.Text = "Send a gift";
-            this.checkBox1.UseVisualStyleBackColor = false;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
+            this.panel2.Location = new System.Drawing.Point(230, 537);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(520, 3);
+            this.panel2.TabIndex = 27;
             // 
             // ProfileAllInfoPanel
             // 
@@ -348,20 +263,6 @@
             this.EmailLabel.Size = new System.Drawing.Size(173, 38);
             this.EmailLabel.TabIndex = 9;
             this.EmailLabel.Text = "Extra Charge";
-            // 
-            // MobileLabel
-            // 
-            this.MobileLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.MobileLabel.AutoSize = true;
-            this.MobileLabel.BackColor = System.Drawing.Color.Transparent;
-            this.MobileLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MobileLabel.ForeColor = System.Drawing.Color.White;
-            this.MobileLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MobileLabel.Location = new System.Drawing.Point(223, 558);
-            this.MobileLabel.Name = "MobileLabel";
-            this.MobileLabel.Size = new System.Drawing.Size(75, 38);
-            this.MobileLabel.TabIndex = 11;
-            this.MobileLabel.Text = "Total";
             // 
             // LocationLabel
             // 
@@ -391,18 +292,19 @@
             this.GenderLabel.Text = "Subtotal";
             this.GenderLabel.Click += new System.EventHandler(this.GenderLabel_Click);
             // 
-            // MobileLabel2
+            // MobileLabel
             // 
-            this.MobileLabel2.AutoSize = true;
-            this.MobileLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.MobileLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MobileLabel2.ForeColor = System.Drawing.Color.White;
-            this.MobileLabel2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MobileLabel2.Location = new System.Drawing.Point(199, 0);
-            this.MobileLabel2.Name = "MobileLabel2";
-            this.MobileLabel2.Size = new System.Drawing.Size(137, 38);
-            this.MobileLabel2.TabIndex = 16;
-            this.MobileLabel2.Text = "949.00 TK";
+            this.MobileLabel.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.MobileLabel.AutoSize = true;
+            this.MobileLabel.BackColor = System.Drawing.Color.Transparent;
+            this.MobileLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MobileLabel.ForeColor = System.Drawing.Color.White;
+            this.MobileLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.MobileLabel.Location = new System.Drawing.Point(223, 558);
+            this.MobileLabel.Name = "MobileLabel";
+            this.MobileLabel.Size = new System.Drawing.Size(75, 38);
+            this.MobileLabel.TabIndex = 11;
+            this.MobileLabel.Text = "Total";
             // 
             // EmailPanel
             // 
@@ -473,114 +375,131 @@
             this.GenderLabel2.TabIndex = 13;
             this.GenderLabel2.Text = "900.00 TK";
             // 
-            // panel2
+            // checkBox1
             // 
-            this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel2.Location = new System.Drawing.Point(230, 537);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(520, 3);
-            this.panel2.TabIndex = 27;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.ForeColor = System.Drawing.Color.White;
+            this.checkBox1.Location = new System.Drawing.Point(229, 301);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(170, 41);
+            this.checkBox1.TabIndex = 11;
+            this.checkBox1.Text = "Send a gift";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // panel3
+            // label2
             // 
-            this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.MobileLabel2);
-            this.panel3.Location = new System.Drawing.Point(414, 558);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(336, 38);
-            this.panel3.TabIndex = 28;
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(366, 231);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(204, 37);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Mobile banking";
             // 
-            // pictureBox1
+            // guna2CustomRadioButton2
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(76, 48);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(578, 352);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.guna2CustomRadioButton2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CustomRadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomRadioButton2.CheckedState.BorderThickness = 0;
+            this.guna2CustomRadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2CustomRadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton2.CheckedState.Parent = this.guna2CustomRadioButton2;
+            this.guna2CustomRadioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2CustomRadioButton2.Location = new System.Drawing.Point(319, 238);
+            this.guna2CustomRadioButton2.Name = "guna2CustomRadioButton2";
+            this.guna2CustomRadioButton2.ShadowDecoration.Parent = this.guna2CustomRadioButton2;
+            this.guna2CustomRadioButton2.Size = new System.Drawing.Size(30, 30);
+            this.guna2CustomRadioButton2.TabIndex = 9;
+            this.guna2CustomRadioButton2.Text = "guna2CustomRadioButton2";
+            this.guna2CustomRadioButton2.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton2.UncheckedState.BorderThickness = 2;
+            this.guna2CustomRadioButton2.UncheckedState.FillColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton2.UncheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2CustomRadioButton2.UncheckedState.Parent = this.guna2CustomRadioButton2;
+            this.guna2CustomRadioButton2.UseTransparentBackground = true;
             // 
-            // artNameLabel
+            // label1
             // 
-            this.artNameLabel.AutoSize = true;
-            this.artNameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.artNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.artNameLabel.Location = new System.Drawing.Point(66, 445);
-            this.artNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.artNameLabel.Name = "artNameLabel";
-            this.artNameLabel.Size = new System.Drawing.Size(213, 45);
-            this.artNameLabel.TabIndex = 1;
-            this.artNameLabel.Text = "Soft Painting";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(366, 179);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(174, 37);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Pay with card";
             // 
-            // guna2Panel1
+            // guna2Button1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.IndianRed;
-            this.guna2Panel1.BorderColor = System.Drawing.Color.White;
-            this.guna2Panel1.Location = new System.Drawing.Point(76, 540);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(578, 2);
-            this.guna2Panel1.TabIndex = 5;
+            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.BorderRadius = 10;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
+            this.guna2Button1.FillColor = System.Drawing.Color.Navy;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(236, 666);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(248, 68);
+            this.guna2Button1.TabIndex = 5;
+            this.guna2Button1.Text = "Back ";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // guna2Panel2
+            // proceedBtn
             // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.IndianRed;
-            this.guna2Panel2.BorderColor = System.Drawing.Color.White;
-            this.guna2Panel2.Location = new System.Drawing.Point(76, 762);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(578, 2);
-            this.guna2Panel2.TabIndex = 6;
+            this.proceedBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.proceedBtn.BackColor = System.Drawing.Color.Transparent;
+            this.proceedBtn.BorderColor = System.Drawing.Color.Transparent;
+            this.proceedBtn.BorderRadius = 10;
+            this.proceedBtn.CheckedState.Parent = this.proceedBtn;
+            this.proceedBtn.CustomImages.Parent = this.proceedBtn;
+            this.proceedBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.proceedBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.proceedBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.proceedBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.proceedBtn.DisabledState.Parent = this.proceedBtn;
+            this.proceedBtn.FillColor = System.Drawing.Color.Navy;
+            this.proceedBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.proceedBtn.ForeColor = System.Drawing.Color.White;
+            this.proceedBtn.HoverState.Parent = this.proceedBtn;
+            this.proceedBtn.Location = new System.Drawing.Point(492, 666);
+            this.proceedBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.proceedBtn.Name = "proceedBtn";
+            this.proceedBtn.ShadowDecoration.Parent = this.proceedBtn;
+            this.proceedBtn.Size = new System.Drawing.Size(248, 68);
+            this.proceedBtn.TabIndex = 4;
+            this.proceedBtn.Text = "Confirm order";
             // 
-            // artistNameLabel
+            // userName
             // 
-            this.artistNameLabel.AutoSize = true;
-            this.artistNameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.artistNameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.artistNameLabel.Location = new System.Drawing.Point(76, 576);
-            this.artistNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.artistNameLabel.Name = "artistNameLabel";
-            this.artistNameLabel.Size = new System.Drawing.Size(219, 38);
-            this.artistNameLabel.TabIndex = 7;
-            this.artistNameLabel.Text = "Art by: Mahjabin";
-            // 
-            // categoryLabel
-            // 
-            this.categoryLabel.AutoSize = true;
-            this.categoryLabel.BackColor = System.Drawing.Color.Transparent;
-            this.categoryLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryLabel.Location = new System.Drawing.Point(76, 637);
-            this.categoryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.categoryLabel.Name = "categoryLabel";
-            this.categoryLabel.Size = new System.Drawing.Size(219, 38);
-            this.categoryLabel.TabIndex = 8;
-            this.categoryLabel.Text = "Category: Vector";
-            // 
-            // codeLabel
-            // 
-            this.codeLabel.AutoSize = true;
-            this.codeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.codeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.codeLabel.Location = new System.Drawing.Point(74, 698);
-            this.codeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.codeLabel.Name = "codeLabel";
-            this.codeLabel.Size = new System.Drawing.Size(233, 38);
-            this.codeLabel.TabIndex = 9;
-            this.codeLabel.Text = "Product code: 007";
-            // 
-            // priceLabel
-            // 
-            this.priceLabel.AutoSize = true;
-            this.priceLabel.BackColor = System.Drawing.Color.Transparent;
-            this.priceLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.priceLabel.ForeColor = System.Drawing.Color.Red;
-            this.priceLabel.Location = new System.Drawing.Point(73, 786);
-            this.priceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(136, 51);
-            this.priceLabel.TabIndex = 10;
-            this.priceLabel.Text = "900 Tk";
+            this.userName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.userName.AutoSize = true;
+            this.userName.BackColor = System.Drawing.Color.Transparent;
+            this.userName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userName.ForeColor = System.Drawing.Color.White;
+            this.userName.Location = new System.Drawing.Point(222, 120);
+            this.userName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.userName.Name = "userName";
+            this.userName.Size = new System.Drawing.Size(330, 38);
+            this.userName.TabIndex = 0;
+            this.userName.Text = "Select Payment Method";
             // 
             // buyArtleftPanel
             // 
@@ -601,27 +520,108 @@
             this.buyArtleftPanel.Size = new System.Drawing.Size(741, 906);
             this.buyArtleftPanel.TabIndex = 20;
             // 
-            // guna2CustomRadioButton1
+            // priceLabel
             // 
-            this.guna2CustomRadioButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CustomRadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2CustomRadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CustomRadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton1.CheckedState.Parent = this.guna2CustomRadioButton1;
-            this.guna2CustomRadioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(319, 186);
-            this.guna2CustomRadioButton1.Name = "guna2CustomRadioButton1";
-            this.guna2CustomRadioButton1.ShadowDecoration.Parent = this.guna2CustomRadioButton1;
-            this.guna2CustomRadioButton1.Size = new System.Drawing.Size(30, 30);
-            this.guna2CustomRadioButton1.TabIndex = 29;
-            this.guna2CustomRadioButton1.Text = "guna2CustomRadioButton1";
-            this.guna2CustomRadioButton1.UncheckedState.BorderColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2CustomRadioButton1.UncheckedState.FillColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton1.UncheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2CustomRadioButton1.UncheckedState.Parent = this.guna2CustomRadioButton1;
-            this.guna2CustomRadioButton1.UseTransparentBackground = true;
+            this.priceLabel.AutoSize = true;
+            this.priceLabel.BackColor = System.Drawing.Color.Transparent;
+            this.priceLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceLabel.ForeColor = System.Drawing.Color.Red;
+            this.priceLabel.Location = new System.Drawing.Point(73, 786);
+            this.priceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(136, 51);
+            this.priceLabel.TabIndex = 10;
+            this.priceLabel.Text = "900 Tk";
+            // 
+            // codeLabel
+            // 
+            this.codeLabel.AutoSize = true;
+            this.codeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.codeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.codeLabel.Location = new System.Drawing.Point(74, 698);
+            this.codeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.codeLabel.Name = "codeLabel";
+            this.codeLabel.Size = new System.Drawing.Size(233, 38);
+            this.codeLabel.TabIndex = 9;
+            this.codeLabel.Text = "Product code: 007";
+            // 
+            // categoryLabel
+            // 
+            this.categoryLabel.AutoSize = true;
+            this.categoryLabel.BackColor = System.Drawing.Color.Transparent;
+            this.categoryLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryLabel.Location = new System.Drawing.Point(76, 637);
+            this.categoryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.categoryLabel.Name = "categoryLabel";
+            this.categoryLabel.Size = new System.Drawing.Size(219, 38);
+            this.categoryLabel.TabIndex = 8;
+            this.categoryLabel.Text = "Category: Vector";
+            // 
+            // artistNameLabel
+            // 
+            this.artistNameLabel.AutoSize = true;
+            this.artistNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.artistNameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.artistNameLabel.Location = new System.Drawing.Point(76, 576);
+            this.artistNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.artistNameLabel.Name = "artistNameLabel";
+            this.artistNameLabel.Size = new System.Drawing.Size(219, 38);
+            this.artistNameLabel.TabIndex = 7;
+            this.artistNameLabel.Text = "Art by: Mahjabin";
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.IndianRed;
+            this.guna2Panel2.BorderColor = System.Drawing.Color.White;
+            this.guna2Panel2.Location = new System.Drawing.Point(76, 762);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(578, 2);
+            this.guna2Panel2.TabIndex = 6;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.IndianRed;
+            this.guna2Panel1.BorderColor = System.Drawing.Color.White;
+            this.guna2Panel1.Location = new System.Drawing.Point(76, 540);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(578, 2);
+            this.guna2Panel1.TabIndex = 5;
+            // 
+            // artNameLabel
+            // 
+            this.artNameLabel.AutoSize = true;
+            this.artNameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.artNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.artNameLabel.Location = new System.Drawing.Point(66, 445);
+            this.artNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.artNameLabel.Name = "artNameLabel";
+            this.artNameLabel.Size = new System.Drawing.Size(213, 45);
+            this.artNameLabel.TabIndex = 1;
+            this.artNameLabel.Text = "Soft Painting";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(76, 48);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(578, 352);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(88, 82);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
             // 
             // PaymentForm
             // 
@@ -637,9 +637,10 @@
             this.Text = "PaymentForm";
             this.Load += new System.EventHandler(this.PaymentForm_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.paymentPanel.ResumeLayout(false);
             this.paymentPanel.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ProfileAllInfoPanel.ResumeLayout(false);
             this.ProfileAllInfoPanel.PerformLayout();
             this.EmailPanel.ResumeLayout(false);
@@ -648,11 +649,10 @@
             this.LocationPanel.PerformLayout();
             this.GenderPanel.ResumeLayout(false);
             this.GenderPanel.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.buyArtleftPanel.ResumeLayout(false);
             this.buyArtleftPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

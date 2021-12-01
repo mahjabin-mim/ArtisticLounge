@@ -128,5 +128,18 @@ namespace Gallery
 
             this.Close();
         }
+
+        private void EditProfileBtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            EditProfileForm editProfileForm = new EditProfileForm();
+            editProfileForm.StartPosition = FormStartPosition.Manual;
+            editProfileForm.Location = this.Location;
+
+            editProfileForm.ShowDialog();
+
+            this.Close();
+        }
     }
 }

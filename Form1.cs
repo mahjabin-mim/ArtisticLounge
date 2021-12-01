@@ -53,7 +53,7 @@ namespace Gallery
             SignUpFrom signUpFrom = new SignUpFrom();
             signUpFrom.StartPosition = FormStartPosition.Manual;
             signUpFrom.Location = this.Location;
-            signUpFrom.Size = this.Size;
+            //signUpFrom.Size = this.Size;
 
             signUpFrom.ShowDialog();
 
@@ -87,7 +87,7 @@ namespace Gallery
             MainForm m = new MainForm();
             m.StartPosition = FormStartPosition.Manual;
             m.Location = this.Location;
-            m.Size = this.Size;
+            //m.Size = this.Size;
 
             m.ShowDialog();
             this.Close();
@@ -99,7 +99,7 @@ namespace Gallery
             AboutUsForm aboutUsForm = new AboutUsForm();
             aboutUsForm.StartPosition = FormStartPosition.Manual;
             aboutUsForm.Location = this.Location;
-            aboutUsForm.Size = this.Size;
+            //aboutUsForm.Size = this.Size;
 
             aboutUsForm.ShowDialog();
             this.Close();
@@ -112,7 +112,7 @@ namespace Gallery
             ContactForm contactForm = new ContactForm();
             contactForm.StartPosition = FormStartPosition.Manual;
             contactForm.Location = this.Location;
-            contactForm.Size = this.Size;
+            //contactForm.Size = this.Size;
 
             contactForm.ShowDialog();
             this.Close();

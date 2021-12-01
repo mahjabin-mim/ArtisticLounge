@@ -49,7 +49,7 @@ namespace Gallery
             PaymentForm paymentForm = new PaymentForm();
             paymentForm.StartPosition = FormStartPosition.Manual;
             paymentForm.Location = this.Location;
-            paymentForm.Size = this.Size;
+            //paymentForm.Size = this.Size;
 
             paymentForm.ShowDialog();
             this.Close();

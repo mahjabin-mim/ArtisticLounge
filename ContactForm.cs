@@ -35,7 +35,7 @@ namespace Gallery
             AboutUsForm aboutUsForm = new AboutUsForm();
             aboutUsForm.StartPosition = FormStartPosition.Manual;
             aboutUsForm.Location = this.Location;
-            aboutUsForm.Size = this.Size;
+            //aboutUsForm.Size = this.Size;
 
             aboutUsForm.ShowDialog();
             this.Close();
