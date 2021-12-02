@@ -226,8 +226,26 @@ namespace Gallery
             ChangedCheck();
         }
 
+
+
         //  ..........slider function end
 
+        private void PostBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            PostArtForm postArtform = new PostArtForm();
+            //postArtform.StartPosition = FormStartPosition.Manual;
+            //postArtform.Location = this.Location;
+            //postArtform.Size = this.Size;
+
+
+
+            postArtform.ShowDialog();
+
+            this.Close();
+
+        }
 
     }
 }
