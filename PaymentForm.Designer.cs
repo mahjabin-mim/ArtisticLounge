@@ -89,18 +89,18 @@
             this.panel1.Controls.Add(this.ArtisticLounge);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1255, 67);
+            this.panel1.Size = new System.Drawing.Size(1717, 100);
             this.panel1.TabIndex = 19;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 8);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(64, 55);
+            this.pictureBox2.Size = new System.Drawing.Size(88, 82);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -114,9 +114,10 @@
             this.ServicesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ServicesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ServicesBtn.ForeColor = System.Drawing.Color.Navy;
-            this.ServicesBtn.Location = new System.Drawing.Point(585, 0);
+            this.ServicesBtn.Location = new System.Drawing.Point(803, 0);
+            this.ServicesBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ServicesBtn.Name = "ServicesBtn";
-            this.ServicesBtn.Size = new System.Drawing.Size(140, 67);
+            this.ServicesBtn.Size = new System.Drawing.Size(192, 100);
             this.ServicesBtn.TabIndex = 9;
             this.ServicesBtn.Text = "Services";
             this.ServicesBtn.UseVisualStyleBackColor = false;
@@ -130,9 +131,10 @@
             this.ContactBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ContactBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContactBtn.ForeColor = System.Drawing.Color.Navy;
-            this.ContactBtn.Location = new System.Drawing.Point(445, 0);
+            this.ContactBtn.Location = new System.Drawing.Point(611, 0);
+            this.ContactBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ContactBtn.Name = "ContactBtn";
-            this.ContactBtn.Size = new System.Drawing.Size(140, 67);
+            this.ContactBtn.Size = new System.Drawing.Size(192, 100);
             this.ContactBtn.TabIndex = 6;
             this.ContactBtn.Text = "Contact";
             this.ContactBtn.UseVisualStyleBackColor = false;
@@ -147,9 +149,10 @@
             this.AboutUsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AboutUsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutUsBtn.ForeColor = System.Drawing.Color.Navy;
-            this.AboutUsBtn.Location = new System.Drawing.Point(305, 0);
+            this.AboutUsBtn.Location = new System.Drawing.Point(419, 0);
+            this.AboutUsBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AboutUsBtn.Name = "AboutUsBtn";
-            this.AboutUsBtn.Size = new System.Drawing.Size(140, 67);
+            this.AboutUsBtn.Size = new System.Drawing.Size(192, 100);
             this.AboutUsBtn.TabIndex = 8;
             this.AboutUsBtn.Text = "About Us";
             this.AboutUsBtn.UseVisualStyleBackColor = false;
@@ -164,8 +167,9 @@
             this.ArtisticLounge.Font = new System.Drawing.Font("Segoe Print", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ArtisticLounge.ForeColor = System.Drawing.Color.SaddleBrown;
             this.ArtisticLounge.Location = new System.Drawing.Point(0, 0);
+            this.ArtisticLounge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ArtisticLounge.Name = "ArtisticLounge";
-            this.ArtisticLounge.Size = new System.Drawing.Size(305, 67);
+            this.ArtisticLounge.Size = new System.Drawing.Size(419, 100);
             this.ArtisticLounge.TabIndex = 7;
             this.ArtisticLounge.Text = "Artistic Lounge";
             this.ArtisticLounge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -190,9 +194,10 @@
             this.paymentPanel.Controls.Add(this.proceedBtn);
             this.paymentPanel.Controls.Add(this.userName);
             this.paymentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.paymentPanel.Location = new System.Drawing.Point(539, 67);
+            this.paymentPanel.Location = new System.Drawing.Point(741, 100);
+            this.paymentPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.paymentPanel.Name = "paymentPanel";
-            this.paymentPanel.Size = new System.Drawing.Size(716, 642);
+            this.paymentPanel.Size = new System.Drawing.Size(976, 938);
             this.paymentPanel.TabIndex = 21;
             // 
             // guna2CustomRadioButton1
@@ -204,11 +209,10 @@
             this.guna2CustomRadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2CustomRadioButton1.CheckedState.Parent = this.guna2CustomRadioButton1;
             this.guna2CustomRadioButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(232, 124);
-            this.guna2CustomRadioButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2CustomRadioButton1.Location = new System.Drawing.Point(319, 186);
             this.guna2CustomRadioButton1.Name = "guna2CustomRadioButton1";
             this.guna2CustomRadioButton1.ShadowDecoration.Parent = this.guna2CustomRadioButton1;
-            this.guna2CustomRadioButton1.Size = new System.Drawing.Size(22, 20);
+            this.guna2CustomRadioButton1.Size = new System.Drawing.Size(30, 30);
             this.guna2CustomRadioButton1.TabIndex = 29;
             this.guna2CustomRadioButton1.Text = "guna2CustomRadioButton1";
             this.guna2CustomRadioButton1.UncheckedState.BorderColor = System.Drawing.Color.White;
@@ -222,10 +226,9 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.MobileLabel2);
-            this.panel3.Location = new System.Drawing.Point(301, 372);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(414, 558);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(244, 25);
+            this.panel3.Size = new System.Drawing.Size(336, 38);
             this.panel3.TabIndex = 28;
             // 
             // MobileLabel2
@@ -235,20 +238,18 @@
             this.MobileLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MobileLabel2.ForeColor = System.Drawing.Color.White;
             this.MobileLabel2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MobileLabel2.Location = new System.Drawing.Point(145, 0);
-            this.MobileLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MobileLabel2.Location = new System.Drawing.Point(199, 0);
             this.MobileLabel2.Name = "MobileLabel2";
-            this.MobileLabel2.Size = new System.Drawing.Size(98, 28);
+            this.MobileLabel2.Size = new System.Drawing.Size(137, 38);
             this.MobileLabel2.TabIndex = 16;
             this.MobileLabel2.Text = "949.00 TK";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel2.Location = new System.Drawing.Point(167, 358);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(230, 537);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(378, 2);
+            this.panel2.Size = new System.Drawing.Size(520, 3);
             this.panel2.TabIndex = 27;
             // 
             // ProfileAllInfoPanel
@@ -257,10 +258,9 @@
             this.ProfileAllInfoPanel.Controls.Add(this.EmailLabel);
             this.ProfileAllInfoPanel.Controls.Add(this.LocationLabel);
             this.ProfileAllInfoPanel.Controls.Add(this.GenderLabel);
-            this.ProfileAllInfoPanel.Location = new System.Drawing.Point(167, 249);
-            this.ProfileAllInfoPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.ProfileAllInfoPanel.Location = new System.Drawing.Point(230, 374);
             this.ProfileAllInfoPanel.Name = "ProfileAllInfoPanel";
-            this.ProfileAllInfoPanel.Size = new System.Drawing.Size(129, 97);
+            this.ProfileAllInfoPanel.Size = new System.Drawing.Size(177, 146);
             this.ProfileAllInfoPanel.TabIndex = 26;
             // 
             // EmailLabel
@@ -270,10 +270,9 @@
             this.EmailLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailLabel.ForeColor = System.Drawing.Color.White;
             this.EmailLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EmailLabel.Location = new System.Drawing.Point(-5, 72);
-            this.EmailLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.EmailLabel.Location = new System.Drawing.Point(-7, 108);
             this.EmailLabel.Name = "EmailLabel";
-            this.EmailLabel.Size = new System.Drawing.Size(122, 28);
+            this.EmailLabel.Size = new System.Drawing.Size(173, 38);
             this.EmailLabel.TabIndex = 9;
             this.EmailLabel.Text = "Extra Charge";
             // 
@@ -285,10 +284,9 @@
             this.LocationLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LocationLabel.ForeColor = System.Drawing.Color.White;
             this.LocationLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LocationLabel.Location = new System.Drawing.Point(-5, 36);
-            this.LocationLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LocationLabel.Location = new System.Drawing.Point(-7, 54);
             this.LocationLabel.Name = "LocationLabel";
-            this.LocationLabel.Size = new System.Drawing.Size(91, 28);
+            this.LocationLabel.Size = new System.Drawing.Size(126, 38);
             this.LocationLabel.TabIndex = 7;
             this.LocationLabel.Text = "Shipping";
             // 
@@ -299,10 +297,9 @@
             this.GenderLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GenderLabel.ForeColor = System.Drawing.Color.White;
             this.GenderLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GenderLabel.Location = new System.Drawing.Point(-5, 0);
-            this.GenderLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.GenderLabel.Location = new System.Drawing.Point(-7, 0);
             this.GenderLabel.Name = "GenderLabel";
-            this.GenderLabel.Size = new System.Drawing.Size(87, 28);
+            this.GenderLabel.Size = new System.Drawing.Size(119, 38);
             this.GenderLabel.TabIndex = 5;
             this.GenderLabel.Text = "Subtotal";
             this.GenderLabel.Click += new System.EventHandler(this.GenderLabel_Click);
@@ -315,10 +312,9 @@
             this.MobileLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MobileLabel.ForeColor = System.Drawing.Color.White;
             this.MobileLabel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MobileLabel.Location = new System.Drawing.Point(162, 391);
-            this.MobileLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MobileLabel.Location = new System.Drawing.Point(223, 574);
             this.MobileLabel.Name = "MobileLabel";
-            this.MobileLabel.Size = new System.Drawing.Size(54, 28);
+            this.MobileLabel.Size = new System.Drawing.Size(75, 38);
             this.MobileLabel.TabIndex = 11;
             this.MobileLabel.Text = "Total";
             // 
@@ -326,10 +322,9 @@
             // 
             this.EmailPanel.BackColor = System.Drawing.Color.Transparent;
             this.EmailPanel.Controls.Add(this.EmailLabel2);
-            this.EmailPanel.Location = new System.Drawing.Point(301, 321);
-            this.EmailPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.EmailPanel.Location = new System.Drawing.Point(414, 482);
             this.EmailPanel.Name = "EmailPanel";
-            this.EmailPanel.Size = new System.Drawing.Size(244, 25);
+            this.EmailPanel.Size = new System.Drawing.Size(336, 38);
             this.EmailPanel.TabIndex = 24;
             // 
             // EmailLabel2
@@ -340,10 +335,9 @@
             this.EmailLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmailLabel2.ForeColor = System.Drawing.Color.White;
             this.EmailLabel2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EmailLabel2.Location = new System.Drawing.Point(157, 0);
-            this.EmailLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.EmailLabel2.Location = new System.Drawing.Point(214, 0);
             this.EmailLabel2.Name = "EmailLabel2";
-            this.EmailLabel2.Size = new System.Drawing.Size(87, 28);
+            this.EmailLabel2.Size = new System.Drawing.Size(122, 38);
             this.EmailLabel2.TabIndex = 15;
             this.EmailLabel2.Text = "00.00 TK";
             // 
@@ -351,10 +345,9 @@
             // 
             this.LocationPanel.BackColor = System.Drawing.Color.Transparent;
             this.LocationPanel.Controls.Add(this.LocationLabel2);
-            this.LocationPanel.Location = new System.Drawing.Point(301, 285);
-            this.LocationPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.LocationPanel.Location = new System.Drawing.Point(414, 428);
             this.LocationPanel.Name = "LocationPanel";
-            this.LocationPanel.Size = new System.Drawing.Size(244, 25);
+            this.LocationPanel.Size = new System.Drawing.Size(336, 38);
             this.LocationPanel.TabIndex = 23;
             // 
             // LocationLabel2
@@ -365,10 +358,9 @@
             this.LocationLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LocationLabel2.ForeColor = System.Drawing.Color.White;
             this.LocationLabel2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LocationLabel2.Location = new System.Drawing.Point(157, 0);
-            this.LocationLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LocationLabel2.Location = new System.Drawing.Point(214, 0);
             this.LocationLabel2.Name = "LocationLabel2";
-            this.LocationLabel2.Size = new System.Drawing.Size(87, 28);
+            this.LocationLabel2.Size = new System.Drawing.Size(122, 38);
             this.LocationLabel2.TabIndex = 14;
             this.LocationLabel2.Text = "49.00 TK";
             // 
@@ -376,10 +368,9 @@
             // 
             this.GenderPanel.BackColor = System.Drawing.Color.Transparent;
             this.GenderPanel.Controls.Add(this.GenderLabel2);
-            this.GenderPanel.Location = new System.Drawing.Point(301, 249);
-            this.GenderPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.GenderPanel.Location = new System.Drawing.Point(414, 374);
             this.GenderPanel.Name = "GenderPanel";
-            this.GenderPanel.Size = new System.Drawing.Size(244, 25);
+            this.GenderPanel.Size = new System.Drawing.Size(336, 38);
             this.GenderPanel.TabIndex = 22;
             // 
             // GenderLabel2
@@ -390,10 +381,9 @@
             this.GenderLabel2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GenderLabel2.ForeColor = System.Drawing.Color.White;
             this.GenderLabel2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GenderLabel2.Location = new System.Drawing.Point(146, 0);
-            this.GenderLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.GenderLabel2.Location = new System.Drawing.Point(199, 0);
             this.GenderLabel2.Name = "GenderLabel2";
-            this.GenderLabel2.Size = new System.Drawing.Size(98, 28);
+            this.GenderLabel2.Size = new System.Drawing.Size(137, 38);
             this.GenderLabel2.TabIndex = 13;
             this.GenderLabel2.Text = "900.00 TK";
             // 
@@ -404,10 +394,9 @@
             this.checkBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(167, 201);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.checkBox1.Location = new System.Drawing.Point(230, 302);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(124, 29);
+            this.checkBox1.Size = new System.Drawing.Size(170, 41);
             this.checkBox1.TabIndex = 11;
             this.checkBox1.Text = "Send a gift";
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -419,10 +408,9 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(266, 154);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(366, 231);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 25);
+            this.label2.Size = new System.Drawing.Size(204, 37);
             this.label2.TabIndex = 10;
             this.label2.Text = "Mobile banking";
             // 
@@ -435,11 +423,10 @@
             this.guna2CustomRadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
             this.guna2CustomRadioButton2.CheckedState.Parent = this.guna2CustomRadioButton2;
             this.guna2CustomRadioButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2CustomRadioButton2.Location = new System.Drawing.Point(232, 159);
-            this.guna2CustomRadioButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2CustomRadioButton2.Location = new System.Drawing.Point(319, 238);
             this.guna2CustomRadioButton2.Name = "guna2CustomRadioButton2";
             this.guna2CustomRadioButton2.ShadowDecoration.Parent = this.guna2CustomRadioButton2;
-            this.guna2CustomRadioButton2.Size = new System.Drawing.Size(22, 20);
+            this.guna2CustomRadioButton2.Size = new System.Drawing.Size(30, 30);
             this.guna2CustomRadioButton2.TabIndex = 9;
             this.guna2CustomRadioButton2.Text = "guna2CustomRadioButton2";
             this.guna2CustomRadioButton2.UncheckedState.BorderColor = System.Drawing.Color.White;
@@ -455,10 +442,9 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(266, 119);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(366, 178);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 25);
+            this.label1.Size = new System.Drawing.Size(174, 37);
             this.label1.TabIndex = 8;
             this.label1.Text = "Pay with card";
             // 
@@ -479,10 +465,11 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(176, 444);
+            this.guna2Button1.Location = new System.Drawing.Point(234, 666);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
+            this.guna2Button1.Size = new System.Drawing.Size(248, 68);
             this.guna2Button1.TabIndex = 5;
             this.guna2Button1.Text = "Back ";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -504,12 +491,14 @@
             this.proceedBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proceedBtn.ForeColor = System.Drawing.Color.White;
             this.proceedBtn.HoverState.Parent = this.proceedBtn;
-            this.proceedBtn.Location = new System.Drawing.Point(362, 444);
+            this.proceedBtn.Location = new System.Drawing.Point(490, 666);
+            this.proceedBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.proceedBtn.Name = "proceedBtn";
             this.proceedBtn.ShadowDecoration.Parent = this.proceedBtn;
-            this.proceedBtn.Size = new System.Drawing.Size(180, 45);
+            this.proceedBtn.Size = new System.Drawing.Size(248, 68);
             this.proceedBtn.TabIndex = 4;
             this.proceedBtn.Text = "Confirm order";
+            this.proceedBtn.Click += new System.EventHandler(this.proceedBtn_Click);
             // 
             // userName
             // 
@@ -518,9 +507,10 @@
             this.userName.BackColor = System.Drawing.Color.Transparent;
             this.userName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userName.ForeColor = System.Drawing.Color.White;
-            this.userName.Location = new System.Drawing.Point(165, 80);
+            this.userName.Location = new System.Drawing.Point(219, 120);
+            this.userName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.userName.Name = "userName";
-            this.userName.Size = new System.Drawing.Size(238, 28);
+            this.userName.Size = new System.Drawing.Size(330, 38);
             this.userName.TabIndex = 0;
             this.userName.Text = "Select Payment Method";
             // 
@@ -537,9 +527,10 @@
             this.buyArtleftPanel.Controls.Add(this.artNameLabel);
             this.buyArtleftPanel.Controls.Add(this.pictureBox1);
             this.buyArtleftPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buyArtleftPanel.Location = new System.Drawing.Point(0, 67);
+            this.buyArtleftPanel.Location = new System.Drawing.Point(0, 100);
+            this.buyArtleftPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buyArtleftPanel.Name = "buyArtleftPanel";
-            this.buyArtleftPanel.Size = new System.Drawing.Size(539, 642);
+            this.buyArtleftPanel.Size = new System.Drawing.Size(741, 938);
             this.buyArtleftPanel.TabIndex = 20;
             // 
             // priceLabel
@@ -548,9 +539,10 @@
             this.priceLabel.BackColor = System.Drawing.Color.Transparent;
             this.priceLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceLabel.ForeColor = System.Drawing.Color.Red;
-            this.priceLabel.Location = new System.Drawing.Point(53, 524);
+            this.priceLabel.Location = new System.Drawing.Point(73, 786);
+            this.priceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(103, 38);
+            this.priceLabel.Size = new System.Drawing.Size(136, 51);
             this.priceLabel.TabIndex = 10;
             this.priceLabel.Text = "900 Tk";
             // 
@@ -559,9 +551,10 @@
             this.codeLabel.AutoSize = true;
             this.codeLabel.BackColor = System.Drawing.Color.Transparent;
             this.codeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.codeLabel.Location = new System.Drawing.Point(54, 465);
+            this.codeLabel.Location = new System.Drawing.Point(74, 698);
+            this.codeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.codeLabel.Name = "codeLabel";
-            this.codeLabel.Size = new System.Drawing.Size(169, 28);
+            this.codeLabel.Size = new System.Drawing.Size(233, 38);
             this.codeLabel.TabIndex = 9;
             this.codeLabel.Text = "Product code: 007";
             // 
@@ -570,9 +563,10 @@
             this.categoryLabel.AutoSize = true;
             this.categoryLabel.BackColor = System.Drawing.Color.Transparent;
             this.categoryLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryLabel.Location = new System.Drawing.Point(55, 425);
+            this.categoryLabel.Location = new System.Drawing.Point(76, 638);
+            this.categoryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.categoryLabel.Name = "categoryLabel";
-            this.categoryLabel.Size = new System.Drawing.Size(157, 28);
+            this.categoryLabel.Size = new System.Drawing.Size(219, 38);
             this.categoryLabel.TabIndex = 8;
             this.categoryLabel.Text = "Category: Vector";
             // 
@@ -581,9 +575,10 @@
             this.artistNameLabel.AutoSize = true;
             this.artistNameLabel.BackColor = System.Drawing.Color.Transparent;
             this.artistNameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.artistNameLabel.Location = new System.Drawing.Point(55, 384);
+            this.artistNameLabel.Location = new System.Drawing.Point(76, 576);
+            this.artistNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.artistNameLabel.Name = "artistNameLabel";
-            this.artistNameLabel.Size = new System.Drawing.Size(156, 28);
+            this.artistNameLabel.Size = new System.Drawing.Size(219, 38);
             this.artistNameLabel.TabIndex = 7;
             this.artistNameLabel.Text = "Art by: Mahjabin";
             // 
@@ -591,22 +586,20 @@
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.IndianRed;
             this.guna2Panel2.BorderColor = System.Drawing.Color.White;
-            this.guna2Panel2.Location = new System.Drawing.Point(55, 508);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel2.Location = new System.Drawing.Point(76, 762);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(420, 1);
+            this.guna2Panel2.Size = new System.Drawing.Size(578, 2);
             this.guna2Panel2.TabIndex = 6;
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.IndianRed;
             this.guna2Panel1.BorderColor = System.Drawing.Color.White;
-            this.guna2Panel1.Location = new System.Drawing.Point(55, 360);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2Panel1.Location = new System.Drawing.Point(76, 540);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(420, 1);
+            this.guna2Panel1.Size = new System.Drawing.Size(578, 2);
             this.guna2Panel1.TabIndex = 5;
             // 
             // artNameLabel
@@ -614,33 +607,34 @@
             this.artNameLabel.AutoSize = true;
             this.artNameLabel.BackColor = System.Drawing.Color.Transparent;
             this.artNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.artNameLabel.Location = new System.Drawing.Point(48, 297);
+            this.artNameLabel.Location = new System.Drawing.Point(66, 446);
+            this.artNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.artNameLabel.Name = "artNameLabel";
-            this.artNameLabel.Size = new System.Drawing.Size(154, 32);
+            this.artNameLabel.Size = new System.Drawing.Size(213, 45);
             this.artNameLabel.TabIndex = 1;
             this.artNameLabel.Text = "Soft Painting";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(55, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(76, 48);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(420, 235);
+            this.pictureBox1.Size = new System.Drawing.Size(578, 352);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // PaymentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1255, 709);
+            this.ClientSize = new System.Drawing.Size(1717, 1038);
             this.Controls.Add(this.paymentPanel);
             this.Controls.Add(this.buyArtleftPanel);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MaximumSize = new System.Drawing.Size(1273, 756);
-            this.MinimumSize = new System.Drawing.Size(1273, 756);
+            this.MaximumSize = new System.Drawing.Size(1741, 1102);
+            this.MinimumSize = new System.Drawing.Size(1741, 1102);
             this.Name = "PaymentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PaymentForm";

@@ -48,5 +48,17 @@ namespace Gallery
 
             this.Close();
         }
+
+        private void proceedBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ThankYouForm thankYou = new ThankYouForm();
+            //  m.StartPosition = FormStartPosition.Manual;
+            //  m.Location = this.Location;
+            //m.Size = this.Size;
+
+            thankYou.ShowDialog();
+            this.Close();
+        }
     }
 }

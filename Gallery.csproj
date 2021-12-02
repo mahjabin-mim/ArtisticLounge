@@ -123,6 +123,12 @@
     <Compile Include="SignUpFrom.Designer.cs">
       <DependentUpon>SignUpFrom.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThankYouForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThankYouForm.Designer.cs">
+      <DependentUpon>ThankYouForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutUsForm.resx">
       <DependentUpon>AboutUsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +174,9 @@
     </Compile>
     <EmbeddedResource Include="SignUpFrom.resx">
       <DependentUpon>SignUpFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThankYouForm.resx">
+      <DependentUpon>ThankYouForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Assets\art1.webp" />
     <None Include="packages.config" />

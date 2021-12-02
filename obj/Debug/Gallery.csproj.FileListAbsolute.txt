@@ -59,3 +59,4 @@ C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.EditProfileForm.resource
 C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.PaymentForm.resources
 C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.PostArtForm.resources
 C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.PostArtForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.ThankYouForm.resources
