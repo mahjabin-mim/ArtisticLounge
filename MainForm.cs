@@ -64,7 +64,7 @@ namespace Gallery
 
             mainPanel.Dock = DockStyle.Fill;
 
-            ArtCard[] artCards = new ArtCard[30];
+            ArtCard[] artCards = new ArtCard[10];
 
             for (int i = 0; i < artCards.Length; i++)
             {
@@ -133,14 +133,14 @@ namespace Gallery
             this.Hide();
 
             ProfileForm profileForm = new ProfileForm();
-            profileForm.StartPosition = FormStartPosition.Manual;
+           /* profileForm.StartPosition = FormStartPosition.Manual;
             profileForm.Location = this.Location;
 
             if (this.Size.Height >= profileForm.MinimumSize.Height &&
                 this.Size.Width >= profileForm.MaximumSize.Width)
             {
                 profileForm.Size = this.Size;
-            }
+            }*/
 
 
             profileForm.ShowDialog();
