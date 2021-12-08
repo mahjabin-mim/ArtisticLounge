@@ -17,7 +17,7 @@ namespace Gallery
         {
             InitializeComponent();
 
-            
+
         }
 
         private void loginLabel_Click(object sender, EventArgs e)
@@ -71,14 +71,32 @@ namespace Gallery
 
         private void signUpBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            if (!string.IsNullOrEmpty(signupEmail.Text) || !string.IsNullOrEmpty(signupName.Text) || !string.IsNullOrEmpty(signupPass.Text))
+            {
+                User user = new User();
+                User.Email = signupEmail.Text.ToString();
+                user.Name = signupName.Text.ToString();
+                user.Password = signupPass.Text.ToString();
 
-            Form1 form1 = new Form1();
-            form1.StartPosition = FormStartPosition.Manual;
-            form1.Location = this.Location;
+                DatabaseHelper.connection.Open();
+                if (DatabaseHelper.SignUpFrom(user) == true)
+                {
+                    MessageBox.Show("Login succesful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
 
-            form1.ShowDialog();
-            this.Close();
+                    Form1 form1 = new Form1();
+                    form1.StartPosition = FormStartPosition.Manual;
+                    form1.Location = this.Location;
+
+                    form1.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Login error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+            }
         }
     }
 }

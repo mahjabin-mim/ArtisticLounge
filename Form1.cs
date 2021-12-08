@@ -10,15 +10,16 @@ using System.Windows.Forms;
 
 namespace Gallery
 {
+
     public partial class Form1 : Form
     {
         private bool showPass = false;
         public Form1()
         {
-           
-        
+
+
             InitializeComponent();
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -34,7 +35,7 @@ namespace Gallery
             signUpUnderPanel.BackColor = Color.Transparent;
 
             //hide signup options
-           
+
 
             //show login options
             loginEmail.Visible = true;
@@ -59,19 +60,19 @@ namespace Gallery
 
             this.Close();
 
-            
 
-            
-            
+
+
+
         }
 
         private void showPassBtn_Click(object sender, EventArgs e)
         {
-            
+
             if (!showPass)
             {
                 showPassBtn.Image = Properties.Resources.open;
-                showPass = true;  
+                showPass = true;
 
             }
             else
@@ -83,39 +84,54 @@ namespace Gallery
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            MainForm m = new MainForm();
-          //  m.StartPosition = FormStartPosition.Manual;
-          //  m.Location = this.Location;
-            //m.Size = this.Size;
+            if (!string.IsNullOrEmpty(loginEmail.Text) || !string.IsNullOrEmpty(loginPass.Text))
+            {
+                DatabaseHelper.connection.Open();
+                User user = new User();
+                User.Email = loginEmail.Text.ToString();
+                user.Password = loginPass.Text.ToString();
 
-            m.ShowDialog();
-            this.Close();
+                if (DatabaseHelper.LoginForm(user) == true)
+                {
+                    MessageBox.Show("Login succesful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    MainForm main = new MainForm();
+                    main.ShowDialog();
+                    this.Close();
+                }
+
+                else
+                {
+                    MessageBox.Show("Login Faild", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void AboutUsBtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            AboutUsForm aboutUsForm = new AboutUsForm();
-            aboutUsForm.StartPosition = FormStartPosition.Manual;
-            aboutUsForm.Location = this.Location;
-            //aboutUsForm.Size = this.Size;
+            {
+                this.Hide();
+                AboutUsForm aboutUsForm = new AboutUsForm();
+                aboutUsForm.StartPosition = FormStartPosition.Manual;
+                aboutUsForm.Location = this.Location;
+                //aboutUsForm.Size = this.Size;
 
-            aboutUsForm.ShowDialog();
-            this.Close();
+                 aboutUsForm.ShowDialog();
+                 this.Close();
 
-        }
+            }
 
         private void ContactBtn_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            ContactForm contactForm = new ContactForm();
-            contactForm.StartPosition = FormStartPosition.Manual;
-            contactForm.Location = this.Location;
-            //contactForm.Size = this.Size;
+            {
+                this.Hide();
+                ContactForm contactForm = new ContactForm();
+                contactForm.StartPosition = FormStartPosition.Manual;
+                contactForm.Location = this.Location;
+                //contactForm.Size = this.Size;
 
-            contactForm.ShowDialog();
-            this.Close();
-        }
+                contactForm.ShowDialog();
+                this.Close();
+            }
+        } 
+
     }
-}
+
