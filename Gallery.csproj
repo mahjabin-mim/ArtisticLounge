@@ -298,5 +298,17 @@
   <ItemGroup>
     <None Include="Assets\gmail.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\smile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\user2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

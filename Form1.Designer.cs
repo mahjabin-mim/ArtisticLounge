@@ -29,6 +29,7 @@ namespace Gallery
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel2 = new System.Windows.Forms.Panel();
             this.showPassBtn = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -46,11 +47,15 @@ namespace Gallery
             this.AboutUsBtn = new System.Windows.Forms.Button();
             this.ArtisticLounge = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.showPassBtn)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -120,6 +125,8 @@ namespace Gallery
             this.loginPass.Size = new System.Drawing.Size(531, 57);
             this.loginPass.TabIndex = 1;
             this.loginPass.UseSystemPasswordChar = true;
+            this.loginPass.TextChanged += new System.EventHandler(this.loginPass_TextChanged);
+            this.loginPass.Enter += new System.EventHandler(this.loginPass_Enter);
             // 
             // loginEmail
             // 
@@ -152,6 +159,7 @@ namespace Gallery
             this.loginEmail.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.loginEmail.Size = new System.Drawing.Size(531, 57);
             this.loginEmail.TabIndex = 0;
+            this.loginEmail.TextChanged += new System.EventHandler(this.loginEmail_TextChanged);
             // 
             // loginBtn
             // 
@@ -341,6 +349,14 @@ namespace Gallery
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
@@ -363,6 +379,8 @@ namespace Gallery
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -385,6 +403,8 @@ namespace Gallery
         private System.Windows.Forms.Button ContactBtn;
         private System.Windows.Forms.Button AboutUsBtn;
         private System.Windows.Forms.Button ArtisticLounge;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
     }
 }
 

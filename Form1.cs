@@ -105,6 +105,11 @@ namespace Gallery
                     MessageBox.Show("Login Faild", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
+            else
+            {
+                MessageBox.Show("Enter your Email & Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void AboutUsBtn_Click(object sender, EventArgs e)
@@ -131,7 +136,47 @@ namespace Gallery
                 contactForm.ShowDialog();
                 this.Close();
             }
-        } 
+
+        private void loginEmail_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(loginEmail.Text))
+            {
+                errorProvider1.Icon = Properties.Resources.check;
+                errorProvider1.BlinkRate = 0;
+                errorProvider1.SetError(loginEmail, "Correct");
+
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void loginPass_TextChanged(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(loginPass.Text))
+            {
+                errorProvider2.Icon = Properties.Resources.check;
+                errorProvider2.BlinkRate = 0;
+                errorProvider2.SetError(loginPass, "Correct");
+
+            }
+            else
+            {
+                errorProvider2.Clear();
+            }
+        }
+
+        private void loginPass_Enter(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(loginEmail.Text))
+            {
+                errorProvider1.Icon = Properties.Resources.error;
+                errorProvider1.SetError(loginEmail, "Enter your Email first");
+                loginEmail.Focus();
+            }
+        }
+    } 
 
     }
 

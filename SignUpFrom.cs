@@ -81,7 +81,7 @@ namespace Gallery
                 DatabaseHelper.connection.Open();
                 if (DatabaseHelper.SignUpFrom(user) == true)
                 {
-                    MessageBox.Show("Login succesful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Account created successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
 
                     Form1 form1 = new Form1();
@@ -96,6 +96,12 @@ namespace Gallery
                     MessageBox.Show("Login error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 }
+            }
+
+            else
+            {
+                MessageBox.Show("Fill up box", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
             }
         }
     }

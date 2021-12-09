@@ -27,6 +27,8 @@ namespace Gallery
 
             userDashFlow.Dock = DockStyle.Fill;
 
+            loadProfile();
+
             //.................... test code.............
 
             userDashFlow.Controls.Clear();
@@ -90,6 +92,23 @@ namespace Gallery
 
         }
 
+        private void loadProfile()
+        {
+            DatabaseHelper.connection.Open();
+
+            User user = DatabaseHelper.GetUser(User.Email);
+
+            if (user != null)
+            {
+                ProfileName.Text = user.Name;
+                ProfilePicture.Image = user.Picture;
+                EmailLabel2.Text = User.Email;
+                GenderLabel2.Text = user.Gender;
+                LocationLabel2.Text = user.Location;
+                MobileLabel2.Text = user.Phone;
+            }
+        }
+
 
 
         private void EditProfileBtn_Click(object sender, EventArgs e)
@@ -140,13 +159,6 @@ namespace Gallery
             editProfileForm.ShowDialog();
 
             this.Close();
-        }
-
-        private void loadProfile()
-        {
-            DatabaseHelper.connection.Open();
-
-            User user = DatabaseHelper.GetUser(User.Email);
         }
     }
 }

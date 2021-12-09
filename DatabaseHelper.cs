@@ -82,20 +82,30 @@ namespace Gallery
 
 
 
-                    /*if (!DBNull.Value.Equals(reader.GetValue(6)))
+                    if (!DBNull.Value.Equals(reader.GetValue(6)))
                     {
-                       user.Picture = GetPhoto((byte[])reader.GetValue(6));
+                        user.Picture = GetPhoto((byte[])reader.GetValue(6));
                     }
                     else
                     {
-                        user.Picture = null;
-                    }*/
+                        user.Picture = Properties.Resources.user2;
+                    }
                 }
 
             }
 
             connection.Close();
             return user;
+        }
+
+        private static Image GetPhoto(byte[] p)
+
+        {
+
+            MemoryStream stream = new MemoryStream(p);
+
+            return Image.FromStream(stream);
+
         }
     }
 }
