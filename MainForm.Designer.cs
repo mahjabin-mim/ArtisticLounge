@@ -85,11 +85,11 @@
             this.navDrawerPanel.Controls.Add(this.panel2);
             this.navDrawerPanel.Controls.Add(this.PostBtn);
             this.navDrawerPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.navDrawerPanel.Location = new System.Drawing.Point(0, 67);
-            this.navDrawerPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.navDrawerPanel.Location = new System.Drawing.Point(0, 54);
+            this.navDrawerPanel.Margin = new System.Windows.Forms.Padding(2);
             this.navDrawerPanel.Name = "navDrawerPanel";
             this.navDrawerPanel.ShadowDecoration.Parent = this.navDrawerPanel;
-            this.navDrawerPanel.Size = new System.Drawing.Size(302, 744);
+            this.navDrawerPanel.Size = new System.Drawing.Size(226, 611);
             this.navDrawerPanel.TabIndex = 18;
             // 
             // logoutBtn
@@ -110,10 +110,11 @@
             this.logoutBtn.Image = ((System.Drawing.Image)(resources.GetObject("logoutBtn.Image")));
             this.logoutBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.logoutBtn.ImageOffset = new System.Drawing.Point(7, 0);
-            this.logoutBtn.Location = new System.Drawing.Point(0, 346);
+            this.logoutBtn.Location = new System.Drawing.Point(0, 281);
+            this.logoutBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.logoutBtn.Name = "logoutBtn";
             this.logoutBtn.ShadowDecoration.Parent = this.logoutBtn;
-            this.logoutBtn.Size = new System.Drawing.Size(302, 45);
+            this.logoutBtn.Size = new System.Drawing.Size(226, 37);
             this.logoutBtn.TabIndex = 20;
             this.logoutBtn.Text = "Logout";
             this.logoutBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -129,11 +130,12 @@
             this.dropDownPanel.Controls.Add(this.fineArt);
             this.dropDownPanel.Controls.Add(this.categoryBtn);
             this.dropDownPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dropDownPanel.Location = new System.Drawing.Point(0, 118);
-            this.dropDownPanel.MaximumSize = new System.Drawing.Size(302, 228);
-            this.dropDownPanel.MinimumSize = new System.Drawing.Size(302, 44);
+            this.dropDownPanel.Location = new System.Drawing.Point(0, 96);
+            this.dropDownPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dropDownPanel.MaximumSize = new System.Drawing.Size(226, 185);
+            this.dropDownPanel.MinimumSize = new System.Drawing.Size(226, 36);
             this.dropDownPanel.Name = "dropDownPanel";
-            this.dropDownPanel.Size = new System.Drawing.Size(302, 228);
+            this.dropDownPanel.Size = new System.Drawing.Size(226, 185);
             this.dropDownPanel.TabIndex = 17;
             // 
             // otherBtn
@@ -154,10 +156,11 @@
             this.otherBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.otherBtn.ImageOffset = new System.Drawing.Point(7, 0);
             this.otherBtn.ImageSize = new System.Drawing.Size(30, 30);
-            this.otherBtn.Location = new System.Drawing.Point(0, 180);
+            this.otherBtn.Location = new System.Drawing.Point(0, 148);
+            this.otherBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.otherBtn.Name = "otherBtn";
             this.otherBtn.ShadowDecoration.Parent = this.otherBtn;
-            this.otherBtn.Size = new System.Drawing.Size(302, 45);
+            this.otherBtn.Size = new System.Drawing.Size(226, 37);
             this.otherBtn.TabIndex = 48;
             this.otherBtn.Text = "Other";
             this.otherBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -181,10 +184,11 @@
             this.compositionBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.compositionBtn.ImageOffset = new System.Drawing.Point(7, 0);
             this.compositionBtn.ImageSize = new System.Drawing.Size(30, 30);
-            this.compositionBtn.Location = new System.Drawing.Point(0, 135);
+            this.compositionBtn.Location = new System.Drawing.Point(0, 111);
+            this.compositionBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.compositionBtn.Name = "compositionBtn";
             this.compositionBtn.ShadowDecoration.Parent = this.compositionBtn;
-            this.compositionBtn.Size = new System.Drawing.Size(302, 45);
+            this.compositionBtn.Size = new System.Drawing.Size(226, 37);
             this.compositionBtn.TabIndex = 47;
             this.compositionBtn.Text = "Composition";
             this.compositionBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -208,10 +212,11 @@
             this.vectorBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.vectorBtn.ImageOffset = new System.Drawing.Point(7, 0);
             this.vectorBtn.ImageSize = new System.Drawing.Size(30, 30);
-            this.vectorBtn.Location = new System.Drawing.Point(0, 90);
+            this.vectorBtn.Location = new System.Drawing.Point(0, 74);
+            this.vectorBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.vectorBtn.Name = "vectorBtn";
             this.vectorBtn.ShadowDecoration.Parent = this.vectorBtn;
-            this.vectorBtn.Size = new System.Drawing.Size(302, 45);
+            this.vectorBtn.Size = new System.Drawing.Size(226, 37);
             this.vectorBtn.TabIndex = 46;
             this.vectorBtn.Text = "Vector art";
             this.vectorBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -235,10 +240,11 @@
             this.fineArt.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.fineArt.ImageOffset = new System.Drawing.Point(7, 0);
             this.fineArt.ImageSize = new System.Drawing.Size(30, 30);
-            this.fineArt.Location = new System.Drawing.Point(0, 45);
+            this.fineArt.Location = new System.Drawing.Point(0, 37);
+            this.fineArt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.fineArt.Name = "fineArt";
             this.fineArt.ShadowDecoration.Parent = this.fineArt;
-            this.fineArt.Size = new System.Drawing.Size(302, 45);
+            this.fineArt.Size = new System.Drawing.Size(226, 37);
             this.fineArt.TabIndex = 44;
             this.fineArt.Text = "Fine art";
             this.fineArt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -263,9 +269,10 @@
             this.categoryBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.categoryBtn.ImageOffset = new System.Drawing.Point(7, 0);
             this.categoryBtn.Location = new System.Drawing.Point(0, 0);
+            this.categoryBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.categoryBtn.Name = "categoryBtn";
             this.categoryBtn.ShadowDecoration.Parent = this.categoryBtn;
-            this.categoryBtn.Size = new System.Drawing.Size(302, 45);
+            this.categoryBtn.Size = new System.Drawing.Size(226, 37);
             this.categoryBtn.TabIndex = 11;
             this.categoryBtn.Text = "Category";
             this.categoryBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -290,10 +297,11 @@
             this.homeBtn.Image = ((System.Drawing.Image)(resources.GetObject("homeBtn.Image")));
             this.homeBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.homeBtn.ImageOffset = new System.Drawing.Point(7, 0);
-            this.homeBtn.Location = new System.Drawing.Point(0, 73);
+            this.homeBtn.Location = new System.Drawing.Point(0, 59);
+            this.homeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.homeBtn.Name = "homeBtn";
             this.homeBtn.ShadowDecoration.Parent = this.homeBtn;
-            this.homeBtn.Size = new System.Drawing.Size(302, 45);
+            this.homeBtn.Size = new System.Drawing.Size(226, 37);
             this.homeBtn.TabIndex = 10;
             this.homeBtn.Text = "Home";
             this.homeBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -303,15 +311,16 @@
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(302, 73);
+            this.panel2.Size = new System.Drawing.Size(226, 59);
             this.panel2.TabIndex = 8;
             // 
             // PostBtn
             // 
             this.PostBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.PostBtn.AutoRoundedCorners = true;
-            this.PostBtn.BorderRadius = 25;
+            this.PostBtn.BorderRadius = 20;
             this.PostBtn.CheckedState.Parent = this.PostBtn;
             this.PostBtn.CustomImages.Parent = this.PostBtn;
             this.PostBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -327,12 +336,12 @@
             this.PostBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.PostBtn.ImageOffset = new System.Drawing.Point(10, 0);
             this.PostBtn.ImageSize = new System.Drawing.Size(15, 15);
-            this.PostBtn.Location = new System.Drawing.Point(39, 668);
-            this.PostBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PostBtn.Location = new System.Drawing.Point(29, 550);
+            this.PostBtn.Margin = new System.Windows.Forms.Padding(2);
             this.PostBtn.Name = "PostBtn";
-            this.PostBtn.Padding = new System.Windows.Forms.Padding(1, 1, 9, 1);
+            this.PostBtn.Padding = new System.Windows.Forms.Padding(1, 1, 7, 1);
             this.PostBtn.ShadowDecoration.Parent = this.PostBtn;
-            this.PostBtn.Size = new System.Drawing.Size(214, 53);
+            this.PostBtn.Size = new System.Drawing.Size(160, 43);
             this.PostBtn.TabIndex = 0;
             this.PostBtn.Text = "Post an Art";
             this.PostBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -354,8 +363,9 @@
             this.ArtisticLounge.Font = new System.Drawing.Font("Segoe Print", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ArtisticLounge.ForeColor = System.Drawing.Color.SaddleBrown;
             this.ArtisticLounge.Location = new System.Drawing.Point(0, 0);
+            this.ArtisticLounge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ArtisticLounge.Name = "ArtisticLounge";
-            this.ArtisticLounge.Size = new System.Drawing.Size(305, 67);
+            this.ArtisticLounge.Size = new System.Drawing.Size(229, 54);
             this.ArtisticLounge.TabIndex = 7;
             this.ArtisticLounge.Text = "Artistic Lounge";
             this.ArtisticLounge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -371,9 +381,10 @@
             this.AboutUsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AboutUsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutUsBtn.ForeColor = System.Drawing.Color.Navy;
-            this.AboutUsBtn.Location = new System.Drawing.Point(305, 0);
+            this.AboutUsBtn.Location = new System.Drawing.Point(229, 0);
+            this.AboutUsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AboutUsBtn.Name = "AboutUsBtn";
-            this.AboutUsBtn.Size = new System.Drawing.Size(140, 67);
+            this.AboutUsBtn.Size = new System.Drawing.Size(105, 54);
             this.AboutUsBtn.TabIndex = 8;
             this.AboutUsBtn.Text = "About Us";
             this.AboutUsBtn.UseVisualStyleBackColor = false;
@@ -387,9 +398,10 @@
             this.ContactBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ContactBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContactBtn.ForeColor = System.Drawing.Color.Navy;
-            this.ContactBtn.Location = new System.Drawing.Point(445, 0);
+            this.ContactBtn.Location = new System.Drawing.Point(334, 0);
+            this.ContactBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ContactBtn.Name = "ContactBtn";
-            this.ContactBtn.Size = new System.Drawing.Size(140, 67);
+            this.ContactBtn.Size = new System.Drawing.Size(105, 54);
             this.ContactBtn.TabIndex = 6;
             this.ContactBtn.Text = "Contact";
             this.ContactBtn.UseVisualStyleBackColor = false;
@@ -403,9 +415,10 @@
             this.ServicesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ServicesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ServicesBtn.ForeColor = System.Drawing.Color.Navy;
-            this.ServicesBtn.Location = new System.Drawing.Point(585, 0);
+            this.ServicesBtn.Location = new System.Drawing.Point(439, 0);
+            this.ServicesBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ServicesBtn.Name = "ServicesBtn";
-            this.ServicesBtn.Size = new System.Drawing.Size(140, 67);
+            this.ServicesBtn.Size = new System.Drawing.Size(105, 54);
             this.ServicesBtn.TabIndex = 9;
             this.ServicesBtn.Text = "Services";
             this.ServicesBtn.UseVisualStyleBackColor = false;
@@ -421,8 +434,9 @@
             this.panel1.Controls.Add(this.ArtisticLounge);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1313, 67);
+            this.panel1.Size = new System.Drawing.Size(986, 54);
             this.panel1.TabIndex = 17;
             // 
             // guna2CirclePictureBox1
@@ -430,11 +444,12 @@
             this.guna2CirclePictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1233, 0);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(925, 0);
+            this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(70, 67);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(52, 54);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 10;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -444,10 +459,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 55);
+            this.pictureBox1.Size = new System.Drawing.Size(48, 45);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -469,8 +484,9 @@
             this.sliderBox.Dock = System.Windows.Forms.DockStyle.Top;
             this.sliderBox.Image = ((System.Drawing.Image)(resources.GetObject("sliderBox.Image")));
             this.sliderBox.Location = new System.Drawing.Point(0, 0);
+            this.sliderBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.sliderBox.Name = "sliderBox";
-            this.sliderBox.Size = new System.Drawing.Size(964, 335);
+            this.sliderBox.Size = new System.Drawing.Size(723, 272);
             this.sliderBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.sliderBox.TabIndex = 1;
             this.sliderBox.TabStop = false;
@@ -482,11 +498,11 @@
             this.mainPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.mainPanel.Controls.Add(this.panel3);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(302, 67);
+            this.mainPanel.Location = new System.Drawing.Point(226, 54);
             this.mainPanel.Margin = new System.Windows.Forms.Padding(0);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Padding = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.mainPanel.Size = new System.Drawing.Size(1011, 744);
+            this.mainPanel.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mainPanel.Size = new System.Drawing.Size(760, 611);
             this.mainPanel.TabIndex = 19;
             // 
             // panel3
@@ -499,9 +515,10 @@
             this.panel3.Controls.Add(this.nextBtn);
             this.panel3.Controls.Add(this.prevBtn);
             this.panel3.Controls.Add(this.sliderBox);
-            this.panel3.Location = new System.Drawing.Point(8, 8);
+            this.panel3.Location = new System.Drawing.Point(6, 6);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(964, 335);
+            this.panel3.Size = new System.Drawing.Size(723, 272);
             this.panel3.TabIndex = 1;
             // 
             // cb5
@@ -512,10 +529,11 @@
             this.cb5.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cb5.CheckedState.InnerColor = System.Drawing.Color.White;
             this.cb5.CheckedState.Parent = this.cb5;
-            this.cb5.Location = new System.Drawing.Point(546, 312);
+            this.cb5.Location = new System.Drawing.Point(410, 254);
+            this.cb5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cb5.Name = "cb5";
             this.cb5.ShadowDecoration.Parent = this.cb5;
-            this.cb5.Size = new System.Drawing.Size(20, 20);
+            this.cb5.Size = new System.Drawing.Size(15, 16);
             this.cb5.TabIndex = 9;
             this.cb5.Text = "guna2CustomRadioButton1";
             this.cb5.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -533,10 +551,11 @@
             this.cb4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cb4.CheckedState.InnerColor = System.Drawing.Color.White;
             this.cb4.CheckedState.Parent = this.cb4;
-            this.cb4.Location = new System.Drawing.Point(520, 312);
+            this.cb4.Location = new System.Drawing.Point(390, 254);
+            this.cb4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cb4.Name = "cb4";
             this.cb4.ShadowDecoration.Parent = this.cb4;
-            this.cb4.Size = new System.Drawing.Size(20, 20);
+            this.cb4.Size = new System.Drawing.Size(15, 16);
             this.cb4.TabIndex = 8;
             this.cb4.Text = "guna2CustomRadioButton1";
             this.cb4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -554,10 +573,11 @@
             this.cb3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cb3.CheckedState.InnerColor = System.Drawing.Color.White;
             this.cb3.CheckedState.Parent = this.cb3;
-            this.cb3.Location = new System.Drawing.Point(494, 312);
+            this.cb3.Location = new System.Drawing.Point(370, 254);
+            this.cb3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cb3.Name = "cb3";
             this.cb3.ShadowDecoration.Parent = this.cb3;
-            this.cb3.Size = new System.Drawing.Size(20, 20);
+            this.cb3.Size = new System.Drawing.Size(15, 16);
             this.cb3.TabIndex = 7;
             this.cb3.Text = "guna2CustomRadioButton1";
             this.cb3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -575,10 +595,11 @@
             this.cb2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cb2.CheckedState.InnerColor = System.Drawing.Color.White;
             this.cb2.CheckedState.Parent = this.cb2;
-            this.cb2.Location = new System.Drawing.Point(468, 312);
+            this.cb2.Location = new System.Drawing.Point(351, 254);
+            this.cb2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cb2.Name = "cb2";
             this.cb2.ShadowDecoration.Parent = this.cb2;
-            this.cb2.Size = new System.Drawing.Size(20, 20);
+            this.cb2.Size = new System.Drawing.Size(15, 16);
             this.cb2.TabIndex = 6;
             this.cb2.Text = "guna2CustomRadioButton1";
             this.cb2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -596,10 +617,11 @@
             this.cb1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cb1.CheckedState.InnerColor = System.Drawing.Color.White;
             this.cb1.CheckedState.Parent = this.cb1;
-            this.cb1.Location = new System.Drawing.Point(442, 312);
+            this.cb1.Location = new System.Drawing.Point(332, 254);
+            this.cb1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cb1.Name = "cb1";
             this.cb1.ShadowDecoration.Parent = this.cb1;
-            this.cb1.Size = new System.Drawing.Size(20, 20);
+            this.cb1.Size = new System.Drawing.Size(15, 16);
             this.cb1.TabIndex = 5;
             this.cb1.Text = "guna2CustomRadioButton1";
             this.cb1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -625,10 +647,11 @@
             this.nextBtn.HoverState.Parent = this.nextBtn;
             this.nextBtn.Image = ((System.Drawing.Image)(resources.GetObject("nextBtn.Image")));
             this.nextBtn.ImageSize = new System.Drawing.Size(30, 30);
-            this.nextBtn.Location = new System.Drawing.Point(921, 155);
+            this.nextBtn.Location = new System.Drawing.Point(691, 126);
+            this.nextBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nextBtn.Name = "nextBtn";
             this.nextBtn.ShadowDecoration.Parent = this.nextBtn;
-            this.nextBtn.Size = new System.Drawing.Size(47, 54);
+            this.nextBtn.Size = new System.Drawing.Size(35, 44);
             this.nextBtn.TabIndex = 4;
             this.nextBtn.Click += new System.EventHandler(this.nextBtn_Click);
             // 
@@ -648,10 +671,11 @@
             this.prevBtn.HoverState.Parent = this.prevBtn;
             this.prevBtn.Image = ((System.Drawing.Image)(resources.GetObject("prevBtn.Image")));
             this.prevBtn.ImageSize = new System.Drawing.Size(30, 30);
-            this.prevBtn.Location = new System.Drawing.Point(0, 155);
+            this.prevBtn.Location = new System.Drawing.Point(0, 126);
+            this.prevBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.prevBtn.Name = "prevBtn";
             this.prevBtn.ShadowDecoration.Parent = this.prevBtn;
-            this.prevBtn.Size = new System.Drawing.Size(47, 54);
+            this.prevBtn.Size = new System.Drawing.Size(35, 44);
             this.prevBtn.TabIndex = 2;
             this.prevBtn.Click += new System.EventHandler(this.prevBtn_Click);
             // 
@@ -661,27 +685,27 @@
             this.MainFormPanelBg.Image = ((System.Drawing.Image)(resources.GetObject("MainFormPanelBg.Image")));
             this.MainFormPanelBg.ImageRotate = 0F;
             this.MainFormPanelBg.Location = new System.Drawing.Point(0, 0);
-            this.MainFormPanelBg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MainFormPanelBg.Margin = new System.Windows.Forms.Padding(2);
             this.MainFormPanelBg.Name = "MainFormPanelBg";
             this.MainFormPanelBg.ShadowDecoration.Parent = this.MainFormPanelBg;
-            this.MainFormPanelBg.Size = new System.Drawing.Size(1313, 811);
+            this.MainFormPanelBg.Size = new System.Drawing.Size(986, 665);
             this.MainFormPanelBg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.MainFormPanelBg.TabIndex = 0;
             this.MainFormPanelBg.TabStop = false;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1313, 811);
+            this.ClientSize = new System.Drawing.Size(986, 665);
             this.Controls.Add(this.mainPanel);
             this.Controls.Add(this.navDrawerPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.MainFormPanelBg);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1331, 858);
-            this.MinimumSize = new System.Drawing.Size(1331, 858);
+            this.MaximumSize = new System.Drawing.Size(1002, 704);
+            this.MinimumSize = new System.Drawing.Size(1002, 704);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";

@@ -3638,7 +3638,7 @@
         2Q==
 </value>
   </data>
-  <data name="emailTextBox.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="nameTextBox.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
         1wAAAdcBjJIIaAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAbuSURBVHhe7Vtr
@@ -3674,7 +3674,7 @@
         EIJOECPhTiB88yAetNHrIIIIIog+hIT8C/dtM9Crl8+oAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="guna2TextBox1.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="genderTextBox.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
         gwAAAIMBYu+7WgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAPCSURBVEhLrZZ7
@@ -3697,25 +3697,7 @@
         0AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="guna2TextBox2.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        rQAAAK0BVE7WMAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKdSURBVEhL7ZVL
-        TxNRGIZngW4wKdAblwZmKL1RbGuxA9IyLRSEEDAiUYiJutW4MBqN6IIFoIEqC8Ef4NK9CQuliYlQ2PgP
-        jEistoEgCu3YC+V1zsBUoAWhuOQkT2YyOed9vu/LSYY6Xv9cXqbipVutXFeeyodBp0t2dXXxR8Gg1yeV
-        +fngigo2+hj6NcWp5ImIl8WXRjsu6LWYeOZDIpHIiXHfqJhBskINDnCFsg1KdvLExlxdDYhkTeBVvQ2f
-        Jt9gaWkpa0g2yN7e9vMYshjFjNVmFn6bGbK8PFBn1KpYh6IQE0ZGlBDmzlngNhkwOzOTNXA7s4EAOLMJ
-        U3WnxbM/m1g8r6LRJi+AvUCWorwVmuiKh8UdTQmuVJYj7KkVN37l7LgktDs2NIh4PJ4RTL6NPRlGt6FK
-        3EvOLDhr0a1W4n5FKb47HbitpROi4JdgfWsxo5V1iJXPbFVD2h21GtHT3IRwOJwOJ+89LV6MWE3pkbyz
-        1cBVrEar04kAW4OwIPC76vkdgv7r1xAKhdDd7IHPtnmYiD4IBzidFu/9fgSmp8EZ9fCz5s2RCN2PG7To
-        sFowPz+Ph7dupgUtSsV6hkBqf2RgAJeF9r+5N0dGnldNehHp2+cGYSTFKgzfu4tIJIJoNHowgcTuaiVW
-        yX5rNZzCSKYmJ8VgiUMJCOQK9rW34XF1lTjrHx4HBitpXDxbi2AwuCM8JwFBvDHDQ/DQ5XALVfse9adH
-        8l8EEsvLy1hcXMwaLJGzgOf5rIG7yRA8YO0r+wlisdiBwwkZgo83eoN7CUh4tpD9OPCIDlP1djIEDZrS
-        te0CcmNyDSf8FbBwKeQJykGXP3WVlfCN8qIUU1b2u7Ozkz8KOoZJNmlKU26VYt3L0C+2/mvHa69FUX8A
-        w1inrPF+98AAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="guna2TextBox3.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="phoneTextBox.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
         pQAAAKUBcMTeVQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAANKSURBVEhLpZbd
@@ -3736,7 +3718,7 @@
         WQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="guna2TextBox4.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="currentPassTextBox.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
         1wAAAdcBjJIIaAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAydSURBVHhe7ZsJ
@@ -3796,7 +3778,7 @@
         D7wGMzYaX6ua62Adj3yMwSe8KAMPQ1VwDgNbMODhWjsJuiN3xMbmfz2tz9ocrab1AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="guna2TextBox5.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="locationTextBox.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
         1wAAAdcBjJIIaAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAA9jSURBVHhe3ZsJ
@@ -3868,7 +3850,7 @@
         C39iV4DQIFPV/3VBQRctSgj6XZVCtn5Rq1atg/8DMZ3FeSEiSCAAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="guna2TextBox6.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="newPassTextBox.IconLeft" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAB
         1wAAAdcBjJIIaAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAydSURBVHhe7ZsJ

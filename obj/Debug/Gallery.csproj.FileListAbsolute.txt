@@ -60,3 +60,50 @@ C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.PaymentForm.resources
 C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.PostArtForm.resources
 C:\Users\abir1\Desktop\ArtisticLounge\obj\Debug\Gallery.PostArtForm.resources
 C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.ThankYouForm.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\bin\Debug\Gallery.exe.config
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.exe
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.pdb
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\bin\Debug\Gallery.exe
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\bin\Debug\Gallery.pdb
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\bin\Debug\Guna.UI2.dll
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.csprojResolveAssemblyReference.cache
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.AboutUsForm.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.ArtCard.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.ArtOnStockCard.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.BuyForm.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.ContactForm.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.EditProfileForm.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.Form1.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.MainForm.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.PaymentForm.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.PostArtForm.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.ProfileForm.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.Properties.Resources.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.SignUpFrom.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.ThankYouForm.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.csproj.GenerateResource.Cache
+C:\Users\fahim\Desktop\ArtisticLounge-main\bin\Debug\Gallery.exe.config
+C:\Users\fahim\Desktop\ArtisticLounge-main\bin\Debug\Gallery.exe
+C:\Users\fahim\Desktop\ArtisticLounge-main\bin\Debug\Gallery.pdb
+C:\Users\fahim\Desktop\ArtisticLounge-main\bin\Debug\Guna.UI2.dll
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.csproj.AssemblyReference.cache
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.csproj.SuggestedBindingRedirects.cache
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.AboutUsForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.ArtCard.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.ArtOnStockCard.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.BuyForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.ContactForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.EditProfileForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.Form1.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.MainForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.PaymentForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.PostArtForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.ProfileForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.Properties.Resources.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.SignUpFrom.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.ThankYouForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.csproj.GenerateResource.cache
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.csproj.CoreCompileInputs.cache
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.csproj.CopyComplete
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.exe
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.pdb

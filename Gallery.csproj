@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -56,6 +57,7 @@
     <Compile Include="AboutUsForm.Designer.cs">
       <DependentUpon>AboutUsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Art.cs" />
     <Compile Include="ArtCard.cs">
       <SubType>UserControl</SubType>
     </Compile>

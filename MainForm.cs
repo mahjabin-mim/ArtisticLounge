@@ -56,24 +56,28 @@ namespace Gallery
 
             cb1.Checked = true;
 
-            //.................... test code.............
-
-           // mainPanel.Controls.Clear();
+            
 
             dropDownPanel.Height = 0;
 
             mainPanel.Dock = DockStyle.Fill;
+            //.................... test code.............
 
-            ArtCard[] artCards = new ArtCard[10];
+            DatabaseHelper.connection.Open();
 
-            for (int i = 0; i < artCards.Length; i++)
+            List<Art> artList = DatabaseHelper.GetArt();
+
+            for (int i = 0; i < artList.Count; i++)
             {
-                artCards[i] = new ArtCard();
-                artCards[i].parentForm = this;
-                
 
-                mainPanel.Controls.Add(artCards[i]);
+                ArtCard card = new ArtCard();
+                card.art_code = artList[i].Product_code;
+                card.image = artList[i].Art_image;
+                card.title = artList[i].Name;
+                card.price = artList[i].Price;
+                card.parentForm = this;
 
+                mainPanel.Controls.Add(card);
                 
             }
 
@@ -133,15 +137,7 @@ namespace Gallery
             this.Hide();
 
             ProfileForm profileForm = new ProfileForm();
-           /* profileForm.StartPosition = FormStartPosition.Manual;
-            profileForm.Location = this.Location;
-
-            if (this.Size.Height >= profileForm.MinimumSize.Height &&
-                this.Size.Width >= profileForm.MaximumSize.Width)
-            {
-                profileForm.Size = this.Size;
-            }*/
-
+          
 
             profileForm.ShowDialog();
 
@@ -235,11 +231,6 @@ namespace Gallery
             this.Hide();
 
             PostArtForm postArtform = new PostArtForm();
-            //postArtform.StartPosition = FormStartPosition.Manual;
-            //postArtform.Location = this.Location;
-            //postArtform.Size = this.Size;
-
-
 
             postArtform.ShowDialog();
 

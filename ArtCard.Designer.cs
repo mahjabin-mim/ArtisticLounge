@@ -29,51 +29,51 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArtCard));
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.artImage = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.arttitle = new System.Windows.Forms.Label();
+            this.artPrice = new System.Windows.Forms.Label();
             this.buyNowBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.artImage)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // guna2PictureBox1
+            // artImage
             // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(386, 278);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
+            this.artImage.Image = ((System.Drawing.Image)(resources.GetObject("artImage.Image")));
+            this.artImage.ImageRotate = 0F;
+            this.artImage.Location = new System.Drawing.Point(2, 2);
+            this.artImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.artImage.Name = "artImage";
+            this.artImage.ShadowDecoration.Parent = this.artImage;
+            this.artImage.Size = new System.Drawing.Size(211, 151);
+            this.artImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.artImage.TabIndex = 0;
+            this.artImage.TabStop = false;
             // 
-            // label1
+            // arttitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(-6, 286);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 51);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Galaxy";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.arttitle.AutoSize = true;
+            this.arttitle.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.arttitle.Location = new System.Drawing.Point(-3, 155);
+            this.arttitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.arttitle.Name = "arttitle";
+            this.arttitle.Size = new System.Drawing.Size(83, 30);
+            this.arttitle.TabIndex = 1;
+            this.arttitle.Text = "Galaxy";
+            this.arttitle.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // artPrice
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(4, 357);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 38);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "900 Tk.";
+            this.artPrice.AutoSize = true;
+            this.artPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.artPrice.ForeColor = System.Drawing.Color.Red;
+            this.artPrice.Location = new System.Drawing.Point(2, 193);
+            this.artPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.artPrice.Name = "artPrice";
+            this.artPrice.Size = new System.Drawing.Size(63, 21);
+            this.artPrice.TabIndex = 2;
+            this.artPrice.Text = "900 Tk.";
             // 
             // buyNowBtn
             // 
@@ -90,11 +90,11 @@
             this.buyNowBtn.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buyNowBtn.ForeColor = System.Drawing.Color.White;
             this.buyNowBtn.HoverState.Parent = this.buyNowBtn;
-            this.buyNowBtn.Location = new System.Drawing.Point(113, 470);
-            this.buyNowBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buyNowBtn.Location = new System.Drawing.Point(62, 255);
+            this.buyNowBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buyNowBtn.Name = "buyNowBtn";
             this.buyNowBtn.ShadowDecoration.Parent = this.buyNowBtn;
-            this.buyNowBtn.Size = new System.Drawing.Size(155, 56);
+            this.buyNowBtn.Size = new System.Drawing.Size(85, 30);
             this.buyNowBtn.TabIndex = 3;
             this.buyNowBtn.Text = "Buy now";
             this.buyNowBtn.Click += new System.EventHandler(this.buyNowBtn_Click);
@@ -102,26 +102,27 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel1.Controls.Add(this.artImage);
             this.guna2Panel1.Controls.Add(this.buyNowBtn);
-            this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Controls.Add(this.label2);
-            this.guna2Panel1.Location = new System.Drawing.Point(4, 0);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Controls.Add(this.arttitle);
+            this.guna2Panel1.Controls.Add(this.artPrice);
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(395, 552);
+            this.guna2Panel1.Size = new System.Drawing.Size(218, 299);
             this.guna2Panel1.TabIndex = 4;
             // 
             // ArtCard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2Panel1);
-            this.Margin = new System.Windows.Forms.Padding(28, 68, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(15, 37, 2, 2);
             this.Name = "ArtCard";
-            this.Size = new System.Drawing.Size(399, 556);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.Size = new System.Drawing.Size(218, 301);
+            this.Load += new System.EventHandler(this.ArtCard_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.artImage)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -130,9 +131,9 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2PictureBox artImage;
+        private System.Windows.Forms.Label arttitle;
+        private System.Windows.Forms.Label artPrice;
         private Guna.UI2.WinForms.Guna2Button buyNowBtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }

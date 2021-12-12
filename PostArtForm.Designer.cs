@@ -39,13 +39,13 @@
             this.ArtisticLounge = new System.Windows.Forms.Button();
             this.PostPanel = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.postBtn = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2NumericUpDown1 = new Guna.UI2.WinForms.Guna2NumericUpDown();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.emailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.priceBox = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.categoryBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.artName = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.SelectArtBtn = new Guna.UI2.WinForms.Guna2Button();
             this.ArtPicture = new System.Windows.Forms.PictureBox();
@@ -54,7 +54,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.PostPanel.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.priceBox)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ArtPicture)).BeginInit();
             this.SuspendLayout();
@@ -71,8 +71,9 @@
             this.panel1.Controls.Add(this.ArtisticLounge);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1253, 67);
+            this.panel1.Size = new System.Drawing.Size(941, 54);
             this.panel1.TabIndex = 18;
             // 
             // BackToMainForm
@@ -81,12 +82,12 @@
             this.BackToMainForm.Dock = System.Windows.Forms.DockStyle.Right;
             this.BackToMainForm.Image = ((System.Drawing.Image)(resources.GetObject("BackToMainForm.Image")));
             this.BackToMainForm.ImageRotate = 0F;
-            this.BackToMainForm.Location = new System.Drawing.Point(1180, 0);
-            this.BackToMainForm.Margin = new System.Windows.Forms.Padding(2, 2, 7, 2);
+            this.BackToMainForm.Location = new System.Drawing.Point(886, 0);
+            this.BackToMainForm.Margin = new System.Windows.Forms.Padding(2, 2, 5, 2);
             this.BackToMainForm.Name = "BackToMainForm";
-            this.BackToMainForm.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
+            this.BackToMainForm.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.BackToMainForm.ShadowDecoration.Parent = this.BackToMainForm;
-            this.BackToMainForm.Size = new System.Drawing.Size(73, 67);
+            this.BackToMainForm.Size = new System.Drawing.Size(55, 54);
             this.BackToMainForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BackToMainForm.TabIndex = 20;
             this.BackToMainForm.TabStop = false;
@@ -94,20 +95,20 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(0, 67);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 54);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(145, 67);
+            this.panel2.Size = new System.Drawing.Size(109, 54);
             this.panel2.TabIndex = 19;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 8);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(64, 55);
+            this.pictureBox1.Size = new System.Drawing.Size(48, 45);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -121,9 +122,10 @@
             this.ServicesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ServicesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ServicesBtn.ForeColor = System.Drawing.Color.Navy;
-            this.ServicesBtn.Location = new System.Drawing.Point(585, 0);
+            this.ServicesBtn.Location = new System.Drawing.Point(439, 0);
+            this.ServicesBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ServicesBtn.Name = "ServicesBtn";
-            this.ServicesBtn.Size = new System.Drawing.Size(140, 67);
+            this.ServicesBtn.Size = new System.Drawing.Size(105, 54);
             this.ServicesBtn.TabIndex = 9;
             this.ServicesBtn.Text = "Services";
             this.ServicesBtn.UseVisualStyleBackColor = false;
@@ -137,9 +139,10 @@
             this.ContactBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ContactBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContactBtn.ForeColor = System.Drawing.Color.Navy;
-            this.ContactBtn.Location = new System.Drawing.Point(445, 0);
+            this.ContactBtn.Location = new System.Drawing.Point(334, 0);
+            this.ContactBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ContactBtn.Name = "ContactBtn";
-            this.ContactBtn.Size = new System.Drawing.Size(140, 67);
+            this.ContactBtn.Size = new System.Drawing.Size(105, 54);
             this.ContactBtn.TabIndex = 6;
             this.ContactBtn.Text = "Contact";
             this.ContactBtn.UseVisualStyleBackColor = false;
@@ -154,9 +157,10 @@
             this.AboutUsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AboutUsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutUsBtn.ForeColor = System.Drawing.Color.Navy;
-            this.AboutUsBtn.Location = new System.Drawing.Point(305, 0);
+            this.AboutUsBtn.Location = new System.Drawing.Point(229, 0);
+            this.AboutUsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AboutUsBtn.Name = "AboutUsBtn";
-            this.AboutUsBtn.Size = new System.Drawing.Size(140, 67);
+            this.AboutUsBtn.Size = new System.Drawing.Size(105, 54);
             this.AboutUsBtn.TabIndex = 8;
             this.AboutUsBtn.Text = "About Us";
             this.AboutUsBtn.UseVisualStyleBackColor = false;
@@ -171,8 +175,9 @@
             this.ArtisticLounge.Font = new System.Drawing.Font("Segoe Print", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ArtisticLounge.ForeColor = System.Drawing.Color.SaddleBrown;
             this.ArtisticLounge.Location = new System.Drawing.Point(0, 0);
+            this.ArtisticLounge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ArtisticLounge.Name = "ArtisticLounge";
-            this.ArtisticLounge.Size = new System.Drawing.Size(305, 67);
+            this.ArtisticLounge.Size = new System.Drawing.Size(229, 54);
             this.ArtisticLounge.TabIndex = 7;
             this.ArtisticLounge.Text = "Artistic Lounge";
             this.ArtisticLounge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -184,64 +189,65 @@
             this.PostPanel.Controls.Add(this.panel4);
             this.PostPanel.Controls.Add(this.panel3);
             this.PostPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PostPanel.Location = new System.Drawing.Point(0, 67);
-            this.PostPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PostPanel.Location = new System.Drawing.Point(0, 54);
+            this.PostPanel.Margin = new System.Windows.Forms.Padding(2);
             this.PostPanel.Name = "PostPanel";
-            this.PostPanel.Size = new System.Drawing.Size(1253, 587);
+            this.PostPanel.Size = new System.Drawing.Size(941, 478);
             this.PostPanel.TabIndex = 19;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.guna2Button1);
+            this.panel4.Controls.Add(this.postBtn);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.guna2NumericUpDown1);
-            this.panel4.Controls.Add(this.guna2ComboBox1);
-            this.panel4.Controls.Add(this.emailTextBox);
+            this.panel4.Controls.Add(this.priceBox);
+            this.panel4.Controls.Add(this.categoryBox);
+            this.panel4.Controls.Add(this.artName);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel4.Location = new System.Drawing.Point(602, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Location = new System.Drawing.Point(452, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(651, 587);
+            this.panel4.Size = new System.Drawing.Size(489, 478);
             this.panel4.TabIndex = 1;
             // 
-            // guna2Button1
+            // postBtn
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.BorderThickness = 2;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.DarkRed;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(319, 494);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(218, 49);
-            this.guna2Button1.TabIndex = 42;
-            this.guna2Button1.Text = "Post";
+            this.postBtn.BackColor = System.Drawing.Color.Transparent;
+            this.postBtn.BorderColor = System.Drawing.Color.Transparent;
+            this.postBtn.BorderRadius = 10;
+            this.postBtn.BorderThickness = 2;
+            this.postBtn.CheckedState.Parent = this.postBtn;
+            this.postBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.postBtn.CustomImages.Parent = this.postBtn;
+            this.postBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.postBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.postBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.postBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.postBtn.DisabledState.Parent = this.postBtn;
+            this.postBtn.FillColor = System.Drawing.Color.DarkRed;
+            this.postBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.postBtn.ForeColor = System.Drawing.Color.White;
+            this.postBtn.HoverState.Parent = this.postBtn;
+            this.postBtn.Location = new System.Drawing.Point(239, 401);
+            this.postBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.postBtn.Name = "postBtn";
+            this.postBtn.ShadowDecoration.Parent = this.postBtn;
+            this.postBtn.Size = new System.Drawing.Size(164, 40);
+            this.postBtn.TabIndex = 42;
+            this.postBtn.Text = "Post";
+            this.postBtn.Click += new System.EventHandler(this.postBtn_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(134, 313);
+            this.label3.Location = new System.Drawing.Point(100, 254);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 28);
+            this.label3.Size = new System.Drawing.Size(75, 21);
             this.label3.TabIndex = 41;
             this.label3.Text = "Art Price";
             // 
@@ -250,10 +256,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(134, 233);
+            this.label2.Location = new System.Drawing.Point(100, 189);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 28);
+            this.label2.Size = new System.Drawing.Size(107, 21);
             this.label2.TabIndex = 40;
             this.label2.Text = "Art Category";
             // 
@@ -262,88 +268,88 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(134, 142);
+            this.label1.Location = new System.Drawing.Point(100, 115);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 28);
+            this.label1.Size = new System.Drawing.Size(83, 21);
             this.label1.TabIndex = 39;
             this.label1.Text = "Art Name";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // guna2NumericUpDown1
+            // priceBox
             // 
-            this.guna2NumericUpDown1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2NumericUpDown1.BorderColor = System.Drawing.Color.Navy;
-            this.guna2NumericUpDown1.BorderRadius = 7;
-            this.guna2NumericUpDown1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2NumericUpDown1.DisabledState.Parent = this.guna2NumericUpDown1;
-            this.guna2NumericUpDown1.FocusedState.Parent = this.guna2NumericUpDown1;
-            this.guna2NumericUpDown1.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2NumericUpDown1.ForeColor = System.Drawing.Color.DarkRed;
-            this.guna2NumericUpDown1.Location = new System.Drawing.Point(139, 341);
-            this.guna2NumericUpDown1.Name = "guna2NumericUpDown1";
-            this.guna2NumericUpDown1.ShadowDecoration.Parent = this.guna2NumericUpDown1;
-            this.guna2NumericUpDown1.Size = new System.Drawing.Size(175, 37);
-            this.guna2NumericUpDown1.TabIndex = 38;
-            this.guna2NumericUpDown1.UpDownButtonFillColor = System.Drawing.Color.Navy;
-            this.guna2NumericUpDown1.UpDownButtonForeColor = System.Drawing.Color.White;
+            this.priceBox.BackColor = System.Drawing.Color.Transparent;
+            this.priceBox.BorderColor = System.Drawing.Color.Navy;
+            this.priceBox.BorderRadius = 7;
+            this.priceBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.priceBox.DisabledState.Parent = this.priceBox;
+            this.priceBox.FocusedState.Parent = this.priceBox;
+            this.priceBox.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.priceBox.ForeColor = System.Drawing.Color.DarkRed;
+            this.priceBox.Location = new System.Drawing.Point(104, 277);
+            this.priceBox.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.priceBox.Name = "priceBox";
+            this.priceBox.ShadowDecoration.Parent = this.priceBox;
+            this.priceBox.Size = new System.Drawing.Size(131, 30);
+            this.priceBox.TabIndex = 38;
+            this.priceBox.UpDownButtonFillColor = System.Drawing.Color.Navy;
+            this.priceBox.UpDownButtonForeColor = System.Drawing.Color.White;
             // 
-            // guna2ComboBox1
+            // categoryBox
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderColor = System.Drawing.Color.Navy;
-            this.guna2ComboBox1.BorderRadius = 7;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.Navy;
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.categoryBox.BackColor = System.Drawing.Color.Transparent;
+            this.categoryBox.BorderColor = System.Drawing.Color.Navy;
+            this.categoryBox.BorderRadius = 7;
+            this.categoryBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.categoryBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.categoryBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.categoryBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.categoryBox.FocusedState.Parent = this.categoryBox;
+            this.categoryBox.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryBox.ForeColor = System.Drawing.Color.Navy;
+            this.categoryBox.HoverState.Parent = this.categoryBox;
+            this.categoryBox.ItemHeight = 30;
+            this.categoryBox.Items.AddRange(new object[] {
             "Fine Art",
             "Vector Art",
             "Composition ",
             "Other"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(139, 263);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(246, 36);
-            this.guna2ComboBox1.TabIndex = 37;
-            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
+            this.categoryBox.ItemsAppearance.Parent = this.categoryBox;
+            this.categoryBox.Location = new System.Drawing.Point(104, 214);
+            this.categoryBox.Margin = new System.Windows.Forms.Padding(2);
+            this.categoryBox.Name = "categoryBox";
+            this.categoryBox.ShadowDecoration.Parent = this.categoryBox;
+            this.categoryBox.Size = new System.Drawing.Size(186, 36);
+            this.categoryBox.TabIndex = 37;
+            this.categoryBox.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
-            // emailTextBox
+            // artName
             // 
-            this.emailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.emailTextBox.BackColor = System.Drawing.Color.Transparent;
-            this.emailTextBox.BorderColor = System.Drawing.Color.Navy;
-            this.emailTextBox.BorderRadius = 7;
-            this.emailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.emailTextBox.DefaultText = "";
-            this.emailTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.emailTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.emailTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.emailTextBox.DisabledState.Parent = this.emailTextBox;
-            this.emailTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.emailTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.emailTextBox.FocusedState.Parent = this.emailTextBox;
-            this.emailTextBox.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            this.emailTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.emailTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.emailTextBox.HoverState.Parent = this.emailTextBox;
-            this.emailTextBox.Location = new System.Drawing.Point(143, 171);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.emailTextBox.Name = "emailTextBox";
-            this.emailTextBox.PasswordChar = '\0';
-            this.emailTextBox.PlaceholderText = "";
-            this.emailTextBox.SelectedText = "";
-            this.emailTextBox.ShadowDecoration.Parent = this.emailTextBox;
-            this.emailTextBox.Size = new System.Drawing.Size(389, 40);
-            this.emailTextBox.TabIndex = 31;
+            this.artName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.artName.BackColor = System.Drawing.Color.Transparent;
+            this.artName.BorderColor = System.Drawing.Color.Navy;
+            this.artName.BorderRadius = 7;
+            this.artName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.artName.DefaultText = "";
+            this.artName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.artName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.artName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.artName.DisabledState.Parent = this.artName;
+            this.artName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.artName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.artName.FocusedState.Parent = this.artName;
+            this.artName.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.artName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.artName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.artName.HoverState.Parent = this.artName;
+            this.artName.Location = new System.Drawing.Point(108, 139);
+            this.artName.Name = "artName";
+            this.artName.PasswordChar = '\0';
+            this.artName.PlaceholderText = "";
+            this.artName.SelectedText = "";
+            this.artName.ShadowDecoration.Parent = this.artName;
+            this.artName.Size = new System.Drawing.Size(292, 32);
+            this.artName.TabIndex = 31;
             // 
             // panel3
             // 
@@ -351,9 +357,9 @@
             this.panel3.Controls.Add(this.ArtPicture);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(602, 587);
+            this.panel3.Size = new System.Drawing.Size(452, 478);
             this.panel3.TabIndex = 0;
             // 
             // SelectArtBtn
@@ -374,35 +380,37 @@
             this.SelectArtBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SelectArtBtn.ForeColor = System.Drawing.Color.White;
             this.SelectArtBtn.HoverState.Parent = this.SelectArtBtn;
-            this.SelectArtBtn.Location = new System.Drawing.Point(233, 423);
-            this.SelectArtBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SelectArtBtn.Location = new System.Drawing.Point(175, 344);
+            this.SelectArtBtn.Margin = new System.Windows.Forms.Padding(2);
             this.SelectArtBtn.Name = "SelectArtBtn";
             this.SelectArtBtn.ShadowDecoration.Parent = this.SelectArtBtn;
-            this.SelectArtBtn.Size = new System.Drawing.Size(173, 45);
+            this.SelectArtBtn.Size = new System.Drawing.Size(130, 37);
             this.SelectArtBtn.TabIndex = 32;
             this.SelectArtBtn.Text = "Select Art";
+            this.SelectArtBtn.Click += new System.EventHandler(this.SelectArtBtn_Click);
             // 
             // ArtPicture
             // 
             this.ArtPicture.Image = ((System.Drawing.Image)(resources.GetObject("ArtPicture.Image")));
-            this.ArtPicture.Location = new System.Drawing.Point(26, 47);
+            this.ArtPicture.Location = new System.Drawing.Point(20, 38);
+            this.ArtPicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ArtPicture.Name = "ArtPicture";
-            this.ArtPicture.Size = new System.Drawing.Size(576, 355);
+            this.ArtPicture.Size = new System.Drawing.Size(432, 288);
             this.ArtPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ArtPicture.TabIndex = 1;
             this.ArtPicture.TabStop = false;
             // 
             // PostArtForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1253, 654);
+            this.ClientSize = new System.Drawing.Size(941, 532);
             this.Controls.Add(this.PostPanel);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1271, 712);
-            this.MinimumSize = new System.Drawing.Size(1271, 694);
+            this.MaximumSize = new System.Drawing.Size(957, 586);
+            this.MinimumSize = new System.Drawing.Size(957, 571);
             this.Name = "PostArtForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PostArtForm";
@@ -413,7 +421,7 @@
             this.PostPanel.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.priceBox)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ArtPicture)).EndInit();
             this.ResumeLayout(false);
@@ -433,14 +441,14 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox ArtPicture;
         private Guna.UI2.WinForms.Guna2Button SelectArtBtn;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2TextBox emailTextBox;
-        private Guna.UI2.WinForms.Guna2NumericUpDown guna2NumericUpDown1;
+        private Guna.UI2.WinForms.Guna2ComboBox categoryBox;
+        private Guna.UI2.WinForms.Guna2TextBox artName;
+        private Guna.UI2.WinForms.Guna2NumericUpDown priceBox;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button postBtn;
         private Guna.UI2.WinForms.Guna2PictureBox BackToMainForm;
     }
 }

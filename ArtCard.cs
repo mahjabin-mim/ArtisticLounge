@@ -18,6 +18,7 @@ namespace Gallery
         public Image image { get; set; }
         public string title { get; set; }
         public string price { get; set; }
+        public string art_code { set; get; }
 
         public Form parentForm { get; set; }
 
@@ -38,6 +39,7 @@ namespace Gallery
             parentForm.Hide();
 
             BuyForm buyForm = new BuyForm();
+            buyForm.art_code = this.art_code;
 
             buyForm.StartPosition = FormStartPosition.Manual;
             buyForm.Location = parentForm.Location;
@@ -52,6 +54,13 @@ namespace Gallery
             buyForm.ShowDialog();
 
             parentForm.Close();
+        }
+
+        private void ArtCard_Load(object sender, EventArgs e)
+        {
+            artImage.Image = this.image;
+            arttitle.Text = this.title;
+            artPrice.Text = this.price;
         }
     }
 }

@@ -60,10 +60,6 @@ namespace Gallery
 
             this.Close();
 
-
-
-
-
         }
 
         private void showPassBtn_Click(object sender, EventArgs e)
@@ -93,7 +89,7 @@ namespace Gallery
 
                 if (DatabaseHelper.LoginForm(user) == true)
                 {
-                    MessageBox.Show("Login succesful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                   
                     this.Hide();
                     MainForm main = new MainForm();
                     main.ShowDialog();
