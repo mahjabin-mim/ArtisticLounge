@@ -123,9 +123,10 @@ namespace Gallery
         public static bool UpdateUser(User user)
         {
             User usr = user;
-            string query = "UPDATE USER_TBL SET Gender = @gender, Location = @loc, Phone = @phone, Picture = @pic WHERE Email = @email";
+            string query = "UPDATE USER_TBL SET Name = @name, Gender = @gender, Location = @loc, Phone = @phone, Picture = @pic WHERE Email = @email";
             cmd = new SqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@email", User.Email);
+            cmd.Parameters.AddWithValue("@name", usr.Name);
             cmd.Parameters.AddWithValue("@gender", usr.Gender);
             cmd.Parameters.AddWithValue("@loc", usr.Location);
             cmd.Parameters.AddWithValue("@phone", usr.Phone);
@@ -359,6 +360,29 @@ namespace Gallery
 
             connection.Close();
             return art;
+        }
+
+        public static bool DeleteArt(string code)
+        {
+            string query = "DELETE FROM ART_TBL WHERE Product_code = @code";
+            cmd = new SqlCommand(query,connection);
+            cmd.Parameters.AddWithValue("@code",code);
+
+            int n = 0;
+
+            try
+            {
+                n = cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                connection.Close();
+                return false;
+            }
+            connection.Close();
+
+            return n > 0 ? true : false;
+
         }
         private static byte[] GetRawPhoto(Image image)
         {

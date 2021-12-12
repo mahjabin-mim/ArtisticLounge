@@ -34,63 +34,24 @@ namespace Gallery
             userDashFlow.Controls.Clear();
             userDashFlow.Dock = DockStyle.Fill;
 
-            Label stockLabel = new Label();
+            DatabaseHelper.connection.Open();
+            List<Art> stockItems = DatabaseHelper.GetStockArt();
 
+            DatabaseHelper.connection.Open();
+            List<Art> soldItems = DatabaseHelper.GetSoldArt();
 
-            stockLabel.BackColor = System.Drawing.Color.Transparent;
-            stockLabel.Font = new System.Drawing.Font("Segoe UI Emoji", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            stockLabel.ForeColor = System.Drawing.Color.Navy;
+            DatabaseHelper.connection.Open();
+            List<Art>boughtItems = DatabaseHelper.GetBoughtArt();
 
-            stockLabel.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
+            loadStockArt(stockItems);
 
-            stockLabel.Name = "stockLabel";
-            stockLabel.TabIndex = 0;
-            stockLabel.Text = "On Stock";
-            stockLabel.AutoSize = false;
-            stockLabel.Size = new Size(1368, 30);
-            stockLabel.Dock = DockStyle.Top;
+            loadSoldArt(soldItems);
 
-
-            userDashFlow.Controls.Add(stockLabel);
-
-
-            ArtOnStockCard[] artCards = new ArtOnStockCard[10];
-
-            for (int i = 0; i < 5; i++)
-            {
-                artCards[i] = new ArtOnStockCard();
-
-                userDashFlow.Controls.Add(artCards[i]);
-            }
-
-            //...............sold items
-            Label soldLabel = new Label();
-
-            soldLabel.BackColor = System.Drawing.Color.Transparent;
-            soldLabel.Font = new System.Drawing.Font("Segoe UI Emoji", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            soldLabel.ForeColor = System.Drawing.Color.Navy;
-
-            soldLabel.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
-
-            soldLabel.Name = "stockLabel";
-            soldLabel.TabIndex = 0;
-            soldLabel.Text = "Sold items";
-            soldLabel.AutoSize = false;
-            soldLabel.Size = new Size(1368, 30);
-            soldLabel.Dock = DockStyle.Top;
-
-
-            userDashFlow.Controls.Add(soldLabel);
-
-            for (int i = 5; i < 10; i++)
-            {
-                artCards[i] = new ArtOnStockCard();
-
-                userDashFlow.Controls.Add(artCards[i]);
-            }
-
+            loadBoughtArt(boughtItems);
 
         }
+
+
 
         private void loadProfile()
         {
@@ -110,7 +71,183 @@ namespace Gallery
         }
 
 
+        private void loadStockArt(List<Art> artList)
+        {
+            Label stockLabel = new Label();
 
+            stockLabel.BackColor = System.Drawing.Color.Transparent;
+            stockLabel.Font = new System.Drawing.Font("Segoe UI Emoji", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            stockLabel.ForeColor = System.Drawing.Color.Navy;
+
+            stockLabel.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
+
+            stockLabel.Name = "stockLabel";
+            stockLabel.TabIndex = 0;
+            stockLabel.Text = "On Stock";
+            stockLabel.AutoSize = false;
+            stockLabel.Size = new Size(1368, 30);
+            stockLabel.Dock = DockStyle.Top;
+
+
+            userDashFlow.Controls.Add(stockLabel);
+
+            if (artList.Count > 0)
+            {
+                //...............sold items
+
+                for (int i = 0; i < artList.Count; i++)
+                {
+                    ArtOnStockCard card = new ArtOnStockCard();
+                    card.art_code = artList[i].Product_code;
+                    card.image = artList[i].Art_image;
+                    card.title = artList[i].Name;
+                    card.price = artList[i].Price;
+
+                    userDashFlow.Controls.Add(card);
+                }
+            }
+
+            else
+            {
+                Label noItem = new Label();
+
+                noItem.BackColor = System.Drawing.Color.Transparent;
+                noItem.Font = new System.Drawing.Font("Segoe UI Emoji", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                noItem.ForeColor = System.Drawing.Color.Gray;
+
+                noItem.Margin = new System.Windows.Forms.Padding(20, 25, 3, 0);
+
+                noItem.Name = "noItem";
+                noItem.TabIndex = 0;
+                noItem.Text = "No Items";
+                noItem.AutoSize = false;
+                noItem.Size = new Size(1368, 30);
+                noItem.Dock = DockStyle.Top;
+
+
+                userDashFlow.Controls.Add(noItem);
+
+            }
+        }
+
+        private void loadSoldArt(List<Art> artList)
+        {
+            Label soldLabel = new Label();
+
+            soldLabel.BackColor = System.Drawing.Color.Transparent;
+            soldLabel.Font = new System.Drawing.Font("Segoe UI Emoji", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            soldLabel.ForeColor = System.Drawing.Color.Navy;
+
+            soldLabel.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
+
+            soldLabel.Name = "soldLabel";
+            soldLabel.TabIndex = 0;
+            soldLabel.Text = "Sold Items";
+            soldLabel.AutoSize = false;
+            soldLabel.Size = new Size(1368, 30);
+            soldLabel.Dock = DockStyle.Top;
+
+
+            userDashFlow.Controls.Add(soldLabel);
+
+            if (artList.Count > 0)
+            {
+                //...............sold items
+
+                for (int i = 0; i < artList.Count; i++)
+                {
+                    ArtOnStockCard card = new ArtOnStockCard();
+                    card.art_code = artList[i].Product_code;
+                    card.image = artList[i].Art_image;
+                    card.title = artList[i].Name;
+                    card.price = artList[i].Price;
+
+                    userDashFlow.Controls.Add(card);
+                }
+            }
+
+            else
+            {
+                Label noItem = new Label();
+
+                noItem.BackColor = System.Drawing.Color.Transparent;
+                noItem.Font = new System.Drawing.Font("Segoe UI Emoji", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                noItem.ForeColor = System.Drawing.Color.Gray;
+
+                noItem.Margin = new System.Windows.Forms.Padding(20, 25, 3, 0);
+
+                noItem.Name = "noItem";
+                noItem.TabIndex = 0;
+                noItem.Text = "No Items";
+                noItem.AutoSize = false;
+                noItem.Size = new Size(1368, 30);
+                noItem.Dock = DockStyle.Top;
+
+
+                userDashFlow.Controls.Add(noItem);
+
+            }
+        }
+
+        private void loadBoughtArt(List<Art> artList)
+        {
+            Label boughtLabel = new Label();
+
+            boughtLabel.BackColor = System.Drawing.Color.Transparent;
+            boughtLabel.Font = new System.Drawing.Font("Segoe UI Emoji", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            boughtLabel.ForeColor = System.Drawing.Color.Navy;
+
+            boughtLabel.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
+
+            boughtLabel.Name = "boughtLabel";
+            boughtLabel.TabIndex = 0;
+            boughtLabel.Text = "Bought Items";
+            boughtLabel.AutoSize = false;
+            boughtLabel.Size = new Size(1368, 35);
+            boughtLabel.Dock = DockStyle.Top;
+
+
+            userDashFlow.Controls.Add(boughtLabel);
+
+            if (artList.Count > 0)
+            {
+                //...............sold items
+
+                for (int i = 0; i < artList.Count; i++)
+                {
+                    ArtOnStockCard card = new ArtOnStockCard();
+                    card.art_code = artList[i].Product_code;
+                    card.image = artList[i].Art_image;
+                    card.title = artList[i].Name;
+                    card.price = artList[i].Price;
+
+                    userDashFlow.Controls.Add(card);
+                }
+            }
+
+            else
+            {
+                Label noItem = new Label();
+
+                noItem.BackColor = System.Drawing.Color.Transparent;
+                noItem.Font = new System.Drawing.Font("Segoe UI Emoji", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                noItem.ForeColor = System.Drawing.Color.Gray;
+
+                noItem.Margin = new System.Windows.Forms.Padding(20, 25, 3, 0);
+
+                noItem.Name = "noItem";
+                noItem.TabIndex = 0;
+                noItem.Text = "No Items";
+                noItem.AutoSize = false;
+                noItem.Size = new Size(1368, 30);
+                noItem.Dock = DockStyle.Top;
+
+
+                userDashFlow.Controls.Add(noItem);
+
+            }
+        }
+    
         private void EditProfileBtn_Click(object sender, EventArgs e)
         {
 

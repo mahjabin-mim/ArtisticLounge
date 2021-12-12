@@ -101,7 +101,7 @@ namespace Gallery
 
             if (DatabaseHelper.UpdateUser(user) == true)
             {
-                MessageBox.Show("User updated", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("User updated "+user.Name, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
             else

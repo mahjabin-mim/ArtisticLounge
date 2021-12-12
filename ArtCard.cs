@@ -62,5 +62,10 @@ namespace Gallery
             arttitle.Text = this.title;
             artPrice.Text = this.price;
         }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
