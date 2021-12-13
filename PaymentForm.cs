@@ -12,6 +12,7 @@ namespace Gallery
 {
     public partial class PaymentForm : Form
     {
+        public string art_code { set; get; }
         public PaymentForm()
         {
             InitializeComponent();
@@ -22,10 +23,7 @@ namespace Gallery
 
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void PaymentForm_Load(object sender, EventArgs e)
         {
@@ -33,15 +31,75 @@ namespace Gallery
             this.BackColor = Color.FromArgb(138, 175, 227);
 
             paymentPanel.BackColor = Color.FromArgb(100, 0, 0, 0);
+
+            LoadData();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void LoadData()
+        {
+            DatabaseHelper.connection.Open();
+
+            Art art = DatabaseHelper.GetSpecificArt(this.art_code);
+
+            DatabaseHelper.connection.Open();
+
+            User user = DatabaseHelper.GetUser(art.Seller);
+
+            this.artPicture.Image = art.Art_image;
+            this.artNameLabel.Text = "Art name: " + art.Name;
+            this.categoryLabel.Text = "Catagory: " + art.Catagory;
+            this.artistNameLabel.Text = "Art by: " + user.Name;
+            this.codeLabel.Text = "Product code: " + art.Product_code;
+            this.priceLabel.Text = art.Price + " Tk.";
+            this.subTotal.Text = art.Price + ".00";
+            this.shipping.Text = "49.00";
+            this.extraCharge.Text = "0.00";
+
+            string total = (Convert.ToDouble(this.subTotal.Text) + Convert.ToDouble(this.shipping.Text) + Convert.ToDouble(extraCharge.Text)).ToString();
+            this.totalPrice.Text = total + ".00";
+
+        }
+
+
+      
+
+        private void confirmBtn_Click(object sender, EventArgs e)
+        {
+            if (cardRb.Checked == true || mobileRb.Checked == true)
+            {
+
+                DatabaseHelper.connection.Open();
+
+                if (DatabaseHelper.UpdateArt(this.art_code) == true)
+                {
+                    this.Hide();
+                    ThankYouForm thankYou = new ThankYouForm();
+                    thankYou.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                   MessageBox.Show("Purchase error!", "Purchase", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                  
+                }
+
+                
+            }
+            else
+            {
+                MessageBox.Show("Pleaase select a payment method", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+
+           
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
 
             BuyForm buyForm = new BuyForm();
-     /*       buyForm.StartPosition = FormStartPosition.Manual;
-            buyForm.Location = this.Location;*/
+            buyForm.art_code = this.art_code;
 
 
             buyForm.ShowDialog();
@@ -49,16 +107,22 @@ namespace Gallery
             this.Close();
         }
 
-        private void proceedBtn_Click(object sender, EventArgs e)
+        private void sendGiftCheck_CheckedChanged(object sender, EventArgs e)
         {
-            this.Hide();
-            ThankYouForm thankYou = new ThankYouForm();
-            //  m.StartPosition = FormStartPosition.Manual;
-            //  m.Location = this.Location;
-            //m.Size = this.Size;
-
-            thankYou.ShowDialog();
-            this.Close();
+            if (sendGiftCheck.Checked == true)
+            {
+                extraCharge.Text = "20.00";
+                string total = (Convert.ToDouble(this.subTotal.Text) + Convert.ToDouble(this.shipping.Text) + Convert.ToDouble(extraCharge.Text)).ToString();
+                this.totalPrice.Text = total + ".00";
+            }
+            else
+            {
+                extraCharge.Text = "0.00";
+                string total = (Convert.ToDouble(this.subTotal.Text) + Convert.ToDouble(this.shipping.Text) + Convert.ToDouble(extraCharge.Text)).ToString();
+                this.totalPrice.Text = total + ".00";
+            }
         }
+
+       
     }
 }

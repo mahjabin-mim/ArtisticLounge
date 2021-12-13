@@ -69,7 +69,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1467, 100);
+            this.panel1.Size = new System.Drawing.Size(1461, 100);
             this.panel1.TabIndex = 20;
             // 
             // BackToMainForm
@@ -78,7 +78,7 @@
             this.BackToMainForm.Dock = System.Windows.Forms.DockStyle.Right;
             this.BackToMainForm.Image = ((System.Drawing.Image)(resources.GetObject("BackToMainForm.Image")));
             this.BackToMainForm.ImageRotate = 0F;
-            this.BackToMainForm.Location = new System.Drawing.Point(1366, 0);
+            this.BackToMainForm.Location = new System.Drawing.Point(1360, 0);
             this.BackToMainForm.Margin = new System.Windows.Forms.Padding(4, 4, 9, 4);
             this.BackToMainForm.Name = "BackToMainForm";
             this.BackToMainForm.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
@@ -178,7 +178,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 100);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1467, 893);
+            this.pictureBox1.Size = new System.Drawing.Size(1461, 871);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
@@ -274,7 +274,7 @@
             this.nameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nameTextBox.HoverState.Parent = this.nameTextBox;
             this.nameTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("nameTextBox.IconLeft")));
-            this.nameTextBox.Location = new System.Drawing.Point(767, 135);
+            this.nameTextBox.Location = new System.Drawing.Point(760, 135);
             this.nameTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.PasswordChar = '\0';
@@ -305,7 +305,7 @@
             this.genderTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.genderTextBox.HoverState.Parent = this.genderTextBox;
             this.genderTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("genderTextBox.IconLeft")));
-            this.genderTextBox.Location = new System.Drawing.Point(767, 216);
+            this.genderTextBox.Location = new System.Drawing.Point(760, 216);
             this.genderTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.genderTextBox.Name = "genderTextBox";
             this.genderTextBox.PasswordChar = '\0';
@@ -336,7 +336,7 @@
             this.phoneTextBox.HoverState.Parent = this.phoneTextBox;
             this.phoneTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("phoneTextBox.IconLeft")));
             this.phoneTextBox.IconRightSize = new System.Drawing.Size(30, 30);
-            this.phoneTextBox.Location = new System.Drawing.Point(767, 380);
+            this.phoneTextBox.Location = new System.Drawing.Point(760, 380);
             this.phoneTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.phoneTextBox.Name = "phoneTextBox";
             this.phoneTextBox.PasswordChar = '\0';
@@ -346,6 +346,7 @@
             this.phoneTextBox.Size = new System.Drawing.Size(535, 61);
             this.phoneTextBox.TabIndex = 28;
             this.phoneTextBox.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
+            this.phoneTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phoneTextBox_KeyPress);
             // 
             // currentPassTextBox
             // 
@@ -367,7 +368,7 @@
             this.currentPassTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.currentPassTextBox.HoverState.Parent = this.currentPassTextBox;
             this.currentPassTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("currentPassTextBox.IconLeft")));
-            this.currentPassTextBox.Location = new System.Drawing.Point(767, 471);
+            this.currentPassTextBox.Location = new System.Drawing.Point(760, 471);
             this.currentPassTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.currentPassTextBox.Name = "currentPassTextBox";
             this.currentPassTextBox.PasswordChar = '\0';
@@ -397,7 +398,7 @@
             this.locationTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.locationTextBox.HoverState.Parent = this.locationTextBox;
             this.locationTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("locationTextBox.IconLeft")));
-            this.locationTextBox.Location = new System.Drawing.Point(767, 297);
+            this.locationTextBox.Location = new System.Drawing.Point(760, 297);
             this.locationTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.locationTextBox.Name = "locationTextBox";
             this.locationTextBox.PasswordChar = '\0';
@@ -424,7 +425,7 @@
             this.EditPanel.Location = new System.Drawing.Point(0, 100);
             this.EditPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EditPanel.Name = "EditPanel";
-            this.EditPanel.Size = new System.Drawing.Size(1467, 893);
+            this.EditPanel.Size = new System.Drawing.Size(1461, 871);
             this.EditPanel.TabIndex = 31;
             // 
             // newPassTextBox
@@ -447,7 +448,7 @@
             this.newPassTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.newPassTextBox.HoverState.Parent = this.newPassTextBox;
             this.newPassTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("newPassTextBox.IconLeft")));
-            this.newPassTextBox.Location = new System.Drawing.Point(767, 552);
+            this.newPassTextBox.Location = new System.Drawing.Point(760, 552);
             this.newPassTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.newPassTextBox.Name = "newPassTextBox";
             this.newPassTextBox.PasswordChar = '\0';
@@ -488,14 +489,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1467, 993);
+            this.ClientSize = new System.Drawing.Size(1461, 971);
             this.Controls.Add(this.EditPanel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1491, 1057);
-            this.MinimumSize = new System.Drawing.Size(1491, 1057);
+            this.MaximumSize = new System.Drawing.Size(1485, 1035);
+            this.MinimumSize = new System.Drawing.Size(1357, 705);
             this.Name = "EditProfileForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditProfileForm";

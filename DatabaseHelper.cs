@@ -182,11 +182,10 @@ namespace Gallery
         public static List<Art> GetArt()
         {
             List<Art> artList = new List<Art>();
-            string[] st = {"Available","Sold"};
-            string query = "SELECT * FROM ART_TBL WHERE Art_status = @avl or Art_status = @sld";
+            string st = "Available";
+            string query = "SELECT * FROM ART_TBL WHERE Art_status = @avl";
             cmd = new SqlCommand(query,connection);
-            cmd.Parameters.AddWithValue("@avl", st[0]);
-            cmd.Parameters.AddWithValue("@sld", st[1]);
+            cmd.Parameters.AddWithValue("@avl",st);
 
             reader = cmd.ExecuteReader();
 
@@ -383,6 +382,31 @@ namespace Gallery
 
             return n > 0 ? true : false;
 
+        }
+
+        public static bool UpdateArt(string code)
+        {
+            string status = "Sold";
+            string query = "UPDATE ART_TBL SET Art_status = @sold, Buyer = @email WHERE Product_code = @code";
+            cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@code", code);
+            cmd.Parameters.AddWithValue("@sold", status);
+            cmd.Parameters.AddWithValue("@email", User.Email);
+
+            int n = 0;
+
+            try
+            {
+                n = cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                connection.Close();
+                return false;
+            }
+            connection.Close();
+
+            return n > 0 ? true : false;
         }
         private static byte[] GetRawPhoto(Image image)
         {

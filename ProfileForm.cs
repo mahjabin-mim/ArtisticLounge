@@ -34,23 +34,11 @@ namespace Gallery
             userDashFlow.Controls.Clear();
             userDashFlow.Dock = DockStyle.Fill;
 
-            DatabaseHelper.connection.Open();
-            List<Art> stockItems = DatabaseHelper.GetStockArt();
 
-            DatabaseHelper.connection.Open();
-            List<Art> soldItems = DatabaseHelper.GetSoldArt();
-
-            DatabaseHelper.connection.Open();
-            List<Art>boughtItems = DatabaseHelper.GetBoughtArt();
-
-            loadStockArt(stockItems);
-
-            loadSoldArt(soldItems);
-
-            loadBoughtArt(boughtItems);
+            loadAllArts();
+           
 
         }
-
 
 
         private void loadProfile()
@@ -70,9 +58,22 @@ namespace Gallery
             }
         }
 
-
-        private void loadStockArt(List<Art> artList)
+        public void loadAllArts()
         {
+            userDashFlow.Controls.Clear();
+
+            loadStockArt();
+
+            loadSoldArt();
+
+            loadBoughtArt();
+        }
+        public void loadStockArt()
+        {
+
+            DatabaseHelper.connection.Open();
+            List<Art> artList = DatabaseHelper.GetStockArt();
+
             Label stockLabel = new Label();
 
             stockLabel.BackColor = System.Drawing.Color.Transparent;
@@ -85,7 +86,7 @@ namespace Gallery
             stockLabel.TabIndex = 0;
             stockLabel.Text = "On Stock";
             stockLabel.AutoSize = false;
-            stockLabel.Size = new Size(1368, 30);
+            stockLabel.Size = new Size(userDashFlow.Width, 30);
             stockLabel.Dock = DockStyle.Top;
 
 
@@ -102,6 +103,7 @@ namespace Gallery
                     card.image = artList[i].Art_image;
                     card.title = artList[i].Name;
                     card.price = artList[i].Price;
+                    card.parentForm = this;
 
                     userDashFlow.Controls.Add(card);
                 }
@@ -121,7 +123,7 @@ namespace Gallery
                 noItem.TabIndex = 0;
                 noItem.Text = "No Items";
                 noItem.AutoSize = false;
-                noItem.Size = new Size(1368, 30);
+                noItem.Size = new Size(userDashFlow.Width, 30);
                 noItem.Dock = DockStyle.Top;
 
 
@@ -130,8 +132,12 @@ namespace Gallery
             }
         }
 
-        private void loadSoldArt(List<Art> artList)
+        public void loadSoldArt()
         {
+
+            DatabaseHelper.connection.Open();
+            List<Art> artList = DatabaseHelper.GetSoldArt();
+
             Label soldLabel = new Label();
 
             soldLabel.BackColor = System.Drawing.Color.Transparent;
@@ -140,11 +146,11 @@ namespace Gallery
 
             soldLabel.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
 
-            soldLabel.Name = "soldLabel";
+            soldLabel.Name = "categoryLabel";
             soldLabel.TabIndex = 0;
             soldLabel.Text = "Sold Items";
             soldLabel.AutoSize = false;
-            soldLabel.Size = new Size(1368, 30);
+            soldLabel.Size = new Size(userDashFlow.Width, 30);
             soldLabel.Dock = DockStyle.Top;
 
 
@@ -161,6 +167,7 @@ namespace Gallery
                     card.image = artList[i].Art_image;
                     card.title = artList[i].Name;
                     card.price = artList[i].Price;
+                    card.parentForm = this;
 
                     userDashFlow.Controls.Add(card);
                 }
@@ -180,7 +187,7 @@ namespace Gallery
                 noItem.TabIndex = 0;
                 noItem.Text = "No Items";
                 noItem.AutoSize = false;
-                noItem.Size = new Size(1368, 30);
+                noItem.Size = new Size(userDashFlow.Width, 30);
                 noItem.Dock = DockStyle.Top;
 
 
@@ -189,8 +196,12 @@ namespace Gallery
             }
         }
 
-        private void loadBoughtArt(List<Art> artList)
+        public void loadBoughtArt()
         {
+
+            DatabaseHelper.connection.Open();
+            List<Art> artList = DatabaseHelper.GetBoughtArt();
+
             Label boughtLabel = new Label();
 
             boughtLabel.BackColor = System.Drawing.Color.Transparent;
@@ -203,7 +214,7 @@ namespace Gallery
             boughtLabel.TabIndex = 0;
             boughtLabel.Text = "Bought Items";
             boughtLabel.AutoSize = false;
-            boughtLabel.Size = new Size(1368, 35);
+            boughtLabel.Size = new Size(userDashFlow.Width, 35);
             boughtLabel.Dock = DockStyle.Top;
 
 
@@ -220,6 +231,7 @@ namespace Gallery
                     card.image = artList[i].Art_image;
                     card.title = artList[i].Name;
                     card.price = artList[i].Price;
+                    card.parentForm = this;
 
                     userDashFlow.Controls.Add(card);
                 }
@@ -239,7 +251,7 @@ namespace Gallery
                 noItem.TabIndex = 0;
                 noItem.Text = "No Items";
                 noItem.AutoSize = false;
-                noItem.Size = new Size(1368, 30);
+                noItem.Size = new Size(userDashFlow.Width, 30);
                 noItem.Dock = DockStyle.Top;
 
 

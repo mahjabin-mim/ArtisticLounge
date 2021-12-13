@@ -19,7 +19,18 @@ namespace Gallery
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(categoryBox.Text))
+            {
+                errorArtCategory.Icon = Properties.Resources.error;
+                errorArtCategory.BlinkRate = 0;
+                errorArtCategory.SetError(categoryBox, "Please fill the Category");
 
+            }
+            else
+            {
+                errorArtCategory.Clear();
+                categoryBox.BorderColor = Color.White;
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -50,13 +61,17 @@ namespace Gallery
 
         private void postBtn_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(artName.Text) && categoryBox.SelectedIndex > -1)
+            /*string s = "0";
+            string c = priceBox.Text;*/
+
+            if (!string.IsNullOrEmpty(artName.Text) && categoryBox.SelectedIndex > -1 && !string.IsNullOrEmpty(priceBox.Text))
             {
+
                 DatabaseHelper.connection.Open();
                 Art art = new Art();
                 art.Name = artName.Text;
                 art.Catagory = categoryBox.Items[categoryBox.SelectedIndex].ToString();
-                art.Price = priceBox.Value.ToString();
+                art.Price = priceBox.Text.ToString();
                 art.Art_image = ArtPicture.Image;
                 art.Seller = User.Email;
                 art.Status = "Available"; // this will be changed to pending
@@ -67,13 +82,42 @@ namespace Gallery
                 }
                 else
                 {
-                    MessageBox.Show("Error posint art", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error posting art", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                
                 }
             }
             else
             {
-                MessageBox.Show("Please select all the items", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                bool post = true;
+                if (string.IsNullOrEmpty(artName.Text))
+                {
+                    artName.BorderColor = Color.Red;
+                    //  emailError.Clear();
+                    errorArtName.Icon = Properties.Resources.error;
+                    errorArtName.BlinkRate = 0;
+                    errorArtName.SetError(artName, "Please fill Art Name");
+                    post = false;
+                }
+                if (string.IsNullOrEmpty(categoryBox.Text))
+                {
+                    categoryBox.BorderColor = Color.Red;
+                    // nameError.Clear();
+                    errorArtCategory.Icon = Properties.Resources.error;
+                    errorArtCategory.BlinkRate = 0;
+                    errorArtCategory.SetError(categoryBox, "Please fill Category");
+                    post = false;
+                }
+                if (string.IsNullOrEmpty(priceBox.Text))
+                {
+                    priceBox.BorderColor = Color.Red;
+                    //   phoneError.Clear();
+                    errorArtPrice.Icon = Properties.Resources.error;
+                    errorArtPrice.BlinkRate = 0;
+                    errorArtPrice.SetError(priceBox, "Please fill Price");
+                    post = false;
+                }
+                
+             MessageBox.Show("Please select art & fill all information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                
             }
         }
@@ -83,13 +127,85 @@ namespace Gallery
 
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Title = "Select Image";
-            dialog.Filter = "IMAGE FILE (*.*) | *.*";
-
+            dialog.Filter = "Image files (*.png, *.jpg, *jpeg)|*.png;*.jpg;*.jpeg";
+            
 
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 ArtPicture.Image = new Bitmap(dialog.FileName);
                
+            }
+        }
+
+        private void artName_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(artName.Text))
+            {
+                errorArtName.Icon = Properties.Resources.error;
+                errorArtName.BlinkRate = 0;
+                errorArtName.SetError(artName, "Please fill Art Name");
+
+            }
+            else
+            {
+                errorArtName.Clear();
+                artName.BorderColor = Color.White;
+            }
+        }
+
+        private void priceBox_ValueChanged(object sender, EventArgs e)
+        {
+            /*string s = "0";
+            string c = priceBox.Text;
+            if (c.Equals(s))
+            {
+                errorArtPrice.Icon = Properties.Resources.error;
+                errorArtPrice.BlinkRate = 0;
+                errorArtPrice.SetError(priceBox, "Please fill Price");
+
+            }
+            else
+            {
+                errorArtPrice.Clear();
+                priceBox.BorderColor = Color.White;
+            }*/
+        }
+
+        private void ArtPicture_Click(object sender, EventArgs e)
+        {
+            //ArtPicture.Image = Properties.Resources.image;
+        }
+
+        private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void priceBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if(!Char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void priceBox_TextChanged(object sender, EventArgs e)
+        {
+            /*string s = "0";
+            string c = priceBox.Text;*/
+            if (string.IsNullOrEmpty(priceBox.Text))
+            {
+                errorArtPrice.Icon = Properties.Resources.error;
+                errorArtPrice.BlinkRate = 0;
+                errorArtPrice.SetError(priceBox, "Please fill Price");
+
+            }
+            else
+            {
+                errorArtPrice.Clear();
+                priceBox.BorderColor = Color.White;
             }
         }
     }

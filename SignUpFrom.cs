@@ -46,11 +46,23 @@ namespace Gallery
                 showPassBtn.Image = Properties.Resources.open;
                 showPass = true;
 
+                switch (showPass)
+                {
+                    case true: signupPass.UseSystemPasswordChar = false; break;
+                    default: signupPass.UseSystemPasswordChar = true; break;
+                }
+
             }
             else
             {
                 showPassBtn.Image = Properties.Resources.hidden__1_;
                 showPass = false;
+
+                switch (showPass)
+                {
+                    case false: signupPass.UseSystemPasswordChar = true; break;
+                    default: signupPass.UseSystemPasswordChar = false; break;
+                }
             }
         }
 
@@ -100,7 +112,7 @@ namespace Gallery
 
             else
             {
-                MessageBox.Show("Fill up box", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Fill up box", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }

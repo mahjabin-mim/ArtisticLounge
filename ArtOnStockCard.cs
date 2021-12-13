@@ -17,6 +17,7 @@ namespace Gallery
         public string price { get; set; }
         public string art_code { set; get; }
 
+        public ProfileForm parentForm { get; set; }
         public ArtOnStockCard()
         {
             InitializeComponent();
@@ -29,16 +30,26 @@ namespace Gallery
 
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
-            DatabaseHelper.connection.Open();
+            
 
-            if (DatabaseHelper.DeleteArt(art_code) == true)
+            DialogResult result = MessageBox.Show("Are you sure?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
             {
-                MessageBox.Show("Art Delete", "Delete", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                DatabaseHelper.connection.Open();
+                if (DatabaseHelper.DeleteArt(art_code) == true)
+                {
+
+
+                    parentForm.loadAllArts();
+
+                }
+                else
+                {
+                    MessageBox.Show("Delete error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
-            {
-                MessageBox.Show("Delete error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+          
+           
         }
 
         private void ArtOnStockCard_Load_1(object sender, EventArgs e)

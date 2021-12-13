@@ -60,7 +60,7 @@ namespace Gallery
         {
             artImage.Image = this.image;
             arttitle.Text = this.title;
-            artPrice.Text = this.price;
+            artPrice.Text = this.price+" Tk.";
         }
 
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)

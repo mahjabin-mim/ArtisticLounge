@@ -69,12 +69,24 @@ namespace Gallery
             {
                 showPassBtn.Image = Properties.Resources.open;
                 showPass = true;
+                
+                switch (showPass)
+                {
+                    case true: loginPass.UseSystemPasswordChar = false; break;
+                    default: loginPass.UseSystemPasswordChar = true; break;
+                }
 
             }
             else
             {
                 showPassBtn.Image = Properties.Resources.hidden__1_;
                 showPass = false;
+
+                switch (showPass)
+                {
+                    case false: loginPass.UseSystemPasswordChar = true; break;
+                    default: loginPass.UseSystemPasswordChar = false; break;
+                }
             }
         }
 
@@ -98,13 +110,13 @@ namespace Gallery
 
                 else
                 {
-                    MessageBox.Show("Login Faild", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Login Faild", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
 
             else
             {
-                MessageBox.Show("Enter your Email & Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Enter your Email & Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

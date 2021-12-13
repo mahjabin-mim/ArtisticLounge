@@ -12,6 +12,7 @@ Picture image
 )
 
 SELECT * FROM USER_TBL
+
 DROP TABLE USER_TBL
 
 SELECT * FROM USER_TBL WHERE Email = 'jubair@gmail.com'

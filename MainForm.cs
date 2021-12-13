@@ -16,9 +16,11 @@ namespace Gallery
         private int ImageNumber = 0;
         private Image[] images = { Properties.Resources.art2,Properties.Resources.art3,Properties.Resources.art4,
                                     Properties.Resources.art5,Properties.Resources.art6};
+        private List<Art> artList;
         public MainForm()
         {
             InitializeComponent();
+            artList = new List<Art>();
         }
 
      
@@ -61,31 +63,147 @@ namespace Gallery
             dropDownPanel.Height = 0;
 
             mainPanel.Dock = DockStyle.Fill;
-            //.................... test code.............
 
-            DatabaseHelper.connection.Open();
+            LoadUserImage();
 
-            List<Art> artList = DatabaseHelper.GetArt();
+            LoadAllArts();
 
-            for (int i = 0; i < artList.Count; i++)
-            {
-
-                ArtCard card = new ArtCard();
-                card.art_code = artList[i].Product_code;
-                card.image = artList[i].Art_image;
-                card.title = artList[i].Name;
-                card.price = artList[i].Price;
-                card.parentForm = this;
-
-                mainPanel.Controls.Add(card);
-                
-            }
-
-            //....................
+           
           
         }
 
+        private void LoadUserImage()
+        {
+            DatabaseHelper.connection.Open();
 
+            User user = DatabaseHelper.GetUser(User.Email);
+
+            if (user != null)
+            {
+                guna2CirclePictureBox1.Image = user.Picture;
+            }
+        }
+
+        private void LoadAllArts()
+        {
+            DatabaseHelper.connection.Open();
+
+            artList = DatabaseHelper.GetArt();
+
+            mainPanel.Controls.Clear();
+            mainPanel.Controls.Add(sliderBox);
+
+            if (artList.Count > 0)
+            {
+                for (int i = 0; i < artList.Count; i++)
+                {
+
+                    ArtCard card = new ArtCard();
+                    card.art_code = artList[i].Product_code;
+                    card.image = artList[i].Art_image;
+                    card.title = artList[i].Name;
+                    card.price = artList[i].Price;
+                    card.parentForm = this;
+
+                    mainPanel.Controls.Add(card);
+                    
+
+                }
+            }
+            else
+            {
+                Label noItem = new Label();
+
+                noItem.BackColor = System.Drawing.Color.Transparent;
+                noItem.Font = new System.Drawing.Font("Segoe UI Emoji", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                noItem.ForeColor = System.Drawing.Color.Gray;
+
+                noItem.Margin = new System.Windows.Forms.Padding(20, 25, 3, 0);
+
+                noItem.Name = "noItem";
+                noItem.TabIndex = 0;
+                noItem.Text = "No Items";
+                noItem.AutoSize = false;
+                noItem.Size = new Size(sliderBox.Width, 30);
+                noItem.Dock = DockStyle.Top;
+
+                mainPanel.Controls.Add(noItem);
+                
+            }
+
+           
+        }
+
+        private void LoadCategory(string category)
+        {
+            mainPanel.Controls.Clear();
+           
+            Label categoryLabel = new Label();
+
+            categoryLabel.BackColor = System.Drawing.Color.Transparent;
+            categoryLabel.Font = new System.Drawing.Font("Segoe UI Emoji", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            categoryLabel.ForeColor = System.Drawing.Color.Navy;
+
+            categoryLabel.Margin = new System.Windows.Forms.Padding(3, 25, 3, 0);
+
+            categoryLabel.Name = "categoryLabel";
+            categoryLabel.TabIndex = 0;
+            categoryLabel.Text = category;
+            categoryLabel.AutoSize = false;
+            categoryLabel.Size = new Size(mainPanel.Width, 30);
+            categoryLabel.Dock = DockStyle.Top;
+
+            mainPanel.Controls.Add(categoryLabel);
+
+            List<Art> tempList = new List<Art>();
+
+            foreach (Art art in artList)
+            {
+                if (art.Catagory.Trim().Equals(category))
+                {
+                    tempList.Add(art);
+                }
+               
+            }
+
+            if (tempList.Count > 0)
+            {
+                foreach (Art art in tempList)
+                {
+                    ArtCard card = new ArtCard();
+                    card.art_code = art.Product_code;
+                    card.image = art.Art_image;
+                    card.title = art.Name;
+                    card.price = art.Price;
+                    card.parentForm = this;
+
+                    mainPanel.Controls.Add(card);
+                }
+            }
+            else
+            {
+                Label noItem = new Label();
+
+                noItem.BackColor = System.Drawing.Color.Transparent;
+                noItem.Font = new System.Drawing.Font("Segoe UI Emoji", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                noItem.ForeColor = System.Drawing.Color.Gray;
+
+                noItem.Margin = new System.Windows.Forms.Padding(20, 25, 3, 0);
+
+                noItem.Name = "noItem";
+                noItem.TabIndex = 0;
+                noItem.Text = "No Items";
+                noItem.AutoSize = false;
+                noItem.Size = new Size(sliderBox.Width, 30);
+                noItem.Dock = DockStyle.Top;
+
+                mainPanel.Controls.Add(noItem);
+            }
+
+            
+
+            
+        }
    
         private void categoryBtn_Click(object sender, EventArgs e)
         {
@@ -236,6 +354,31 @@ namespace Gallery
 
             this.Close();
 
+        }
+
+        private void fineArt_Click(object sender, EventArgs e)
+        {
+            LoadCategory(fineArt.Text);
+        }
+
+        private void vectorBtn_Click(object sender, EventArgs e)
+        {
+            LoadCategory(vectorBtn.Text);
+        }
+
+        private void compositionBtn_Click(object sender, EventArgs e)
+        {
+            LoadCategory(compositionBtn.Text);
+        }
+
+        private void otherBtn_Click(object sender, EventArgs e)
+        {
+            LoadCategory(otherBtn.Text);
+        }
+
+        private void homeBtn_Click(object sender, EventArgs e)
+        {
+            LoadAllArts();
         }
 
     }
