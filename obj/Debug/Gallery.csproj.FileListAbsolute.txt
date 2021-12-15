@@ -107,3 +107,4 @@ C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.csproj.CoreCompileI
 C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.csproj.CopyComplete
 C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.exe
 C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.pdb
+C:\Users\fahim\Desktop\ArtisticLounge\obj\Debug\Gallery.AdminForm.resources

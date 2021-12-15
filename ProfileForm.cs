@@ -304,6 +304,7 @@ namespace Gallery
             EditProfileForm editProfileForm = new EditProfileForm();
             /* editProfileForm.StartPosition = FormStartPosition.Manual;
              editProfileForm.Location = this.Location;*/
+            editProfileForm.Psize = this.MinimumSize;
 
             editProfileForm.ShowDialog();
 

@@ -46,7 +46,7 @@ namespace Gallery
             User user = DatabaseHelper.GetUser(art.Seller);
 
             this.artPicture.Image = art.Art_image;
-            this.artNameLabel.Text = "Art name: " + art.Name;
+            this.artNameLabel.Text = art.Name;
             this.categoryLabel.Text = "Catagory: " + art.Catagory;
             this.artistNameLabel.Text = "Art by: " + user.Name;
             this.codeLabel.Text = "Product code: " + art.Product_code;

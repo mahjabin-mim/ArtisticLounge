@@ -107,11 +107,19 @@ namespace Gallery
                     main.ShowDialog();
                     this.Close();
                 }
+                else if (loginEmail.Text.Equals("a.admin") && loginPass.Text.Equals("123"))
+                {
+                    this.Hide();
 
+                    AdminForm admin = new AdminForm();
+                    admin.ShowDialog();
+                    this.Close();
+                }
                 else
                 {
                     MessageBox.Show("Login Faild", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+
             }
 
             else

@@ -49,6 +49,7 @@ namespace Gallery
             prevBtn.Parent = sliderBox;
             nextBtn.Parent = sliderBox;
             sliderBox.Image = images[ImageNumber];
+            sliderBox.Width = mainPanel.Width - 29;
 
             cb1.Parent = sliderBox;
             cb2.Parent = sliderBox;
@@ -255,7 +256,9 @@ namespace Gallery
             this.Hide();
 
             ProfileForm profileForm = new ProfileForm();
-          
+            profileForm.Size = new Size(this.Size.Width + 43, this.Size.Height);
+            profileForm.MinimumSize = new Size(this.MinimumSize.Width + 43, this.MinimumSize.Height);
+            profileForm.MaximumSize = new Size(this.MaximumSize.Width + 43, this.MaximumSize.Height);
 
             profileForm.ShowDialog();
 

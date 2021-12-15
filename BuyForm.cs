@@ -42,7 +42,7 @@ namespace Gallery
             User user = DatabaseHelper.GetUser(art.Seller);
 
             artPicture.Image = art.Art_image;
-            artNameLabel.Text = "Art name: " + art.Name;
+            artNameLabel.Text = art.Name;
             categoryLabel.Text = "Catagory: " + art.Catagory;
             artistNameLabel.Text = "Art by: " + user.Name;
             codeLabel.Text = "Product code: " + art.Product_code;

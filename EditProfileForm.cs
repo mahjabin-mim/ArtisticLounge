@@ -12,6 +12,7 @@ namespace Gallery
 {
     public partial class EditProfileForm : Form
     {
+        public Size Psize { get; set; }
         public EditProfileForm()
         {
             InitializeComponent();
@@ -79,8 +80,9 @@ namespace Gallery
             this.Hide();
 
             ProfileForm profileForm = new ProfileForm();
-           /* profileForm.StartPosition = FormStartPosition.Manual;
-            profileForm.Location = this.Location;*/
+            profileForm.Size = this.Psize;
+            profileForm.MinimumSize = this.Psize;
+            profileForm.MaximumSize = this.Psize;
 
             profileForm.ShowDialog();
 
