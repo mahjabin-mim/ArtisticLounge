@@ -54,3 +54,22 @@ INSERT INTO ART_TBL VALUES (next value for ART_SQ, 'My art','My catagory','10','
 SELECT * FROM ART_TBL
 
 EXEC sp_help 'dbo.ART_TBL'
+
+
+CREATE SEQUENCE MSG_SQ
+START WITH 1
+INCREMENT BY 1
+MAXVALUE 9999
+NO CYCLE
+NO CACHE
+
+
+CREATE TABLE MSG_TBL
+(
+MsgCount varchar(70) primary key,
+Name varchar(70) not null,
+Email varchar(70) not null,
+User_Message varchar(1000) not null
+)
+
+SELECT * FROM MSG_TBL

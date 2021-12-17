@@ -562,5 +562,100 @@ namespace Gallery
             return Image.FromStream(stream);
 
         }
+
+
+        public static bool SendMsg(Message msg)
+        {
+            string query = "INSERT INTO MSG_TBL VALUES (next value for MSG_SQ,@name,@mail,@msg)";
+            cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@name", msg.Name);
+            cmd.Parameters.AddWithValue("@mail", msg.Email);
+            cmd.Parameters.AddWithValue("@msg", msg.User_Message);
+          
+
+            int n = 0;
+
+            try
+            {
+                n = cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                connection.Close();
+                return false;
+            }
+            connection.Close();
+
+            return n > 0 ? true : false;
+
+
+
+        }
+
+
+        public static DataTable BindMsg()
+        {
+            string query = "SELECT * FROM MSG_TBL";
+            adapter = new SqlDataAdapter(query, connection);
+
+            dataTable = new DataTable();
+            try
+            {
+                adapter.Fill(dataTable);
+                connection.Close();
+                return dataTable;
+            }
+            catch
+            {
+                connection.Close();
+                return null;
+            }
+
+        }
+
+        public static bool DeleteMessage(string msg)
+        {
+            string query = "DELETE FROM MSG_TBL WHERE MsgCount = @msgNo";
+            cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@msgNo", msg);
+
+            int n = 0;
+
+            try
+            {
+                n = cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                connection.Close();
+                return false;
+            }
+            connection.Close();
+
+            return n > 0 ? true : false;
+        }
+
+        public static bool DeleteMsgWithNo(string msgNo)
+        {
+            string query = "DELETE FROM MSG_TBL WHERE MsgCount = @msgNo";
+            cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@msgNo", msgNo);
+
+            int n = 0;
+
+            try
+            {
+                n = cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                connection.Close();
+                return false;
+            }
+            connection.Close();
+
+            return n > 0 ? true : false;
+
+        }
     }
 }

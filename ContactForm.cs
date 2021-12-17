@@ -15,7 +15,7 @@ namespace Gallery
 {
     public partial class ContactForm : Form
     {
-        public bool mainForm {set;get;}
+        public bool mainForm { set; get; }
         public ContactForm()
         {
             InitializeComponent();
@@ -58,7 +58,7 @@ namespace Gallery
         private void ContactForm_Load(object sender, EventArgs e)
         {
             ContactFormPanel.Parent = ContactFormBG;
-            ContactFormPanel.BackColor = Color.FromArgb(100,0,0,0);
+            ContactFormPanel.BackColor = Color.FromArgb(100, 0, 0, 0);
 
             //MessageBoxPanel.Parent = ContactFormBG;
             //MessageBoxPanel.BackColor = Color.FromArgb(100, 0, 0, 0);
@@ -76,21 +76,26 @@ namespace Gallery
 
         private void sendBtn_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(nameBox.Text) || string.IsNullOrEmpty(mailBox.Text) || string.IsNullOrEmpty(msgBox.Text))
-            {
-                // @Todo - > Error provider
-            }
-            else
+            if (!string.IsNullOrEmpty(nameBox.Text) || !string.IsNullOrEmpty(mailBox.Text) || !string.IsNullOrEmpty(msgBox.Text))
             {
                 if (IsValidEmailAddress(mailBox.Text) == true)
                 {
-                    try
+
+                    Message msg = new Message();
+                    msg.Email = mailBox.Text.ToString();
+                    msg.Name = nameBox.Text.ToString();
+                    msg.User_Message = msgBox.Text.ToString();
+
+                    DatabaseHelper.connection.Open();
+                    if (DatabaseHelper.SendMsg(msg) == true)
                     {
-                      
+                        MessageBox.Show("Thanks for contact, Stay with us!", "Message Sent", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                     }
-                    catch(Exception ex)
+                    else
                     {
-                        MessageBox.Show("Check your connection! "+ex.Message, "Connectio Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Faild to contact", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
                     }
                 }
                 else
@@ -98,11 +103,34 @@ namespace Gallery
                     MessageBox.Show("Please provide a valid email address", "Opps", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 }
+                /*if (string.IsNullOrEmpty(nameBox.Text) || string.IsNullOrEmpty(mailBox.Text) || string.IsNullOrEmpty(msgBox.Text))
+                {
+                    // @Todo - > Error provider
+                }
+                else
+                {
+                    if (IsValidEmailAddress(mailBox.Text) == true)
+                    {
+                        try
+                        {
+
+                        }
+                        catch(Exception ex)
+                        {
+                            MessageBox.Show("Check your connection! "+ex.Message, "Connectio Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please provide a valid email address", "Opps", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    }
+                }*/
             }
         }
-        public static bool IsValidEmailAddress(string address)
-        {
-            return new EmailAddressAttribute().IsValid(address);
+            public static bool IsValidEmailAddress(string address)
+            {
+                return new EmailAddressAttribute().IsValid(address);
+            }
         }
-    }
-}
+    } 
