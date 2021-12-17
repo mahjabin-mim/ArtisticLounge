@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.ComponentModel.DataAnnotations;
 namespace Gallery
 {
     public partial class SignUpFrom : Form
@@ -85,27 +85,33 @@ namespace Gallery
         {
             if (!string.IsNullOrEmpty(signupEmail.Text) || !string.IsNullOrEmpty(signupName.Text) || !string.IsNullOrEmpty(signupPass.Text))
             {
-                User user = new User();
-                User.Email = signupEmail.Text.ToString();
-                user.Name = signupName.Text.ToString();
-                user.Password = signupPass.Text.ToString();
-
-                DatabaseHelper.connection.Open();
-                if (DatabaseHelper.SignUpFrom(user) == true)
+                if (IsValidEmailAddress(signupEmail.Text) == true)
                 {
-                    MessageBox.Show("Account created successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Hide();
 
-                    Form1 form1 = new Form1();
-                    form1.StartPosition = FormStartPosition.Manual;
-                    form1.Location = this.Location;
+                    User user = new User();
+                    User.Email = signupEmail.Text.ToString();
+                    user.Name = signupName.Text.ToString();
+                    user.Password = signupPass.Text.ToString();
 
-                    form1.ShowDialog();
-                    this.Close();
+                    DatabaseHelper.connection.Open();
+                    if (DatabaseHelper.SignUpFrom(user) == true)
+                    {
+                        MessageBox.Show("Account created successfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        this.Hide();
+
+                        Form1 form1 = new Form1();
+                        form1.ShowDialog();
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Login error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
                 }
                 else
                 {
-                    MessageBox.Show("Login error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Please provide a valid email address", "Opps", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 }
             }
@@ -115,6 +121,11 @@ namespace Gallery
                 MessageBox.Show("Fill up box", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+        }
+
+        public static bool IsValidEmailAddress(string address)
+        {
+            return new EmailAddressAttribute().IsValid(address);
         }
     }
 }

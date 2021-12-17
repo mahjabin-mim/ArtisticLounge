@@ -7,6 +7,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.IO;
 using System.Drawing;
+using System.Data;
 
 namespace Gallery
 {
@@ -16,7 +17,8 @@ namespace Gallery
         public static SqlConnection connection = new SqlConnection(cs);
         private static SqlCommand cmd;
         private static SqlDataReader reader;
-        //  private static SqlDataAdapter adapter;
+        private static DataTable dataTable;
+        private static SqlDataAdapter adapter;
 
         public static bool SignUpFrom(User user)
         {
@@ -178,7 +180,7 @@ namespace Gallery
           
                 
         }
-
+        
         public static List<Art> GetArt()
         {
             List<Art> artList = new List<Art>();
@@ -188,6 +190,7 @@ namespace Gallery
             cmd.Parameters.AddWithValue("@avl",st);
 
             reader = cmd.ExecuteReader();
+            
 
             if (reader.HasRows == true)
             {
@@ -384,6 +387,29 @@ namespace Gallery
 
         }
 
+        public static bool DeleteArtWithEmail(string email)
+        {
+            string query = "DELETE FROM ART_TBL WHERE Seller = @email";
+            cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@email", email);
+
+            int n = 0;
+
+            try
+            {
+                n = cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                connection.Close();
+                return false;
+            }
+            connection.Close();
+
+            return n > 0 ? true : false;
+
+        }
+
         public static bool UpdateArt(string code)
         {
             string status = "Sold";
@@ -408,6 +434,118 @@ namespace Gallery
 
             return n > 0 ? true : false;
         }
+
+        public static DataTable BindUsers()
+        {
+            string query = "SELECT * FROM USER_TBL";
+            adapter = new SqlDataAdapter(query, connection);
+
+             dataTable = new DataTable();
+            try
+            {
+                adapter.Fill(dataTable);
+                connection.Close();
+                return dataTable;
+            }
+            catch
+            {
+                connection.Close();
+                return null;
+            }
+            
+        }
+        public static bool UpdatePendingArts(string code)
+        {
+            string status = "Available";
+            string query = "UPDATE ART_TBL SET Art_status = @avl WHERE Product_code = @code";
+            cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@code", code);
+            cmd.Parameters.AddWithValue("@avl", status);
+
+            int n = 0;
+
+            try
+            {
+                n = cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                connection.Close();
+                return false;
+            }
+            connection.Close();
+
+            return n > 0 ? true : false;
+        }
+
+        public static DataTable BindPendingArts()
+        {
+            string st = "Pending";
+            string query = "SELECT * FROM ART_TBL WHERE Art_status = @pend";
+            adapter = new SqlDataAdapter(query, connection);
+            adapter.SelectCommand.Parameters.AddWithValue("@pend", st);
+
+            dataTable = new DataTable();
+            try
+            {
+                adapter.Fill(dataTable);
+                connection.Close();
+                return dataTable;
+            }
+            catch
+            {
+                connection.Close();
+                return null;
+            }
+        }
+
+        public static bool AcceptArt(string code)
+        {
+
+            string status = "Available";
+            string query = "UPDATE ART_TBL SET Art_status = @sold WHERE Product_code = @code";
+            cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@code", code);
+            cmd.Parameters.AddWithValue("@sold", status);
+
+            int n = 0;
+
+            try
+            {
+                n = cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                connection.Close();
+                return false;
+            }
+            connection.Close();
+
+            return n > 0 ? true : false;
+        }
+
+        public static bool DeleteUser(string email)
+        {
+            string query = "DELETE FROM USER_TBL WHERE Email = @email";
+            cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@email", email);
+
+            int n = 0;
+
+            try
+            {
+                n = cmd.ExecuteNonQuery();
+            }
+            catch
+            {
+                connection.Close();
+                return false;
+            }
+            connection.Close();
+
+            return n > 0 ? true : false;
+        }
+
         private static byte[] GetRawPhoto(Image image)
         {
             MemoryStream stream = new MemoryStream();

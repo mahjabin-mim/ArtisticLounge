@@ -12,6 +12,7 @@ namespace Gallery
 {
     public partial class AboutUsForm : Form
     {
+        public bool mainForm { set; get; }
         public AboutUsForm()
         {
             InitializeComponent();
@@ -26,25 +27,45 @@ namespace Gallery
         private void BackToMainForm_Click(object sender, EventArgs e)
         {
             this.Hide();
-
-            Form1 form1 = new Form1();
-            form1.StartPosition = FormStartPosition.Manual;
-            form1.Location = this.Location;
-
-            form1.ShowDialog();
-            this.Close();
+            if (mainForm == true)
+            {
+                MainForm main = new MainForm();
+                main.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                Form1 form1 = new Form1();
+                form1.ShowDialog();
+                this.Close();
+            }
         }
 
         private void ContactBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             ContactForm contactForm = new ContactForm();
-            contactForm.StartPosition = FormStartPosition.Manual;
-            contactForm.Location = this.Location;
-            //contactForm.Size = this.Size;
-
+            if (mainForm == true)
+            {
+                contactForm.mainForm = true;
+            }
+            else
+            {
+                contactForm.mainForm = false;
+            }
             contactForm.ShowDialog();
             this.Close();
+        }
+
+        private void AboutUsForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+            
+        }
+
+        private void AboutUsForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
         }
     }
 }

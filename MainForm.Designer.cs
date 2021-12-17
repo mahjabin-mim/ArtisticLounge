@@ -393,6 +393,7 @@
             this.AboutUsBtn.TabIndex = 8;
             this.AboutUsBtn.Text = "About Us";
             this.AboutUsBtn.UseVisualStyleBackColor = false;
+            this.AboutUsBtn.Click += new System.EventHandler(this.AboutUsBtn_Click_1);
             // 
             // ContactBtn
             // 
@@ -410,6 +411,7 @@
             this.ContactBtn.TabIndex = 6;
             this.ContactBtn.Text = "Contact";
             this.ContactBtn.UseVisualStyleBackColor = false;
+            this.ContactBtn.Click += new System.EventHandler(this.ContactBtn_Click_1);
             // 
             // ServicesBtn
             // 

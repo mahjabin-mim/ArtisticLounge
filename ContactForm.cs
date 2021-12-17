@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.ComponentModel.DataAnnotations;
+using System.Net.Mail;
+using System.Net;
 
 namespace Gallery
 {
     public partial class ContactForm : Form
     {
+        public bool mainForm {set;get;}
         public ContactForm()
         {
             InitializeComponent();
@@ -20,22 +24,32 @@ namespace Gallery
         private void BackToMainForm_Click(object sender, EventArgs e)
         {
             this.Hide();
-
-            Form1 form1 = new Form1();
-            form1.StartPosition = FormStartPosition.Manual;
-            form1.Location = this.Location;
-
-            form1.ShowDialog();
-            this.Close();
+            if (mainForm == true)
+            {
+                MainForm main = new MainForm();
+                main.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                Form1 form1 = new Form1();
+                form1.ShowDialog();
+                this.Close();
+            }
         }
 
         private void AboutUsBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             AboutUsForm aboutUsForm = new AboutUsForm();
-            aboutUsForm.StartPosition = FormStartPosition.Manual;
-            aboutUsForm.Location = this.Location;
-            //aboutUsForm.Size = this.Size;
+            if (mainForm == true)
+            {
+                aboutUsForm.mainForm = true;
+            }
+            else
+            {
+                aboutUsForm.mainForm = false;
+            }
 
             aboutUsForm.ShowDialog();
             this.Close();
@@ -58,6 +72,37 @@ namespace Gallery
         private void loginEmail_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void sendBtn_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(nameBox.Text) || string.IsNullOrEmpty(mailBox.Text) || string.IsNullOrEmpty(msgBox.Text))
+            {
+                // @Todo - > Error provider
+            }
+            else
+            {
+                if (IsValidEmailAddress(mailBox.Text) == true)
+                {
+                    try
+                    {
+                      
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show("Check your connection! "+ex.Message, "Connectio Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please provide a valid email address", "Opps", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                }
+            }
+        }
+        public static bool IsValidEmailAddress(string address)
+        {
+            return new EmailAddressAttribute().IsValid(address);
         }
     }
 }

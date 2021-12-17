@@ -39,5 +39,29 @@ namespace Gallery
 
             this.Close();
         }
+
+        private void UserBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UsersForm userFrom = new UsersForm();
+            userFrom.ShowDialog();
+            this.Close();
+        }
+
+        private void PendingBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            PendingArtForm pendingForm = new PendingArtForm();
+            pendingForm.ShowDialog();
+            this.Close();
+        }
+
+        private void MsgBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MessageForm messageFrom = new MessageForm();
+            messageFrom.ShowDialog();
+            this.Close();
+        }
     }
 }

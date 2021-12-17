@@ -47,6 +47,11 @@ namespace Gallery
             artistNameLabel.Text = "Art by: " + user.Name;
             codeLabel.Text = "Product code: " + art.Product_code;
             priceLabel.Text = art.Price + " Tk.";
+
+            if (art.Seller.Trim().Equals(User.Email.Trim()))
+            {
+                proceedBtn.Enabled = false;
+            }
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

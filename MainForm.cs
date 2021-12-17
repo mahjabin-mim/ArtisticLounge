@@ -240,11 +240,6 @@ namespace Gallery
             this.Hide();
 
             Form1 form1 = new Form1();
-            form1.StartPosition = FormStartPosition.Manual;
-            form1.Location = this.Location;
-            form1.Size = this.Size;
-
-
 
             form1.ShowDialog();
 
@@ -382,6 +377,24 @@ namespace Gallery
         private void homeBtn_Click(object sender, EventArgs e)
         {
             LoadAllArts();
+        }
+
+        private void AboutUsBtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutUsForm aboutUsForm = new AboutUsForm();
+            aboutUsForm.mainForm = true;
+            aboutUsForm.ShowDialog();
+            this.Close();
+        }
+
+        private void ContactBtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            ContactForm contactForm = new ContactForm();
+            contactForm.mainForm = true;
+            contactForm.ShowDialog();
+            this.Close();
         }
 
     }

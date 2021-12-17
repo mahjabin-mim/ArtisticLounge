@@ -74,11 +74,19 @@ namespace Gallery
                 art.Price = priceBox.Text.ToString();
                 art.Art_image = ArtPicture.Image;
                 art.Seller = User.Email;
-                art.Status = "Available"; // this will be changed to pending
+                art.Status = "Pending"; // this will be changed to pending
 
                 if (DatabaseHelper.PostArt(art) == true)
                 {
                     MessageBox.Show("Art posted", "Post Art", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                    this.Hide();
+
+                    MainForm mainForm = new MainForm();
+
+                    mainForm.ShowDialog();
+
+                    this.Close();
                 }
                 else
                 {
@@ -88,7 +96,7 @@ namespace Gallery
             }
             else
             {
-                bool post = true;
+               
                 if (string.IsNullOrEmpty(artName.Text))
                 {
                     artName.BorderColor = Color.Red;
@@ -96,7 +104,7 @@ namespace Gallery
                     errorArtName.Icon = Properties.Resources.error;
                     errorArtName.BlinkRate = 0;
                     errorArtName.SetError(artName, "Please fill Art Name");
-                    post = false;
+                    
                 }
                 if (string.IsNullOrEmpty(categoryBox.Text))
                 {
@@ -105,7 +113,7 @@ namespace Gallery
                     errorArtCategory.Icon = Properties.Resources.error;
                     errorArtCategory.BlinkRate = 0;
                     errorArtCategory.SetError(categoryBox, "Please fill Category");
-                    post = false;
+                 
                 }
                 if (string.IsNullOrEmpty(priceBox.Text))
                 {
@@ -114,7 +122,7 @@ namespace Gallery
                     errorArtPrice.Icon = Properties.Resources.error;
                     errorArtPrice.BlinkRate = 0;
                     errorArtPrice.SetError(priceBox, "Please fill Price");
-                    post = false;
+                  
                 }
                 
              MessageBox.Show("Please select art & fill all information", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
