@@ -45,7 +45,7 @@
             this.panel1.Controls.Add(this.msgGridView);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1654, 964);
             this.panel1.TabIndex = 0;
@@ -71,7 +71,7 @@
             this.deleteBtn.Image = ((System.Drawing.Image)(resources.GetObject("deleteBtn.Image")));
             this.deleteBtn.ImageSize = new System.Drawing.Size(15, 15);
             this.deleteBtn.Location = new System.Drawing.Point(1020, 22);
-            this.deleteBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteBtn.Margin = new System.Windows.Forms.Padding(4);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.ShadowDecoration.Parent = this.deleteBtn;
             this.deleteBtn.Size = new System.Drawing.Size(307, 68);
@@ -100,7 +100,7 @@
             this.cancleBtn.Image = ((System.Drawing.Image)(resources.GetObject("cancleBtn.Image")));
             this.cancleBtn.ImageSize = new System.Drawing.Size(15, 15);
             this.cancleBtn.Location = new System.Drawing.Point(1335, 22);
-            this.cancleBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cancleBtn.Margin = new System.Windows.Forms.Padding(4);
             this.cancleBtn.Name = "cancleBtn";
             this.cancleBtn.ShadowDecoration.Parent = this.cancleBtn;
             this.cancleBtn.Size = new System.Drawing.Size(307, 68);
@@ -118,7 +118,7 @@
             this.msgGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.msgGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.msgGridView.Location = new System.Drawing.Point(0, 111);
-            this.msgGridView.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.msgGridView.Margin = new System.Windows.Forms.Padding(6);
             this.msgGridView.MaximumSize = new System.Drawing.Size(1654, 853);
             this.msgGridView.MinimumSize = new System.Drawing.Size(1654, 853);
             this.msgGridView.Name = "msgGridView";
@@ -138,7 +138,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1654, 964);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1678, 1028);
             this.MinimumSize = new System.Drawing.Size(1678, 1028);

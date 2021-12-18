@@ -550,6 +550,7 @@
             this.Controls.Add(this.ProfilePanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.ProfileFormBG);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1804, 1203);

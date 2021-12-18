@@ -46,7 +46,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1654, 964);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -62,7 +62,7 @@
             this.panel1.Controls.Add(this.usersGridView);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1654, 964);
             this.panel1.TabIndex = 1;
@@ -88,7 +88,7 @@
             this.cancleBtn.Image = ((System.Drawing.Image)(resources.GetObject("cancleBtn.Image")));
             this.cancleBtn.ImageSize = new System.Drawing.Size(15, 15);
             this.cancleBtn.Location = new System.Drawing.Point(1395, 18);
-            this.cancleBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cancleBtn.Margin = new System.Windows.Forms.Padding(4);
             this.cancleBtn.Name = "cancleBtn";
             this.cancleBtn.ShadowDecoration.Parent = this.cancleBtn;
             this.cancleBtn.Size = new System.Drawing.Size(235, 68);
@@ -115,9 +115,9 @@
             this.searchBox.HoverState.Parent = this.searchBox;
             this.searchBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("searchBox.IconLeft")));
             this.searchBox.Location = new System.Drawing.Point(13, 22);
-            this.searchBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.searchBox.Margin = new System.Windows.Forms.Padding(4);
             this.searchBox.Name = "searchBox";
-            this.searchBox.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.searchBox.Padding = new System.Windows.Forms.Padding(15);
             this.searchBox.PasswordChar = '\0';
             this.searchBox.PlaceholderText = "Search...";
             this.searchBox.SelectedText = "";
@@ -150,7 +150,7 @@
             this.deleteBtn.Image = ((System.Drawing.Image)(resources.GetObject("deleteBtn.Image")));
             this.deleteBtn.ImageSize = new System.Drawing.Size(15, 15);
             this.deleteBtn.Location = new System.Drawing.Point(1146, 18);
-            this.deleteBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteBtn.Margin = new System.Windows.Forms.Padding(4);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.ShadowDecoration.Parent = this.deleteBtn;
             this.deleteBtn.Size = new System.Drawing.Size(235, 68);
@@ -169,7 +169,7 @@
             this.usersGridView.Cursor = System.Windows.Forms.Cursors.Hand;
             this.usersGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.usersGridView.Location = new System.Drawing.Point(0, 111);
-            this.usersGridView.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.usersGridView.Margin = new System.Windows.Forms.Padding(6);
             this.usersGridView.MaximumSize = new System.Drawing.Size(1654, 853);
             this.usersGridView.MinimumSize = new System.Drawing.Size(1654, 853);
             this.usersGridView.Name = "usersGridView";
@@ -191,7 +191,8 @@
             this.ClientSize = new System.Drawing.Size(1654, 964);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1678, 1028);
             this.MinimumSize = new System.Drawing.Size(1678, 1028);
