@@ -68,9 +68,9 @@
             this.panel1.Controls.Add(this.ArtisticLounge);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1454, 100);
+            this.panel1.Size = new System.Drawing.Size(797, 54);
             this.panel1.TabIndex = 20;
             // 
             // BackToMainForm
@@ -79,12 +79,12 @@
             this.BackToMainForm.Dock = System.Windows.Forms.DockStyle.Right;
             this.BackToMainForm.Image = ((System.Drawing.Image)(resources.GetObject("BackToMainForm.Image")));
             this.BackToMainForm.ImageRotate = 0F;
-            this.BackToMainForm.Location = new System.Drawing.Point(1353, 0);
-            this.BackToMainForm.Margin = new System.Windows.Forms.Padding(4, 4, 9, 4);
+            this.BackToMainForm.Location = new System.Drawing.Point(742, 0);
+            this.BackToMainForm.Margin = new System.Windows.Forms.Padding(2, 2, 5, 2);
             this.BackToMainForm.Name = "BackToMainForm";
-            this.BackToMainForm.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.BackToMainForm.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.BackToMainForm.ShadowDecoration.Parent = this.BackToMainForm;
-            this.BackToMainForm.Size = new System.Drawing.Size(101, 100);
+            this.BackToMainForm.Size = new System.Drawing.Size(55, 54);
             this.BackToMainForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BackToMainForm.TabIndex = 12;
             this.BackToMainForm.TabStop = false;
@@ -94,10 +94,10 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 13);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 7);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 81);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 44);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -112,9 +112,9 @@
             this.ArtisticLounge.Font = new System.Drawing.Font("Segoe Print", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ArtisticLounge.ForeColor = System.Drawing.Color.SaddleBrown;
             this.ArtisticLounge.Location = new System.Drawing.Point(0, 0);
-            this.ArtisticLounge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArtisticLounge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ArtisticLounge.Name = "ArtisticLounge";
-            this.ArtisticLounge.Size = new System.Drawing.Size(420, 100);
+            this.ArtisticLounge.Size = new System.Drawing.Size(229, 54);
             this.ArtisticLounge.TabIndex = 7;
             this.ArtisticLounge.Text = "Artistic Lounge";
             this.ArtisticLounge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -124,10 +124,10 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 100);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 54);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1454, 851);
+            this.pictureBox1.Size = new System.Drawing.Size(797, 475);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
@@ -136,14 +136,14 @@
             // 
             this.EditProfilePicture.AutoRoundedCorners = true;
             this.EditProfilePicture.BackColor = System.Drawing.Color.Transparent;
-            this.EditProfilePicture.BorderRadius = 126;
+            this.EditProfilePicture.BorderRadius = 68;
             this.EditProfilePicture.Image = ((System.Drawing.Image)(resources.GetObject("EditProfilePicture.Image")));
             this.EditProfilePicture.ImageRotate = 0F;
-            this.EditProfilePicture.Location = new System.Drawing.Point(216, 212);
-            this.EditProfilePicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditProfilePicture.Location = new System.Drawing.Point(118, 115);
+            this.EditProfilePicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.EditProfilePicture.Name = "EditProfilePicture";
             this.EditProfilePicture.ShadowDecoration.Parent = this.EditProfilePicture;
-            this.EditProfilePicture.Size = new System.Drawing.Size(270, 255);
+            this.EditProfilePicture.Size = new System.Drawing.Size(147, 138);
             this.EditProfilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.EditProfilePicture.TabIndex = 22;
             this.EditProfilePicture.TabStop = false;
@@ -167,11 +167,11 @@
             this.BrowseBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BrowseBtn.ForeColor = System.Drawing.Color.White;
             this.BrowseBtn.HoverState.Parent = this.BrowseBtn;
-            this.BrowseBtn.Location = new System.Drawing.Point(110, 504);
-            this.BrowseBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BrowseBtn.Location = new System.Drawing.Point(60, 273);
+            this.BrowseBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BrowseBtn.Name = "BrowseBtn";
             this.BrowseBtn.ShadowDecoration.Parent = this.BrowseBtn;
-            this.BrowseBtn.Size = new System.Drawing.Size(240, 61);
+            this.BrowseBtn.Size = new System.Drawing.Size(131, 33);
             this.BrowseBtn.TabIndex = 23;
             this.BrowseBtn.Text = "Change";
             this.BrowseBtn.Click += new System.EventHandler(this.BrowseBtn_Click);
@@ -194,11 +194,11 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.DarkRed;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(367, 504);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Location = new System.Drawing.Point(200, 273);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(240, 61);
+            this.guna2Button1.Size = new System.Drawing.Size(131, 33);
             this.guna2Button1.TabIndex = 24;
             this.guna2Button1.Text = "Remove";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -223,14 +223,14 @@
             this.nameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nameTextBox.HoverState.Parent = this.nameTextBox;
             this.nameTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("nameTextBox.IconLeft")));
-            this.nameTextBox.Location = new System.Drawing.Point(754, 135);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.nameTextBox.Location = new System.Drawing.Point(415, 73);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.PasswordChar = '\0';
             this.nameTextBox.PlaceholderText = "Full Name";
             this.nameTextBox.SelectedText = "";
             this.nameTextBox.ShadowDecoration.Parent = this.nameTextBox;
-            this.nameTextBox.Size = new System.Drawing.Size(535, 61);
+            this.nameTextBox.Size = new System.Drawing.Size(292, 33);
             this.nameTextBox.TabIndex = 25;
             this.nameTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
@@ -254,14 +254,14 @@
             this.genderTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.genderTextBox.HoverState.Parent = this.genderTextBox;
             this.genderTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("genderTextBox.IconLeft")));
-            this.genderTextBox.Location = new System.Drawing.Point(754, 216);
-            this.genderTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.genderTextBox.Location = new System.Drawing.Point(415, 117);
+            this.genderTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.genderTextBox.Name = "genderTextBox";
             this.genderTextBox.PasswordChar = '\0';
             this.genderTextBox.PlaceholderText = "Gender";
             this.genderTextBox.SelectedText = "";
             this.genderTextBox.ShadowDecoration.Parent = this.genderTextBox;
-            this.genderTextBox.Size = new System.Drawing.Size(535, 61);
+            this.genderTextBox.Size = new System.Drawing.Size(292, 33);
             this.genderTextBox.TabIndex = 26;
             // 
             // phoneTextBox
@@ -285,14 +285,14 @@
             this.phoneTextBox.HoverState.Parent = this.phoneTextBox;
             this.phoneTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("phoneTextBox.IconLeft")));
             this.phoneTextBox.IconRightSize = new System.Drawing.Size(30, 30);
-            this.phoneTextBox.Location = new System.Drawing.Point(754, 380);
-            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.phoneTextBox.Location = new System.Drawing.Point(415, 206);
+            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.phoneTextBox.Name = "phoneTextBox";
             this.phoneTextBox.PasswordChar = '\0';
             this.phoneTextBox.PlaceholderText = "Phone";
             this.phoneTextBox.SelectedText = "";
             this.phoneTextBox.ShadowDecoration.Parent = this.phoneTextBox;
-            this.phoneTextBox.Size = new System.Drawing.Size(535, 61);
+            this.phoneTextBox.Size = new System.Drawing.Size(292, 33);
             this.phoneTextBox.TabIndex = 28;
             this.phoneTextBox.TextChanged += new System.EventHandler(this.guna2TextBox3_TextChanged);
             this.phoneTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phoneTextBox_KeyPress);
@@ -317,14 +317,14 @@
             this.currentPassTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.currentPassTextBox.HoverState.Parent = this.currentPassTextBox;
             this.currentPassTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("currentPassTextBox.IconLeft")));
-            this.currentPassTextBox.Location = new System.Drawing.Point(754, 471);
-            this.currentPassTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.currentPassTextBox.Location = new System.Drawing.Point(415, 255);
+            this.currentPassTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.currentPassTextBox.Name = "currentPassTextBox";
             this.currentPassTextBox.PasswordChar = '\0';
             this.currentPassTextBox.PlaceholderText = "Current Password";
             this.currentPassTextBox.SelectedText = "";
             this.currentPassTextBox.ShadowDecoration.Parent = this.currentPassTextBox;
-            this.currentPassTextBox.Size = new System.Drawing.Size(535, 61);
+            this.currentPassTextBox.Size = new System.Drawing.Size(292, 33);
             this.currentPassTextBox.TabIndex = 29;
             this.currentPassTextBox.UseSystemPasswordChar = true;
             // 
@@ -348,14 +348,14 @@
             this.locationTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.locationTextBox.HoverState.Parent = this.locationTextBox;
             this.locationTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("locationTextBox.IconLeft")));
-            this.locationTextBox.Location = new System.Drawing.Point(754, 297);
-            this.locationTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.locationTextBox.Location = new System.Drawing.Point(415, 161);
+            this.locationTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.locationTextBox.Name = "locationTextBox";
             this.locationTextBox.PasswordChar = '\0';
             this.locationTextBox.PlaceholderText = "Location";
             this.locationTextBox.SelectedText = "";
             this.locationTextBox.ShadowDecoration.Parent = this.locationTextBox;
-            this.locationTextBox.Size = new System.Drawing.Size(535, 61);
+            this.locationTextBox.Size = new System.Drawing.Size(292, 33);
             this.locationTextBox.TabIndex = 30;
             // 
             // EditPanel
@@ -374,10 +374,10 @@
             this.EditPanel.Controls.Add(this.currentPassTextBox);
             this.EditPanel.Controls.Add(this.phoneTextBox);
             this.EditPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.EditPanel.Location = new System.Drawing.Point(0, 100);
-            this.EditPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditPanel.Location = new System.Drawing.Point(0, 54);
+            this.EditPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.EditPanel.Name = "EditPanel";
-            this.EditPanel.Size = new System.Drawing.Size(1454, 851);
+            this.EditPanel.Size = new System.Drawing.Size(797, 475);
             this.EditPanel.TabIndex = 31;
             // 
             // showNewPassBtn
@@ -386,12 +386,12 @@
             this.showNewPassBtn.FillColor = System.Drawing.Color.Transparent;
             this.showNewPassBtn.Image = ((System.Drawing.Image)(resources.GetObject("showNewPassBtn.Image")));
             this.showNewPassBtn.ImageRotate = 0F;
-            this.showNewPassBtn.Location = new System.Drawing.Point(1265, 563);
-            this.showNewPassBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.showNewPassBtn.Location = new System.Drawing.Point(690, 305);
+            this.showNewPassBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showNewPassBtn.Name = "showNewPassBtn";
             this.showNewPassBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.showNewPassBtn.ShadowDecoration.Parent = this.showNewPassBtn;
-            this.showNewPassBtn.Size = new System.Drawing.Size(28, 39);
+            this.showNewPassBtn.Size = new System.Drawing.Size(15, 21);
             this.showNewPassBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.showNewPassBtn.TabIndex = 34;
             this.showNewPassBtn.TabStop = false;
@@ -404,12 +404,12 @@
             this.showCurrentPassBtn.FillColor = System.Drawing.Color.Transparent;
             this.showCurrentPassBtn.Image = ((System.Drawing.Image)(resources.GetObject("showCurrentPassBtn.Image")));
             this.showCurrentPassBtn.ImageRotate = 0F;
-            this.showCurrentPassBtn.Location = new System.Drawing.Point(1265, 482);
-            this.showCurrentPassBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.showCurrentPassBtn.Location = new System.Drawing.Point(690, 261);
+            this.showCurrentPassBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showCurrentPassBtn.Name = "showCurrentPassBtn";
             this.showCurrentPassBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.showCurrentPassBtn.ShadowDecoration.Parent = this.showCurrentPassBtn;
-            this.showCurrentPassBtn.Size = new System.Drawing.Size(28, 39);
+            this.showCurrentPassBtn.Size = new System.Drawing.Size(15, 21);
             this.showCurrentPassBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.showCurrentPassBtn.TabIndex = 33;
             this.showCurrentPassBtn.TabStop = false;
@@ -436,14 +436,14 @@
             this.newPassTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.newPassTextBox.HoverState.Parent = this.newPassTextBox;
             this.newPassTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("newPassTextBox.IconLeft")));
-            this.newPassTextBox.Location = new System.Drawing.Point(754, 552);
-            this.newPassTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.newPassTextBox.Location = new System.Drawing.Point(415, 299);
+            this.newPassTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.newPassTextBox.Name = "newPassTextBox";
             this.newPassTextBox.PasswordChar = '\0';
             this.newPassTextBox.PlaceholderText = "New Password";
             this.newPassTextBox.SelectedText = "";
             this.newPassTextBox.ShadowDecoration.Parent = this.newPassTextBox;
-            this.newPassTextBox.Size = new System.Drawing.Size(535, 61);
+            this.newPassTextBox.Size = new System.Drawing.Size(292, 33);
             this.newPassTextBox.TabIndex = 32;
             this.newPassTextBox.UseSystemPasswordChar = true;
             this.newPassTextBox.Enter += new System.EventHandler(this.newPassTextBox_Enter);
@@ -466,11 +466,11 @@
             this.updateProfileBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateProfileBtn.ForeColor = System.Drawing.Color.White;
             this.updateProfileBtn.HoverState.Parent = this.updateProfileBtn;
-            this.updateProfileBtn.Location = new System.Drawing.Point(532, 762);
-            this.updateProfileBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.updateProfileBtn.Location = new System.Drawing.Point(290, 413);
+            this.updateProfileBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.updateProfileBtn.Name = "updateProfileBtn";
             this.updateProfileBtn.ShadowDecoration.Parent = this.updateProfileBtn;
-            this.updateProfileBtn.Size = new System.Drawing.Size(346, 76);
+            this.updateProfileBtn.Size = new System.Drawing.Size(189, 41);
             this.updateProfileBtn.TabIndex = 31;
             this.updateProfileBtn.Text = "Update Profile";
             this.updateProfileBtn.Click += new System.EventHandler(this.updateProfileBtn_Click);
@@ -481,17 +481,17 @@
             // 
             // EditProfileForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1454, 951);
+            this.ClientSize = new System.Drawing.Size(797, 529);
             this.Controls.Add(this.EditPanel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1478, 1015);
-            this.MinimumSize = new System.Drawing.Size(1478, 1015);
+            this.MaximumSize = new System.Drawing.Size(813, 568);
+            this.MinimumSize = new System.Drawing.Size(813, 568);
             this.Name = "EditProfileForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditProfileForm";

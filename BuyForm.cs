@@ -84,7 +84,7 @@ namespace Gallery
                 emailError.SetError(emailTextBox, "Please give email");
                 procced = false;
             }
-            if (IsValidEmailAddress(emailTextBox.Text))
+            if (IsValidEmailAddress(emailTextBox.Text) == false)
             {
                 emailTextBox.BorderColor = Color.Red;
                 //  emailError.Clear();

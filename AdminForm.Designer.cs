@@ -47,9 +47,9 @@
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(1654, 964);
+            this.pictureBox2.Size = new System.Drawing.Size(907, 536);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
@@ -65,9 +65,9 @@
             this.AdminPanel.Controls.Add(this.pictureBox1);
             this.AdminPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AdminPanel.Location = new System.Drawing.Point(0, 0);
-            this.AdminPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AdminPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AdminPanel.Name = "AdminPanel";
-            this.AdminPanel.Size = new System.Drawing.Size(1654, 964);
+            this.AdminPanel.Size = new System.Drawing.Size(907, 536);
             this.AdminPanel.TabIndex = 16;
             // 
             // MsgBtn
@@ -89,11 +89,11 @@
             this.MsgBtn.ForeColor = System.Drawing.Color.White;
             this.MsgBtn.HoverState.Parent = this.MsgBtn;
             this.MsgBtn.Image = ((System.Drawing.Image)(resources.GetObject("MsgBtn.Image")));
-            this.MsgBtn.Location = new System.Drawing.Point(935, 580);
-            this.MsgBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MsgBtn.Location = new System.Drawing.Point(510, 314);
+            this.MsgBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MsgBtn.Name = "MsgBtn";
             this.MsgBtn.ShadowDecoration.Parent = this.MsgBtn;
-            this.MsgBtn.Size = new System.Drawing.Size(278, 78);
+            this.MsgBtn.Size = new System.Drawing.Size(157, 42);
             this.MsgBtn.TabIndex = 22;
             this.MsgBtn.Text = "Messages";
             this.MsgBtn.Click += new System.EventHandler(this.MsgBtn_Click);
@@ -117,11 +117,11 @@
             this.LouOutBtn.ForeColor = System.Drawing.Color.White;
             this.LouOutBtn.HoverState.Parent = this.LouOutBtn;
             this.LouOutBtn.Image = ((System.Drawing.Image)(resources.GetObject("LouOutBtn.Image")));
-            this.LouOutBtn.Location = new System.Drawing.Point(935, 685);
-            this.LouOutBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LouOutBtn.Location = new System.Drawing.Point(510, 371);
+            this.LouOutBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LouOutBtn.Name = "LouOutBtn";
             this.LouOutBtn.ShadowDecoration.Parent = this.LouOutBtn;
-            this.LouOutBtn.Size = new System.Drawing.Size(278, 78);
+            this.LouOutBtn.Size = new System.Drawing.Size(157, 42);
             this.LouOutBtn.TabIndex = 18;
             this.LouOutBtn.Text = "Log Out";
             this.LouOutBtn.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -145,11 +145,11 @@
             this.PendingBtn.ForeColor = System.Drawing.Color.White;
             this.PendingBtn.HoverState.Parent = this.PendingBtn;
             this.PendingBtn.Image = ((System.Drawing.Image)(resources.GetObject("PendingBtn.Image")));
-            this.PendingBtn.Location = new System.Drawing.Point(444, 685);
-            this.PendingBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PendingBtn.Location = new System.Drawing.Point(242, 371);
+            this.PendingBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PendingBtn.Name = "PendingBtn";
             this.PendingBtn.ShadowDecoration.Parent = this.PendingBtn;
-            this.PendingBtn.Size = new System.Drawing.Size(278, 78);
+            this.PendingBtn.Size = new System.Drawing.Size(157, 42);
             this.PendingBtn.TabIndex = 17;
             this.PendingBtn.Text = "Pending Arts";
             this.PendingBtn.Click += new System.EventHandler(this.PendingBtn_Click);
@@ -173,11 +173,11 @@
             this.UserBtn.ForeColor = System.Drawing.Color.White;
             this.UserBtn.HoverState.Parent = this.UserBtn;
             this.UserBtn.Image = ((System.Drawing.Image)(resources.GetObject("UserBtn.Image")));
-            this.UserBtn.Location = new System.Drawing.Point(444, 580);
-            this.UserBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.UserBtn.Location = new System.Drawing.Point(242, 314);
+            this.UserBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.UserBtn.Name = "UserBtn";
             this.UserBtn.ShadowDecoration.Parent = this.UserBtn;
-            this.UserBtn.Size = new System.Drawing.Size(278, 78);
+            this.UserBtn.Size = new System.Drawing.Size(157, 42);
             this.UserBtn.TabIndex = 16;
             this.UserBtn.Text = "Users";
             this.UserBtn.Click += new System.EventHandler(this.UserBtn_Click);
@@ -190,10 +190,10 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.label1.Location = new System.Drawing.Point(588, 354);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(321, 192);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(470, 98);
+            this.label1.Size = new System.Drawing.Size(270, 57);
             this.label1.TabIndex = 15;
             this.label1.Text = "Artistic Lounge";
             // 
@@ -203,26 +203,26 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(757, 209);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(413, 113);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 146);
+            this.pictureBox1.Size = new System.Drawing.Size(84, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
             // AdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1654, 964);
+            this.ClientSize = new System.Drawing.Size(907, 536);
             this.Controls.Add(this.AdminPanel);
             this.Controls.Add(this.pictureBox2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1678, 1028);
-            this.MinimumSize = new System.Drawing.Size(1678, 1028);
+            this.MaximumSize = new System.Drawing.Size(923, 575);
+            this.MinimumSize = new System.Drawing.Size(923, 575);
             this.Name = "AdminForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminForm";

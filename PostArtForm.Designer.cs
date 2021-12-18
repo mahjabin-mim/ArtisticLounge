@@ -72,9 +72,9 @@
             this.panel1.Controls.Add(this.ArtisticLounge);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1696, 100);
+            this.panel1.Size = new System.Drawing.Size(929, 54);
             this.panel1.TabIndex = 18;
             // 
             // BackToMainForm
@@ -83,12 +83,12 @@
             this.BackToMainForm.Dock = System.Windows.Forms.DockStyle.Right;
             this.BackToMainForm.Image = ((System.Drawing.Image)(resources.GetObject("BackToMainForm.Image")));
             this.BackToMainForm.ImageRotate = 0F;
-            this.BackToMainForm.Location = new System.Drawing.Point(1595, 0);
-            this.BackToMainForm.Margin = new System.Windows.Forms.Padding(4, 4, 9, 4);
+            this.BackToMainForm.Location = new System.Drawing.Point(874, 0);
+            this.BackToMainForm.Margin = new System.Windows.Forms.Padding(2, 2, 5, 2);
             this.BackToMainForm.Name = "BackToMainForm";
-            this.BackToMainForm.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.BackToMainForm.Padding = new System.Windows.Forms.Padding(8);
             this.BackToMainForm.ShadowDecoration.Parent = this.BackToMainForm;
-            this.BackToMainForm.Size = new System.Drawing.Size(101, 100);
+            this.BackToMainForm.Size = new System.Drawing.Size(55, 54);
             this.BackToMainForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BackToMainForm.TabIndex = 20;
             this.BackToMainForm.TabStop = false;
@@ -96,20 +96,20 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(0, 100);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Location = new System.Drawing.Point(0, 54);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 100);
+            this.panel2.Size = new System.Drawing.Size(109, 54);
             this.panel2.TabIndex = 19;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 11);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(88, 83);
+            this.pictureBox1.Size = new System.Drawing.Size(48, 45);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -124,9 +124,9 @@
             this.ArtisticLounge.Font = new System.Drawing.Font("Segoe Print", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ArtisticLounge.ForeColor = System.Drawing.Color.SaddleBrown;
             this.ArtisticLounge.Location = new System.Drawing.Point(0, 0);
-            this.ArtisticLounge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArtisticLounge.Margin = new System.Windows.Forms.Padding(2);
             this.ArtisticLounge.Name = "ArtisticLounge";
-            this.ArtisticLounge.Size = new System.Drawing.Size(420, 100);
+            this.ArtisticLounge.Size = new System.Drawing.Size(229, 54);
             this.ArtisticLounge.TabIndex = 7;
             this.ArtisticLounge.Text = "Artistic Lounge";
             this.ArtisticLounge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -138,10 +138,10 @@
             this.PostPanel.Controls.Add(this.panel4);
             this.PostPanel.Controls.Add(this.panel3);
             this.PostPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PostPanel.Location = new System.Drawing.Point(0, 100);
-            this.PostPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PostPanel.Location = new System.Drawing.Point(0, 54);
+            this.PostPanel.Margin = new System.Windows.Forms.Padding(2);
             this.PostPanel.Name = "PostPanel";
-            this.PostPanel.Size = new System.Drawing.Size(1696, 821);
+            this.PostPanel.Size = new System.Drawing.Size(929, 458);
             this.PostPanel.TabIndex = 19;
             // 
             // panel4
@@ -156,10 +156,10 @@
             this.panel4.Controls.Add(this.artName);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Font = new System.Drawing.Font("Segoe UI", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel4.Location = new System.Drawing.Point(840, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Location = new System.Drawing.Point(458, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(856, 821);
+            this.panel4.Size = new System.Drawing.Size(471, 458);
             this.panel4.TabIndex = 1;
             // 
             // TK
@@ -167,10 +167,10 @@
             this.TK.AutoSize = true;
             this.TK.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TK.ForeColor = System.Drawing.Color.DarkRed;
-            this.TK.Location = new System.Drawing.Point(407, 504);
-            this.TK.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.TK.Location = new System.Drawing.Point(222, 273);
+            this.TK.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TK.Name = "TK";
-            this.TK.Size = new System.Drawing.Size(66, 45);
+            this.TK.Size = new System.Drawing.Size(39, 25);
             this.TK.TabIndex = 44;
             this.TK.Text = "TK.";
             // 
@@ -193,14 +193,14 @@
             this.priceBox.ForeColor = System.Drawing.Color.DarkRed;
             this.priceBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.priceBox.HoverState.Parent = this.priceBox;
-            this.priceBox.Location = new System.Drawing.Point(119, 498);
-            this.priceBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.priceBox.Location = new System.Drawing.Point(69, 270);
+            this.priceBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.priceBox.Name = "priceBox";
             this.priceBox.PasswordChar = '\0';
             this.priceBox.PlaceholderText = "";
             this.priceBox.SelectedText = "";
             this.priceBox.ShadowDecoration.Parent = this.priceBox;
-            this.priceBox.Size = new System.Drawing.Size(249, 61);
+            this.priceBox.Size = new System.Drawing.Size(136, 33);
             this.priceBox.TabIndex = 43;
             this.priceBox.TextChanged += new System.EventHandler(this.priceBox_TextChanged);
             this.priceBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.priceBox_KeyPress);
@@ -223,11 +223,11 @@
             this.postBtn.Font = new System.Drawing.Font("Segoe UI", 14.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.postBtn.ForeColor = System.Drawing.Color.White;
             this.postBtn.HoverState.Parent = this.postBtn;
-            this.postBtn.Location = new System.Drawing.Point(394, 740);
-            this.postBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.postBtn.Location = new System.Drawing.Point(215, 401);
+            this.postBtn.Margin = new System.Windows.Forms.Padding(2);
             this.postBtn.Name = "postBtn";
             this.postBtn.ShadowDecoration.Parent = this.postBtn;
-            this.postBtn.Size = new System.Drawing.Size(301, 74);
+            this.postBtn.Size = new System.Drawing.Size(164, 40);
             this.postBtn.TabIndex = 42;
             this.postBtn.Text = "Post";
             this.postBtn.Click += new System.EventHandler(this.postBtn_Click);
@@ -237,10 +237,10 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Navy;
-            this.label3.Location = new System.Drawing.Point(134, 452);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(73, 245);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 38);
+            this.label3.Size = new System.Drawing.Size(75, 21);
             this.label3.TabIndex = 41;
             this.label3.Text = "Art Price";
             // 
@@ -249,10 +249,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Navy;
-            this.label2.Location = new System.Drawing.Point(134, 323);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(73, 175);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(187, 38);
+            this.label2.Size = new System.Drawing.Size(107, 21);
             this.label2.TabIndex = 40;
             this.label2.Text = "Art Category";
             // 
@@ -261,10 +261,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Navy;
-            this.label1.Location = new System.Drawing.Point(136, 177);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(74, 96);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 38);
+            this.label1.Size = new System.Drawing.Size(83, 21);
             this.label1.TabIndex = 39;
             this.label1.Text = "Art Name";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -289,11 +289,11 @@
             "Composition ",
             "Other"});
             this.categoryBox.ItemsAppearance.Parent = this.categoryBox;
-            this.categoryBox.Location = new System.Drawing.Point(141, 369);
-            this.categoryBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.categoryBox.Location = new System.Drawing.Point(69, 198);
+            this.categoryBox.Margin = new System.Windows.Forms.Padding(2);
             this.categoryBox.Name = "categoryBox";
             this.categoryBox.ShadowDecoration.Parent = this.categoryBox;
-            this.categoryBox.Size = new System.Drawing.Size(338, 36);
+            this.categoryBox.Size = new System.Drawing.Size(186, 36);
             this.categoryBox.TabIndex = 37;
             this.categoryBox.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
@@ -316,14 +316,14 @@
             this.artName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.artName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.artName.HoverState.Parent = this.artName;
-            this.artName.Location = new System.Drawing.Point(119, 223);
-            this.artName.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.artName.Location = new System.Drawing.Point(69, 121);
+            this.artName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.artName.Name = "artName";
             this.artName.PasswordChar = '\0';
             this.artName.PlaceholderText = "";
             this.artName.SelectedText = "";
             this.artName.ShadowDecoration.Parent = this.artName;
-            this.artName.Size = new System.Drawing.Size(535, 61);
+            this.artName.Size = new System.Drawing.Size(292, 33);
             this.artName.TabIndex = 31;
             this.artName.TextChanged += new System.EventHandler(this.artName_TextChanged);
             // 
@@ -333,9 +333,9 @@
             this.panel3.Controls.Add(this.ArtPicture);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(840, 821);
+            this.panel3.Size = new System.Drawing.Size(458, 458);
             this.panel3.TabIndex = 0;
             // 
             // SelectArtBtn
@@ -356,11 +356,11 @@
             this.SelectArtBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SelectArtBtn.ForeColor = System.Drawing.Color.White;
             this.SelectArtBtn.HoverState.Parent = this.SelectArtBtn;
-            this.SelectArtBtn.Location = new System.Drawing.Point(332, 635);
-            this.SelectArtBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SelectArtBtn.Location = new System.Drawing.Point(181, 344);
+            this.SelectArtBtn.Margin = new System.Windows.Forms.Padding(2);
             this.SelectArtBtn.Name = "SelectArtBtn";
             this.SelectArtBtn.ShadowDecoration.Parent = this.SelectArtBtn;
-            this.SelectArtBtn.Size = new System.Drawing.Size(238, 68);
+            this.SelectArtBtn.Size = new System.Drawing.Size(130, 37);
             this.SelectArtBtn.TabIndex = 32;
             this.SelectArtBtn.Text = "Select Art";
             this.SelectArtBtn.Click += new System.EventHandler(this.SelectArtBtn_Click);
@@ -369,10 +369,10 @@
             // 
             this.ArtPicture.BackColor = System.Drawing.Color.Transparent;
             this.ArtPicture.Image = ((System.Drawing.Image)(resources.GetObject("ArtPicture.Image")));
-            this.ArtPicture.Location = new System.Drawing.Point(48, 70);
-            this.ArtPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArtPicture.Location = new System.Drawing.Point(26, 38);
+            this.ArtPicture.Margin = new System.Windows.Forms.Padding(2);
             this.ArtPicture.Name = "ArtPicture";
-            this.ArtPicture.Size = new System.Drawing.Size(792, 532);
+            this.ArtPicture.Size = new System.Drawing.Size(432, 288);
             this.ArtPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ArtPicture.TabIndex = 1;
             this.ArtPicture.TabStop = false;
@@ -392,16 +392,16 @@
             // 
             // PostArtForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1696, 921);
+            this.ClientSize = new System.Drawing.Size(929, 512);
             this.Controls.Add(this.PostPanel);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1720, 985);
-            this.MinimumSize = new System.Drawing.Size(1720, 985);
+            this.MaximumSize = new System.Drawing.Size(945, 551);
+            this.MinimumSize = new System.Drawing.Size(945, 551);
             this.Name = "PostArtForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PostArtForm";

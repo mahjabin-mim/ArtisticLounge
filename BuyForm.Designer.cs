@@ -73,19 +73,19 @@
             this.panel1.Controls.Add(this.ArtisticLounge);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1707, 100);
+            this.panel1.Size = new System.Drawing.Size(935, 54);
             this.panel1.TabIndex = 18;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 11);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 6);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(88, 83);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 45);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
@@ -100,9 +100,9 @@
             this.ArtisticLounge.Font = new System.Drawing.Font("Segoe Print", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ArtisticLounge.ForeColor = System.Drawing.Color.SaddleBrown;
             this.ArtisticLounge.Location = new System.Drawing.Point(0, 0);
-            this.ArtisticLounge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ArtisticLounge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ArtisticLounge.Name = "ArtisticLounge";
-            this.ArtisticLounge.Size = new System.Drawing.Size(420, 100);
+            this.ArtisticLounge.Size = new System.Drawing.Size(229, 54);
             this.ArtisticLounge.TabIndex = 7;
             this.ArtisticLounge.Text = "Artistic Lounge";
             this.ArtisticLounge.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -118,10 +118,10 @@
             this.buyArtrightPanel.Controls.Add(this.phoneTextBox);
             this.buyArtrightPanel.Controls.Add(this.emailTextBox);
             this.buyArtrightPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.buyArtrightPanel.Location = new System.Drawing.Point(741, 100);
-            this.buyArtrightPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buyArtrightPanel.Location = new System.Drawing.Point(404, 54);
+            this.buyArtrightPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buyArtrightPanel.Name = "buyArtrightPanel";
-            this.buyArtrightPanel.Size = new System.Drawing.Size(966, 853);
+            this.buyArtrightPanel.Size = new System.Drawing.Size(531, 476);
             this.buyArtrightPanel.TabIndex = 20;
             // 
             // nameTextBox
@@ -144,14 +144,14 @@
             this.nameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nameTextBox.HoverState.Parent = this.nameTextBox;
             this.nameTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("nameTextBox.IconLeft")));
-            this.nameTextBox.Location = new System.Drawing.Point(242, 137);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.nameTextBox.Location = new System.Drawing.Point(136, 74);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.PasswordChar = '\0';
             this.nameTextBox.PlaceholderText = "Name....";
             this.nameTextBox.SelectedText = "";
             this.nameTextBox.ShadowDecoration.Parent = this.nameTextBox;
-            this.nameTextBox.Size = new System.Drawing.Size(535, 70);
+            this.nameTextBox.Size = new System.Drawing.Size(292, 38);
             this.nameTextBox.TabIndex = 6;
             this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
@@ -172,11 +172,11 @@
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(255, 626);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Button1.Location = new System.Drawing.Point(143, 339);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(248, 68);
+            this.guna2Button1.Size = new System.Drawing.Size(135, 37);
             this.guna2Button1.TabIndex = 5;
             this.guna2Button1.Text = "Back ";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -198,11 +198,11 @@
             this.proceedBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proceedBtn.ForeColor = System.Drawing.Color.White;
             this.proceedBtn.HoverState.Parent = this.proceedBtn;
-            this.proceedBtn.Location = new System.Drawing.Point(511, 626);
-            this.proceedBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.proceedBtn.Location = new System.Drawing.Point(283, 339);
+            this.proceedBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.proceedBtn.Name = "proceedBtn";
             this.proceedBtn.ShadowDecoration.Parent = this.proceedBtn;
-            this.proceedBtn.Size = new System.Drawing.Size(248, 68);
+            this.proceedBtn.Size = new System.Drawing.Size(135, 37);
             this.proceedBtn.TabIndex = 4;
             this.proceedBtn.Text = "Proceed to pay";
             this.proceedBtn.Click += new System.EventHandler(this.proceedBtn_Click);
@@ -227,14 +227,14 @@
             this.addressTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.addressTextBox.HoverState.Parent = this.addressTextBox;
             this.addressTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("addressTextBox.IconLeft")));
-            this.addressTextBox.Location = new System.Drawing.Point(242, 486);
-            this.addressTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.addressTextBox.Location = new System.Drawing.Point(136, 263);
+            this.addressTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.PasswordChar = '\0';
             this.addressTextBox.PlaceholderText = "Location...";
             this.addressTextBox.SelectedText = "";
             this.addressTextBox.ShadowDecoration.Parent = this.addressTextBox;
-            this.addressTextBox.Size = new System.Drawing.Size(535, 70);
+            this.addressTextBox.Size = new System.Drawing.Size(292, 38);
             this.addressTextBox.TabIndex = 3;
             this.addressTextBox.TextChanged += new System.EventHandler(this.addressTextBox_TextChanged);
             // 
@@ -258,14 +258,14 @@
             this.phoneTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phoneTextBox.HoverState.Parent = this.phoneTextBox;
             this.phoneTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("phoneTextBox.IconLeft")));
-            this.phoneTextBox.Location = new System.Drawing.Point(242, 366);
-            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.phoneTextBox.Location = new System.Drawing.Point(136, 198);
+            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.phoneTextBox.Name = "phoneTextBox";
             this.phoneTextBox.PasswordChar = '\0';
             this.phoneTextBox.PlaceholderText = "Phone...";
             this.phoneTextBox.SelectedText = "";
             this.phoneTextBox.ShadowDecoration.Parent = this.phoneTextBox;
-            this.phoneTextBox.Size = new System.Drawing.Size(535, 70);
+            this.phoneTextBox.Size = new System.Drawing.Size(292, 38);
             this.phoneTextBox.TabIndex = 2;
             this.phoneTextBox.TextChanged += new System.EventHandler(this.phoneTextBox_TextChanged);
             this.phoneTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.phoneTextBox_KeyPress);
@@ -290,14 +290,14 @@
             this.emailTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextBox.HoverState.Parent = this.emailTextBox;
             this.emailTextBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("emailTextBox.IconLeft")));
-            this.emailTextBox.Location = new System.Drawing.Point(242, 247);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
+            this.emailTextBox.Location = new System.Drawing.Point(136, 134);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.PasswordChar = '\0';
             this.emailTextBox.PlaceholderText = "Email....";
             this.emailTextBox.SelectedText = "";
             this.emailTextBox.ShadowDecoration.Parent = this.emailTextBox;
-            this.emailTextBox.Size = new System.Drawing.Size(535, 70);
+            this.emailTextBox.Size = new System.Drawing.Size(292, 38);
             this.emailTextBox.TabIndex = 1;
             this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
@@ -314,10 +314,10 @@
             this.buyArtleftPanel.Controls.Add(this.artNameLabel);
             this.buyArtleftPanel.Controls.Add(this.artPicture);
             this.buyArtleftPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.buyArtleftPanel.Location = new System.Drawing.Point(0, 100);
-            this.buyArtleftPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buyArtleftPanel.Location = new System.Drawing.Point(0, 54);
+            this.buyArtleftPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buyArtleftPanel.Name = "buyArtleftPanel";
-            this.buyArtleftPanel.Size = new System.Drawing.Size(741, 853);
+            this.buyArtleftPanel.Size = new System.Drawing.Size(404, 476);
             this.buyArtleftPanel.TabIndex = 19;
             this.buyArtleftPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.buyArtleftPanel_Paint);
             // 
@@ -327,10 +327,10 @@
             this.priceLabel.BackColor = System.Drawing.Color.Transparent;
             this.priceLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.priceLabel.ForeColor = System.Drawing.Color.Red;
-            this.priceLabel.Location = new System.Drawing.Point(73, 785);
-            this.priceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.priceLabel.Location = new System.Drawing.Point(40, 425);
+            this.priceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(136, 51);
+            this.priceLabel.Size = new System.Drawing.Size(79, 30);
             this.priceLabel.TabIndex = 10;
             this.priceLabel.Text = "900 Tk";
             // 
@@ -339,10 +339,10 @@
             this.codeLabel.AutoSize = true;
             this.codeLabel.BackColor = System.Drawing.Color.Transparent;
             this.codeLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.codeLabel.Location = new System.Drawing.Point(73, 696);
-            this.codeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.codeLabel.Location = new System.Drawing.Point(40, 377);
+            this.codeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.codeLabel.Name = "codeLabel";
-            this.codeLabel.Size = new System.Drawing.Size(233, 38);
+            this.codeLabel.Size = new System.Drawing.Size(135, 21);
             this.codeLabel.TabIndex = 9;
             this.codeLabel.Text = "Product code: 007";
             // 
@@ -351,10 +351,10 @@
             this.categoryLabel.AutoSize = true;
             this.categoryLabel.BackColor = System.Drawing.Color.Transparent;
             this.categoryLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryLabel.Location = new System.Drawing.Point(75, 635);
-            this.categoryLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.categoryLabel.Location = new System.Drawing.Point(41, 344);
+            this.categoryLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.categoryLabel.Name = "categoryLabel";
-            this.categoryLabel.Size = new System.Drawing.Size(219, 38);
+            this.categoryLabel.Size = new System.Drawing.Size(126, 21);
             this.categoryLabel.TabIndex = 8;
             this.categoryLabel.Text = "Category: Vector";
             // 
@@ -363,10 +363,10 @@
             this.artistNameLabel.AutoSize = true;
             this.artistNameLabel.BackColor = System.Drawing.Color.Transparent;
             this.artistNameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.artistNameLabel.Location = new System.Drawing.Point(75, 574);
-            this.artistNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.artistNameLabel.Location = new System.Drawing.Point(41, 311);
+            this.artistNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.artistNameLabel.Name = "artistNameLabel";
-            this.artistNameLabel.Size = new System.Drawing.Size(219, 38);
+            this.artistNameLabel.Size = new System.Drawing.Size(125, 21);
             this.artistNameLabel.TabIndex = 7;
             this.artistNameLabel.Text = "Art by: Mahjabin";
             // 
@@ -374,22 +374,22 @@
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.IndianRed;
             this.guna2Panel2.BorderColor = System.Drawing.Color.White;
-            this.guna2Panel2.Location = new System.Drawing.Point(75, 761);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Location = new System.Drawing.Point(41, 412);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(578, 2);
+            this.guna2Panel2.Size = new System.Drawing.Size(315, 1);
             this.guna2Panel2.TabIndex = 6;
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.IndianRed;
             this.guna2Panel1.BorderColor = System.Drawing.Color.White;
-            this.guna2Panel1.Location = new System.Drawing.Point(75, 539);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel1.Location = new System.Drawing.Point(41, 292);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(578, 2);
+            this.guna2Panel1.Size = new System.Drawing.Size(315, 1);
             this.guna2Panel1.TabIndex = 5;
             // 
             // artNameLabel
@@ -397,20 +397,20 @@
             this.artNameLabel.AutoSize = true;
             this.artNameLabel.BackColor = System.Drawing.Color.Transparent;
             this.artNameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.artNameLabel.Location = new System.Drawing.Point(66, 443);
-            this.artNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.artNameLabel.Location = new System.Drawing.Point(36, 240);
+            this.artNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.artNameLabel.Name = "artNameLabel";
-            this.artNameLabel.Size = new System.Drawing.Size(213, 45);
+            this.artNameLabel.Size = new System.Drawing.Size(122, 25);
             this.artNameLabel.TabIndex = 1;
             this.artNameLabel.Text = "Soft Painting";
             // 
             // artPicture
             // 
             this.artPicture.Image = ((System.Drawing.Image)(resources.GetObject("artPicture.Image")));
-            this.artPicture.Location = new System.Drawing.Point(75, 46);
-            this.artPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.artPicture.Location = new System.Drawing.Point(41, 25);
+            this.artPicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.artPicture.Name = "artPicture";
-            this.artPicture.Size = new System.Drawing.Size(578, 353);
+            this.artPicture.Size = new System.Drawing.Size(315, 191);
             this.artPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.artPicture.TabIndex = 0;
             this.artPicture.TabStop = false;
@@ -420,9 +420,9 @@
             this.buyFormBg.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buyFormBg.Image = ((System.Drawing.Image)(resources.GetObject("buyFormBg.Image")));
             this.buyFormBg.Location = new System.Drawing.Point(0, 0);
-            this.buyFormBg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buyFormBg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buyFormBg.Name = "buyFormBg";
-            this.buyFormBg.Size = new System.Drawing.Size(1707, 953);
+            this.buyFormBg.Size = new System.Drawing.Size(935, 530);
             this.buyFormBg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.buyFormBg.TabIndex = 0;
             this.buyFormBg.TabStop = false;
@@ -445,18 +445,18 @@
             // 
             // BuyForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1707, 953);
+            this.ClientSize = new System.Drawing.Size(935, 530);
             this.Controls.Add(this.buyArtrightPanel);
             this.Controls.Add(this.buyArtleftPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buyFormBg);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1731, 1017);
-            this.MinimumSize = new System.Drawing.Size(1731, 1017);
+            this.MaximumSize = new System.Drawing.Size(951, 569);
+            this.MinimumSize = new System.Drawing.Size(951, 569);
             this.Name = "BuyForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuyForm";
