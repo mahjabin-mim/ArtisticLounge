@@ -8,6 +8,7 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Drawing;
 using System.Data;
+using System.Windows.Forms;
 
 namespace Gallery
 {
@@ -125,16 +126,31 @@ namespace Gallery
         public static bool UpdateUser(User user)
         {
             User usr = user;
-            string query = "UPDATE USER_TBL SET Name = @name, Gender = @gender, Location = @loc, Phone = @phone, Picture = @pic WHERE Email = @email";
-            cmd = new SqlCommand(query, connection);
-            cmd.Parameters.AddWithValue("@email", User.Email);
-            cmd.Parameters.AddWithValue("@name", usr.Name);
-            cmd.Parameters.AddWithValue("@gender", usr.Gender);
-            cmd.Parameters.AddWithValue("@loc", usr.Location);
-            cmd.Parameters.AddWithValue("@phone", usr.Phone);
-          //  cmd.Parameters.AddWithValue("@pass", usr.Password);
-            cmd.Parameters.AddWithValue("@pic", GetRawPhoto(usr.Picture));
-            
+
+            if (usr.Password != null)
+            {
+                string query = "UPDATE USER_TBL SET Pass = @pass, Name = @name, Gender = @gender, Location = @loc, Phone = @phone, Picture = @pic WHERE Email = @email";
+                cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@email", User.Email);
+                cmd.Parameters.AddWithValue("@name", usr.Name);
+                cmd.Parameters.AddWithValue("@gender", usr.Gender);
+                cmd.Parameters.AddWithValue("@loc", usr.Location);
+                cmd.Parameters.AddWithValue("@phone", usr.Phone);
+                cmd.Parameters.AddWithValue("@pass", usr.Password);
+                cmd.Parameters.AddWithValue("@pic", GetRawPhoto(usr.Picture));
+            }
+            else
+            {
+                string query = "UPDATE USER_TBL SET Name = @name, Gender = @gender, Location = @loc, Phone = @phone, Picture = @pic WHERE Email = @email";
+                cmd = new SqlCommand(query, connection);
+                cmd.Parameters.AddWithValue("@email", User.Email);
+                cmd.Parameters.AddWithValue("@name", usr.Name);
+                cmd.Parameters.AddWithValue("@gender", usr.Gender);
+                cmd.Parameters.AddWithValue("@loc", usr.Location);
+                cmd.Parameters.AddWithValue("@phone", usr.Phone);
+                cmd.Parameters.AddWithValue("@pic", GetRawPhoto(usr.Picture));
+            }
+
             int n = 0;
 
             try
@@ -144,6 +160,7 @@ namespace Gallery
             catch (Exception e)
             {
                 connection.Close();
+                MessageBox.Show(e.Message);
                 return false;
             }
                connection.Close();
@@ -389,6 +406,7 @@ namespace Gallery
 
         public static bool DeleteArtWithEmail(string email)
         {
+            
             string query = "DELETE FROM ART_TBL WHERE Seller = @email";
             cmd = new SqlCommand(query, connection);
             cmd.Parameters.AddWithValue("@email", email);
@@ -587,8 +605,6 @@ namespace Gallery
             connection.Close();
 
             return n > 0 ? true : false;
-
-
 
         }
 

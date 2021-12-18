@@ -91,27 +91,56 @@ namespace Gallery
 
         private void updateProfileBtn_Click(object sender, EventArgs e)
         {
+            bool canUpdate = true;
             User user = new User();
-           
             user.Name = nameTextBox.Text;
             user.Gender = genderTextBox.Text;
             user.Location = locationTextBox.Text;
             user.Phone = phoneTextBox.Text;
             user.Picture = EditProfilePicture.Image;
 
-            DatabaseHelper.connection.Open();
-
-            if (DatabaseHelper.UpdateUser(user) == true)
+            if (!string.IsNullOrEmpty(currentPassTextBox.Text) && !string.IsNullOrEmpty(newPassTextBox.Text))
             {
-                MessageBox.Show("User updated "+user.Name, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                User checkUser = new User();
+                checkUser.Password = currentPassTextBox.Text.ToString();
 
+                DatabaseHelper.connection.Open();
+                if (DatabaseHelper.LoginForm(checkUser) == true)
+                {
+                    user.Password = newPassTextBox.Text;
+                }
+                else
+                {
+                    user.Password = null;
+                    canUpdate = false;
+                }
+                
+            }
+
+            if (canUpdate == true)
+            {
+                DatabaseHelper.connection.Open();
+
+                if (DatabaseHelper.UpdateUser(user) == true)
+                {
+                    MessageBox.Show("Profile updated!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    BackToMainForm_Click(null, null);
+
+                }
+                else
+                {
+
+                    MessageBox.Show("Update error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                }
             }
             else
             {
-
-                MessageBox.Show("Update error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Your current password is wrong!", "Password error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             }
+
+           
             
         }
 
@@ -122,6 +151,50 @@ namespace Gallery
             if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
             {
                 e.Handled = true;
+            }
+        }
+
+        private void newPassTextBox_Enter(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(currentPassTextBox.Text.ToString()))
+            {
+                errorProvider1.Clear();
+                errorProvider1.Icon = Properties.Resources.error;
+                errorProvider1.BlinkRate = 0;
+                errorProvider1.SetError(currentPassTextBox, "Please select current password!");
+                currentPassTextBox.Focus();
+            }
+            else
+            {
+                errorProvider1.Clear();
+            }
+        }
+
+        private void showCurrentPassBtn_Click(object sender, EventArgs e)
+        {
+            if (currentPassTextBox.UseSystemPasswordChar == true)
+            {
+                currentPassTextBox.UseSystemPasswordChar = false;
+                showCurrentPassBtn.Image = Properties.Resources.open;
+            }
+            else
+            {
+                currentPassTextBox.UseSystemPasswordChar = true;
+                showCurrentPassBtn.Image = Properties.Resources.hidden__1_;
+            }
+        }
+
+        private void showNewPassBtn_Click(object sender, EventArgs e)
+        {
+            if (newPassTextBox.UseSystemPasswordChar == true)
+            {
+                newPassTextBox.UseSystemPasswordChar = false;
+                showNewPassBtn.Image = Properties.Resources.open;
+            }
+            else
+            {
+                newPassTextBox.UseSystemPasswordChar = true;
+                showNewPassBtn.Image = Properties.Resources.open;
             }
         }
     }

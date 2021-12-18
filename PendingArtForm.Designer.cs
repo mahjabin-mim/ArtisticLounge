@@ -51,13 +51,16 @@
             this.artsGridView.BackgroundColor = System.Drawing.Color.White;
             this.artsGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.artsGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.artsGridView.Location = new System.Drawing.Point(0, 112);
+            this.artsGridView.Location = new System.Drawing.Point(0, 111);
             this.artsGridView.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.artsGridView.MaximumSize = new System.Drawing.Size(1654, 853);
+            this.artsGridView.MinimumSize = new System.Drawing.Size(1654, 853);
             this.artsGridView.Name = "artsGridView";
+            this.artsGridView.ReadOnly = true;
             this.artsGridView.RowHeadersVisible = false;
             this.artsGridView.RowHeadersWidth = 72;
             this.artsGridView.RowTemplate.Height = 125;
-            this.artsGridView.Size = new System.Drawing.Size(1661, 872);
+            this.artsGridView.Size = new System.Drawing.Size(1654, 853);
             this.artsGridView.TabIndex = 0;
             this.artsGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.artsGridView_CellClick);
             this.artsGridView.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.artsGridView_CellMouseEnter);
@@ -76,7 +79,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1661, 984);
+            this.panel1.Size = new System.Drawing.Size(1654, 964);
             this.panel1.TabIndex = 3;
             // 
             // deleteBtn
@@ -103,7 +106,7 @@
             this.deleteBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.ShadowDecoration.Parent = this.deleteBtn;
-            this.deleteBtn.Size = new System.Drawing.Size(242, 68);
+            this.deleteBtn.Size = new System.Drawing.Size(235, 68);
             this.deleteBtn.TabIndex = 22;
             this.deleteBtn.Text = "Delete";
             this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
@@ -132,7 +135,7 @@
             this.cancleBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cancleBtn.Name = "cancleBtn";
             this.cancleBtn.ShadowDecoration.Parent = this.cancleBtn;
-            this.cancleBtn.Size = new System.Drawing.Size(242, 68);
+            this.cancleBtn.Size = new System.Drawing.Size(235, 68);
             this.cancleBtn.TabIndex = 21;
             this.cancleBtn.Text = "Back";
             this.cancleBtn.Click += new System.EventHandler(this.cancleBtn_Click);
@@ -155,7 +158,7 @@
             this.searchBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.searchBox.HoverState.Parent = this.searchBox;
             this.searchBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("searchBox.IconLeft")));
-            this.searchBox.Location = new System.Drawing.Point(13, 23);
+            this.searchBox.Location = new System.Drawing.Point(13, 22);
             this.searchBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.searchBox.Name = "searchBox";
             this.searchBox.Padding = new System.Windows.Forms.Padding(15, 15, 15, 15);
@@ -166,7 +169,7 @@
             this.searchBox.ShadowDecoration.Enabled = true;
             this.searchBox.ShadowDecoration.Parent = this.searchBox;
             this.searchBox.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.searchBox.Size = new System.Drawing.Size(885, 57);
+            this.searchBox.Size = new System.Drawing.Size(886, 57);
             this.searchBox.TabIndex = 20;
             this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
             // 
@@ -190,11 +193,11 @@
             this.acceptBtn.HoverState.Parent = this.acceptBtn;
             this.acceptBtn.Image = ((System.Drawing.Image)(resources.GetObject("acceptBtn.Image")));
             this.acceptBtn.ImageSize = new System.Drawing.Size(15, 15);
-            this.acceptBtn.Location = new System.Drawing.Point(1156, 18);
+            this.acceptBtn.Location = new System.Drawing.Point(1157, 18);
             this.acceptBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.acceptBtn.Name = "acceptBtn";
             this.acceptBtn.ShadowDecoration.Parent = this.acceptBtn;
-            this.acceptBtn.Size = new System.Drawing.Size(242, 68);
+            this.acceptBtn.Size = new System.Drawing.Size(235, 68);
             this.acceptBtn.TabIndex = 19;
             this.acceptBtn.Text = "Accept";
             this.acceptBtn.Click += new System.EventHandler(this.acceptBtn_Click);
@@ -206,7 +209,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1661, 984);
+            this.pictureBox1.Size = new System.Drawing.Size(1654, 964);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -215,12 +218,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1661, 984);
+            this.ClientSize = new System.Drawing.Size(1654, 964);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.MaximumSize = new System.Drawing.Size(1685, 1048);
-            this.MinimumSize = new System.Drawing.Size(1685, 1048);
+            this.MaximumSize = new System.Drawing.Size(1678, 1028);
+            this.MinimumSize = new System.Drawing.Size(1678, 1028);
             this.Name = "PendingArtForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PendingArtForm";

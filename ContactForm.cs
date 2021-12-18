@@ -16,6 +16,9 @@ namespace Gallery
     public partial class ContactForm : Form
     {
         public bool mainForm { set; get; }
+        public bool profileForm { set; get; }
+
+        public Size Psize { get; set; }
         public ContactForm()
         {
             InitializeComponent();
@@ -30,6 +33,16 @@ namespace Gallery
                 main.ShowDialog();
                 this.Close();
             }
+            else if (profileForm == true)
+            {
+                ProfileForm form = new ProfileForm();
+                form.Size = this.Psize;
+                form.MinimumSize = this.Psize;
+                form.MaximumSize = this.Psize;
+                form.ShowDialog();
+                this.Close();
+
+            }
             else
             {
                 Form1 form1 = new Form1();
@@ -41,17 +54,11 @@ namespace Gallery
         private void AboutUsBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            AboutUsForm aboutUsForm = new AboutUsForm();
-            if (mainForm == true)
-            {
-                aboutUsForm.mainForm = true;
-            }
-            else
-            {
-                aboutUsForm.mainForm = false;
-            }
-
-            aboutUsForm.ShowDialog();
+            AboutUsForm contactForm = new AboutUsForm();
+            contactForm.mainForm = this.mainForm;
+            contactForm.profileForm = this.profileForm;
+            contactForm.Psize = this.Psize;
+            contactForm.ShowDialog();
             this.Close();
         }
 
@@ -76,7 +83,7 @@ namespace Gallery
 
         private void sendBtn_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(nameBox.Text) || !string.IsNullOrEmpty(mailBox.Text) || !string.IsNullOrEmpty(msgBox.Text))
+            if (!string.IsNullOrEmpty(nameBox.Text) && !string.IsNullOrEmpty(mailBox.Text) && !string.IsNullOrEmpty(msgBox.Text))
             {
                 if (IsValidEmailAddress(mailBox.Text) == true)
                 {
@@ -103,34 +110,24 @@ namespace Gallery
                     MessageBox.Show("Please provide a valid email address", "Opps", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                 }
-                /*if (string.IsNullOrEmpty(nameBox.Text) || string.IsNullOrEmpty(mailBox.Text) || string.IsNullOrEmpty(msgBox.Text))
-                {
-                    // @Todo - > Error provider
-                }
-                else
-                {
-                    if (IsValidEmailAddress(mailBox.Text) == true)
-                    {
-                        try
-                        {
-
-                        }
-                        catch(Exception ex)
-                        {
-                            MessageBox.Show("Check your connection! "+ex.Message, "Connectio Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Please provide a valid email address", "Opps", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-                    }
-                }*/
+               
             }
         }
             public static bool IsValidEmailAddress(string address)
             {
                 return new EmailAddressAttribute().IsValid(address);
+            }
+
+            private void ServicesBtn_Click(object sender, EventArgs e)
+            {
+
+                this.Hide();
+                ServiceForm contactForm = new ServiceForm();
+                contactForm.mainForm = this.mainForm;
+                contactForm.profileForm = this.profileForm;
+                contactForm.Psize = this.Psize;
+                contactForm.ShowDialog();
+                this.Close();
             }
         }
     } 

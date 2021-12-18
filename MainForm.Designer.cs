@@ -429,6 +429,7 @@
             this.ServicesBtn.TabIndex = 9;
             this.ServicesBtn.Text = "Services";
             this.ServicesBtn.UseVisualStyleBackColor = false;
+            this.ServicesBtn.Click += new System.EventHandler(this.ServicesBtn_Click);
             // 
             // panel1
             // 

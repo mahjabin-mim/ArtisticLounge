@@ -80,12 +80,18 @@ namespace Gallery
                         MessageBox.Show("Error deleting message", "Opps", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
                     }
-                }
-                else
-                {
-                    MessageBox.Show("Ërror");
-                }
+                }                
             }
+        }
+
+        private void msgGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            selectedIndex = e.RowIndex;
+        }
+
+        private void msgGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            msgGridView.ClearSelection();
         }
     }
 }

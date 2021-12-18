@@ -13,6 +13,8 @@ namespace Gallery
     public partial class AboutUsForm : Form
     {
         public bool mainForm { set; get; }
+        public bool profileForm { set; get; }
+        public Size Psize { get; set; }
         public AboutUsForm()
         {
             InitializeComponent();
@@ -33,6 +35,16 @@ namespace Gallery
                 main.ShowDialog();
                 this.Close();
             }
+            else if (profileForm == true)
+            {
+                ProfileForm form = new ProfileForm();
+                form.Size = this.Psize;
+                form.MinimumSize = this.Psize;
+                form.MaximumSize = this.Psize;
+                form.ShowDialog();
+                this.Close();
+
+            }
             else
             {
                 Form1 form1 = new Form1();
@@ -45,14 +57,9 @@ namespace Gallery
         {
             this.Hide();
             ContactForm contactForm = new ContactForm();
-            if (mainForm == true)
-            {
-                contactForm.mainForm = true;
-            }
-            else
-            {
-                contactForm.mainForm = false;
-            }
+            contactForm.mainForm = this.mainForm;
+            contactForm.profileForm = this.profileForm;
+            contactForm.Psize = this.Psize;
             contactForm.ShowDialog();
             this.Close();
         }
@@ -66,6 +73,17 @@ namespace Gallery
         private void AboutUsForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             
+        }
+
+        private void ServicesBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ServiceForm contactForm = new ServiceForm();
+            contactForm.mainForm = this.mainForm;
+            contactForm.profileForm = this.profileForm;
+            contactForm.Psize = this.Psize;
+            contactForm.ShowDialog();
+            this.Close();
         }
     }
 }

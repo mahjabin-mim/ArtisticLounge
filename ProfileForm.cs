@@ -310,5 +310,41 @@ namespace Gallery
 
             this.Close();
         }
+
+        private void AboutUsBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutUsForm form = new AboutUsForm();
+            form.mainForm = false;
+            form.profileForm = true;
+            form.Psize = this.Size;
+            form.ShowDialog();
+            this.Close();
+
+        }
+
+        private void ContactBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ContactForm form = new ContactForm();
+            form.mainForm = false;
+            form.profileForm = true;
+            form.Psize = this.Size;
+            form.ShowDialog();
+
+            this.Close();
+        }
+
+        private void ServicesBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ServiceForm form = new ServiceForm();
+            form.mainForm = false;
+            form.profileForm = true;
+            form.Psize = this.Size;
+            form.ShowDialog();
+
+            this.Close();
+        }
     }
 }

@@ -72,21 +72,21 @@ namespace Gallery
 
         private void usersGridView_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex > -1)
+            /*if (e.RowIndex > -1)
             {
                 usersGridView.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Navy;
                 usersGridView.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.White;
-            }
+            }*/
         }
 
         private void usersGridView_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex > -1)
+            /*if (e.RowIndex > -1)
             {
                 usersGridView.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.White;
                 usersGridView.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.Black;
                 
-            }
+            }*/
             
         }
 

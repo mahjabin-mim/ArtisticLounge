@@ -32,9 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BuyForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.ServicesBtn = new System.Windows.Forms.Button();
-            this.ContactBtn = new System.Windows.Forms.Button();
-            this.AboutUsBtn = new System.Windows.Forms.Button();
             this.ArtisticLounge = new System.Windows.Forms.Button();
             this.buyArtrightPanel = new System.Windows.Forms.Panel();
             this.nameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
@@ -73,13 +70,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.ServicesBtn);
-            this.panel1.Controls.Add(this.ContactBtn);
-            this.panel1.Controls.Add(this.AboutUsBtn);
             this.panel1.Controls.Add(this.ArtisticLounge);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(939, 54);
             this.panel1.TabIndex = 18;
@@ -89,64 +83,12 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 6);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(48, 45);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
-            // 
-            // ServicesBtn
-            // 
-            this.ServicesBtn.BackColor = System.Drawing.Color.White;
-            this.ServicesBtn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ServicesBtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ServicesBtn.FlatAppearance.BorderSize = 0;
-            this.ServicesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ServicesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ServicesBtn.ForeColor = System.Drawing.Color.Navy;
-            this.ServicesBtn.Location = new System.Drawing.Point(439, 0);
-            this.ServicesBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ServicesBtn.Name = "ServicesBtn";
-            this.ServicesBtn.Size = new System.Drawing.Size(105, 54);
-            this.ServicesBtn.TabIndex = 9;
-            this.ServicesBtn.Text = "Services";
-            this.ServicesBtn.UseVisualStyleBackColor = false;
-            // 
-            // ContactBtn
-            // 
-            this.ContactBtn.BackColor = System.Drawing.Color.White;
-            this.ContactBtn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ContactBtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ContactBtn.FlatAppearance.BorderSize = 0;
-            this.ContactBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ContactBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ContactBtn.ForeColor = System.Drawing.Color.Navy;
-            this.ContactBtn.Location = new System.Drawing.Point(334, 0);
-            this.ContactBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ContactBtn.Name = "ContactBtn";
-            this.ContactBtn.Size = new System.Drawing.Size(105, 54);
-            this.ContactBtn.TabIndex = 6;
-            this.ContactBtn.Text = "Contact";
-            this.ContactBtn.UseVisualStyleBackColor = false;
-            // 
-            // AboutUsBtn
-            // 
-            this.AboutUsBtn.BackColor = System.Drawing.Color.White;
-            this.AboutUsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.AboutUsBtn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.AboutUsBtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.AboutUsBtn.FlatAppearance.BorderSize = 0;
-            this.AboutUsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AboutUsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AboutUsBtn.ForeColor = System.Drawing.Color.Navy;
-            this.AboutUsBtn.Location = new System.Drawing.Point(229, 0);
-            this.AboutUsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.AboutUsBtn.Name = "AboutUsBtn";
-            this.AboutUsBtn.Size = new System.Drawing.Size(105, 54);
-            this.AboutUsBtn.TabIndex = 8;
-            this.AboutUsBtn.Text = "About Us";
-            this.AboutUsBtn.UseVisualStyleBackColor = false;
             // 
             // ArtisticLounge
             // 
@@ -158,7 +100,7 @@
             this.ArtisticLounge.Font = new System.Drawing.Font("Segoe Print", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ArtisticLounge.ForeColor = System.Drawing.Color.SaddleBrown;
             this.ArtisticLounge.Location = new System.Drawing.Point(0, 0);
-            this.ArtisticLounge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ArtisticLounge.Margin = new System.Windows.Forms.Padding(2);
             this.ArtisticLounge.Name = "ArtisticLounge";
             this.ArtisticLounge.Size = new System.Drawing.Size(229, 54);
             this.ArtisticLounge.TabIndex = 7;
@@ -177,7 +119,7 @@
             this.buyArtrightPanel.Controls.Add(this.emailTextBox);
             this.buyArtrightPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buyArtrightPanel.Location = new System.Drawing.Point(404, 54);
-            this.buyArtrightPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buyArtrightPanel.Margin = new System.Windows.Forms.Padding(2);
             this.buyArtrightPanel.Name = "buyArtrightPanel";
             this.buyArtrightPanel.Size = new System.Drawing.Size(535, 487);
             this.buyArtrightPanel.TabIndex = 20;
@@ -231,7 +173,7 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(147, 339);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(135, 37);
@@ -257,7 +199,7 @@
             this.proceedBtn.ForeColor = System.Drawing.Color.White;
             this.proceedBtn.HoverState.Parent = this.proceedBtn;
             this.proceedBtn.Location = new System.Drawing.Point(287, 339);
-            this.proceedBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.proceedBtn.Margin = new System.Windows.Forms.Padding(2);
             this.proceedBtn.Name = "proceedBtn";
             this.proceedBtn.ShadowDecoration.Parent = this.proceedBtn;
             this.proceedBtn.Size = new System.Drawing.Size(135, 37);
@@ -373,7 +315,7 @@
             this.buyArtleftPanel.Controls.Add(this.artPicture);
             this.buyArtleftPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.buyArtleftPanel.Location = new System.Drawing.Point(0, 54);
-            this.buyArtleftPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buyArtleftPanel.Margin = new System.Windows.Forms.Padding(2);
             this.buyArtleftPanel.Name = "buyArtleftPanel";
             this.buyArtleftPanel.Size = new System.Drawing.Size(404, 487);
             this.buyArtleftPanel.TabIndex = 19;
@@ -433,7 +375,7 @@
             this.guna2Panel2.BackColor = System.Drawing.Color.IndianRed;
             this.guna2Panel2.BorderColor = System.Drawing.Color.White;
             this.guna2Panel2.Location = new System.Drawing.Point(41, 412);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(315, 1);
@@ -444,7 +386,7 @@
             this.guna2Panel1.BackColor = System.Drawing.Color.IndianRed;
             this.guna2Panel1.BorderColor = System.Drawing.Color.White;
             this.guna2Panel1.Location = new System.Drawing.Point(41, 292);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(315, 1);
@@ -466,7 +408,7 @@
             // 
             this.artPicture.Image = ((System.Drawing.Image)(resources.GetObject("artPicture.Image")));
             this.artPicture.Location = new System.Drawing.Point(41, 25);
-            this.artPicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.artPicture.Margin = new System.Windows.Forms.Padding(2);
             this.artPicture.Name = "artPicture";
             this.artPicture.Size = new System.Drawing.Size(315, 191);
             this.artPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -478,7 +420,7 @@
             this.buyFormBg.Dock = System.Windows.Forms.DockStyle.Fill;
             this.buyFormBg.Image = ((System.Drawing.Image)(resources.GetObject("buyFormBg.Image")));
             this.buyFormBg.Location = new System.Drawing.Point(0, 0);
-            this.buyFormBg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buyFormBg.Margin = new System.Windows.Forms.Padding(2);
             this.buyFormBg.Name = "buyFormBg";
             this.buyFormBg.Size = new System.Drawing.Size(939, 541);
             this.buyFormBg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -510,7 +452,7 @@
             this.Controls.Add(this.buyArtleftPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buyFormBg);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(955, 580);
             this.MinimumSize = new System.Drawing.Size(955, 580);
@@ -538,9 +480,6 @@
         private System.Windows.Forms.PictureBox buyFormBg;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button ServicesBtn;
-        private System.Windows.Forms.Button ContactBtn;
-        private System.Windows.Forms.Button AboutUsBtn;
         private System.Windows.Forms.Button ArtisticLounge;
         private System.Windows.Forms.Panel buyArtleftPanel;
         private System.Windows.Forms.PictureBox artPicture;

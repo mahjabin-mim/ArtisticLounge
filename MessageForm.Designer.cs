@@ -45,8 +45,9 @@
             this.panel1.Controls.Add(this.msgGridView);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1661, 984);
+            this.panel1.Size = new System.Drawing.Size(1654, 964);
             this.panel1.TabIndex = 0;
             // 
             // deleteBtn
@@ -69,11 +70,11 @@
             this.deleteBtn.HoverState.Parent = this.deleteBtn;
             this.deleteBtn.Image = ((System.Drawing.Image)(resources.GetObject("deleteBtn.Image")));
             this.deleteBtn.ImageSize = new System.Drawing.Size(15, 15);
-            this.deleteBtn.Location = new System.Drawing.Point(996, 22);
+            this.deleteBtn.Location = new System.Drawing.Point(1020, 22);
             this.deleteBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.ShadowDecoration.Parent = this.deleteBtn;
-            this.deleteBtn.Size = new System.Drawing.Size(314, 68);
+            this.deleteBtn.Size = new System.Drawing.Size(307, 68);
             this.deleteBtn.TabIndex = 25;
             this.deleteBtn.Text = "Delete Message";
             this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
@@ -98,11 +99,11 @@
             this.cancleBtn.HoverState.Parent = this.cancleBtn;
             this.cancleBtn.Image = ((System.Drawing.Image)(resources.GetObject("cancleBtn.Image")));
             this.cancleBtn.ImageSize = new System.Drawing.Size(15, 15);
-            this.cancleBtn.Location = new System.Drawing.Point(1334, 22);
+            this.cancleBtn.Location = new System.Drawing.Point(1335, 22);
             this.cancleBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cancleBtn.Name = "cancleBtn";
             this.cancleBtn.ShadowDecoration.Parent = this.cancleBtn;
-            this.cancleBtn.Size = new System.Drawing.Size(314, 68);
+            this.cancleBtn.Size = new System.Drawing.Size(307, 68);
             this.cancleBtn.TabIndex = 24;
             this.cancleBtn.Text = "Back";
             this.cancleBtn.Click += new System.EventHandler(this.cancleBtn_Click);
@@ -116,25 +117,31 @@
             this.msgGridView.BackgroundColor = System.Drawing.Color.White;
             this.msgGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.msgGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.msgGridView.Location = new System.Drawing.Point(0, 112);
+            this.msgGridView.Location = new System.Drawing.Point(0, 111);
             this.msgGridView.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.msgGridView.MaximumSize = new System.Drawing.Size(1654, 853);
+            this.msgGridView.MinimumSize = new System.Drawing.Size(1654, 853);
             this.msgGridView.Name = "msgGridView";
+            this.msgGridView.ReadOnly = true;
             this.msgGridView.RowHeadersVisible = false;
             this.msgGridView.RowHeadersWidth = 72;
             this.msgGridView.RowTemplate.Height = 125;
-            this.msgGridView.Size = new System.Drawing.Size(1661, 872);
+            this.msgGridView.Size = new System.Drawing.Size(1654, 853);
             this.msgGridView.TabIndex = 3;
+            this.msgGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.msgGridView_CellClick);
             this.msgGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.msgGridView_CellContentClick);
+            this.msgGridView.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.msgGridView_DataBindingComplete);
             // 
             // MessageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1661, 984);
+            this.ClientSize = new System.Drawing.Size(1654, 964);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(1685, 1048);
-            this.MinimumSize = new System.Drawing.Size(1685, 1048);
+            this.MaximumSize = new System.Drawing.Size(1678, 1028);
+            this.MinimumSize = new System.Drawing.Size(1678, 1028);
             this.Name = "MessageForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MessageForm";

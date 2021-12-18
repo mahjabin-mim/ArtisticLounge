@@ -175,3 +175,10 @@ C:\Users\fahim\Desktop\New folder\ArtisticLounge\bin\Debug\Gallery.exe
 C:\Users\fahim\Desktop\New folder\ArtisticLounge\bin\Debug\Gallery.pdb
 C:\Users\fahim\Desktop\New folder\ArtisticLounge\bin\Debug\Guna.UI2.dll
 C:\Users\fahim\Desktop\New folder\ArtisticLounge\obj\Debug\Gallery.csproj.CopyComplete
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.MessageForm.resources
+C:\Users\DPE\Desktop\New folder\ArtisticLounge-main\obj\Debug\Gallery.ServiceForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.AdminForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.MessageForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.PendingArtForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.ServiceForm.resources
+C:\Users\fahim\Desktop\ArtisticLounge-main\obj\Debug\Gallery.UsersForm.resources

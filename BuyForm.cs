@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.ComponentModel.DataAnnotations;
 
 namespace Gallery
 {
@@ -81,6 +82,15 @@ namespace Gallery
                 emailError.Icon = Properties.Resources.error;
                 emailError.BlinkRate = 0;
                 emailError.SetError(emailTextBox, "Please give email");
+                procced = false;
+            }
+            if (IsValidEmailAddress(emailTextBox.Text))
+            {
+                emailTextBox.BorderColor = Color.Red;
+                //  emailError.Clear();
+                emailError.Icon = Properties.Resources.error;
+                emailError.BlinkRate = 0;
+                emailError.SetError(emailTextBox, "Please give a valid email address");
                 procced = false;
             }
             if(string.IsNullOrEmpty(nameTextBox.Text))
@@ -201,6 +211,10 @@ namespace Gallery
             {
                 e.Handled = true;
             }
+        }
+        public static bool IsValidEmailAddress(string address)
+        {
+            return new EmailAddressAttribute().IsValid(address);
         }
     }
 }

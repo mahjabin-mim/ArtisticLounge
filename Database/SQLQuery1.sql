@@ -53,6 +53,7 @@ INSERT INTO ART_TBL VALUES (next value for ART_SQ, 'My art','My catagory','10','
 
 SELECT * FROM ART_TBL
 
+
 EXEC sp_help 'dbo.ART_TBL'
 
 
@@ -63,6 +64,7 @@ MAXVALUE 9999
 NO CYCLE
 NO CACHE
 
+DROP SEQUENCE MSG_SQ
 
 CREATE TABLE MSG_TBL
 (

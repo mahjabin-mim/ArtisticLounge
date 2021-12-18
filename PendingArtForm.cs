@@ -72,21 +72,21 @@ namespace Gallery
 
         private void artsGridView_CellMouseEnter(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex > -1)
+            /*if (e.RowIndex > -1)
             {
                 artsGridView.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.Navy;
                 artsGridView.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.White;
-            }
+            }*/
         }
 
         private void artsGridView_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex > -1)
+            /*if (e.RowIndex > -1)
             {
                 artsGridView.Rows[e.RowIndex].DefaultCellStyle.BackColor = Color.White;
                 artsGridView.Rows[e.RowIndex].DefaultCellStyle.ForeColor = Color.Black;
 
-            }
+            }*/
         }
 
         private void artsGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
@@ -110,6 +110,8 @@ namespace Gallery
                 }
                 else
                 {
+                    string toMail = artsGridView.Rows[selectedIndex].Cells[4].Value.ToString();
+                    Message.SendAcceptMail(toMail);
                     BindArts();
                 }
                 
@@ -132,6 +134,8 @@ namespace Gallery
                     if (DatabaseHelper.DeleteArt(code) == true)
                     {
                         MessageBox.Show("Art delete successfull", "Success", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        string toMail = artsGridView.Rows[selectedIndex].Cells[4].Value.ToString();
+                        Message.SendDeclineMail(toMail);
                         BindArts();
                     }
                     else

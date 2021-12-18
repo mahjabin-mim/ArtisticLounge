@@ -79,6 +79,8 @@ namespace Gallery
                 if (DatabaseHelper.PostArt(art) == true)
                 {
                     MessageBox.Show("Art posted", "Post Art", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    Message.SendPendingMail(User.Email);
+                    //MessageBox.Show(User.Email);
 
                     this.Hide();
 

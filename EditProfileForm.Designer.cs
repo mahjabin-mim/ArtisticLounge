@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditProfileForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.BackToMainForm = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.ServicesBtn = new System.Windows.Forms.Button();
-            this.ContactBtn = new System.Windows.Forms.Button();
-            this.AboutUsBtn = new System.Windows.Forms.Button();
             this.ArtisticLounge = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.EditProfilePicture = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -48,12 +46,18 @@
             this.EditPanel = new System.Windows.Forms.Panel();
             this.newPassTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.updateProfileBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.showCurrentPassBtn = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.showNewPassBtn = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BackToMainForm)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditProfilePicture)).BeginInit();
             this.EditPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.showCurrentPassBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showNewPassBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -61,13 +65,10 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.BackToMainForm);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.ServicesBtn);
-            this.panel1.Controls.Add(this.ContactBtn);
-            this.panel1.Controls.Add(this.AboutUsBtn);
             this.panel1.Controls.Add(this.ArtisticLounge);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(801, 54);
             this.panel1.TabIndex = 20;
@@ -81,7 +82,7 @@
             this.BackToMainForm.Location = new System.Drawing.Point(746, 0);
             this.BackToMainForm.Margin = new System.Windows.Forms.Padding(2, 2, 5, 2);
             this.BackToMainForm.Name = "BackToMainForm";
-            this.BackToMainForm.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.BackToMainForm.Padding = new System.Windows.Forms.Padding(8);
             this.BackToMainForm.ShadowDecoration.Parent = this.BackToMainForm;
             this.BackToMainForm.Size = new System.Drawing.Size(55, 54);
             this.BackToMainForm.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -94,64 +95,12 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 7);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(48, 44);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
-            // 
-            // ServicesBtn
-            // 
-            this.ServicesBtn.BackColor = System.Drawing.Color.White;
-            this.ServicesBtn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ServicesBtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ServicesBtn.FlatAppearance.BorderSize = 0;
-            this.ServicesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ServicesBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ServicesBtn.ForeColor = System.Drawing.Color.Navy;
-            this.ServicesBtn.Location = new System.Drawing.Point(439, 0);
-            this.ServicesBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ServicesBtn.Name = "ServicesBtn";
-            this.ServicesBtn.Size = new System.Drawing.Size(105, 54);
-            this.ServicesBtn.TabIndex = 9;
-            this.ServicesBtn.Text = "Services";
-            this.ServicesBtn.UseVisualStyleBackColor = false;
-            // 
-            // ContactBtn
-            // 
-            this.ContactBtn.BackColor = System.Drawing.Color.White;
-            this.ContactBtn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ContactBtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ContactBtn.FlatAppearance.BorderSize = 0;
-            this.ContactBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ContactBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ContactBtn.ForeColor = System.Drawing.Color.Navy;
-            this.ContactBtn.Location = new System.Drawing.Point(334, 0);
-            this.ContactBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ContactBtn.Name = "ContactBtn";
-            this.ContactBtn.Size = new System.Drawing.Size(105, 54);
-            this.ContactBtn.TabIndex = 6;
-            this.ContactBtn.Text = "Contact";
-            this.ContactBtn.UseVisualStyleBackColor = false;
-            // 
-            // AboutUsBtn
-            // 
-            this.AboutUsBtn.BackColor = System.Drawing.Color.White;
-            this.AboutUsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.AboutUsBtn.Dock = System.Windows.Forms.DockStyle.Left;
-            this.AboutUsBtn.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.AboutUsBtn.FlatAppearance.BorderSize = 0;
-            this.AboutUsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AboutUsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AboutUsBtn.ForeColor = System.Drawing.Color.Navy;
-            this.AboutUsBtn.Location = new System.Drawing.Point(229, 0);
-            this.AboutUsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.AboutUsBtn.Name = "AboutUsBtn";
-            this.AboutUsBtn.Size = new System.Drawing.Size(105, 54);
-            this.AboutUsBtn.TabIndex = 8;
-            this.AboutUsBtn.Text = "About Us";
-            this.AboutUsBtn.UseVisualStyleBackColor = false;
             // 
             // ArtisticLounge
             // 
@@ -163,7 +112,7 @@
             this.ArtisticLounge.Font = new System.Drawing.Font("Segoe Print", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ArtisticLounge.ForeColor = System.Drawing.Color.SaddleBrown;
             this.ArtisticLounge.Location = new System.Drawing.Point(0, 0);
-            this.ArtisticLounge.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ArtisticLounge.Margin = new System.Windows.Forms.Padding(2);
             this.ArtisticLounge.Name = "ArtisticLounge";
             this.ArtisticLounge.Size = new System.Drawing.Size(229, 54);
             this.ArtisticLounge.TabIndex = 7;
@@ -176,7 +125,7 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 54);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(801, 486);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -191,7 +140,7 @@
             this.EditProfilePicture.Image = ((System.Drawing.Image)(resources.GetObject("EditProfilePicture.Image")));
             this.EditProfilePicture.ImageRotate = 0F;
             this.EditProfilePicture.Location = new System.Drawing.Point(118, 115);
-            this.EditProfilePicture.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EditProfilePicture.Margin = new System.Windows.Forms.Padding(2);
             this.EditProfilePicture.Name = "EditProfilePicture";
             this.EditProfilePicture.ShadowDecoration.Parent = this.EditProfilePicture;
             this.EditProfilePicture.Size = new System.Drawing.Size(147, 138);
@@ -219,7 +168,7 @@
             this.BrowseBtn.ForeColor = System.Drawing.Color.White;
             this.BrowseBtn.HoverState.Parent = this.BrowseBtn;
             this.BrowseBtn.Location = new System.Drawing.Point(60, 273);
-            this.BrowseBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BrowseBtn.Margin = new System.Windows.Forms.Padding(2);
             this.BrowseBtn.Name = "BrowseBtn";
             this.BrowseBtn.ShadowDecoration.Parent = this.BrowseBtn;
             this.BrowseBtn.Size = new System.Drawing.Size(131, 33);
@@ -246,7 +195,7 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.DarkRed;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(200, 273);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(131, 33);
@@ -377,6 +326,7 @@
             this.currentPassTextBox.ShadowDecoration.Parent = this.currentPassTextBox;
             this.currentPassTextBox.Size = new System.Drawing.Size(292, 33);
             this.currentPassTextBox.TabIndex = 29;
+            this.currentPassTextBox.UseSystemPasswordChar = true;
             // 
             // locationTextBox
             // 
@@ -411,6 +361,8 @@
             // EditPanel
             // 
             this.EditPanel.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.EditPanel.Controls.Add(this.showNewPassBtn);
+            this.EditPanel.Controls.Add(this.showCurrentPassBtn);
             this.EditPanel.Controls.Add(this.newPassTextBox);
             this.EditPanel.Controls.Add(this.updateProfileBtn);
             this.EditPanel.Controls.Add(this.guna2Button1);
@@ -423,7 +375,7 @@
             this.EditPanel.Controls.Add(this.phoneTextBox);
             this.EditPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EditPanel.Location = new System.Drawing.Point(0, 54);
-            this.EditPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EditPanel.Margin = new System.Windows.Forms.Padding(2);
             this.EditPanel.Name = "EditPanel";
             this.EditPanel.Size = new System.Drawing.Size(801, 486);
             this.EditPanel.TabIndex = 31;
@@ -457,6 +409,8 @@
             this.newPassTextBox.ShadowDecoration.Parent = this.newPassTextBox;
             this.newPassTextBox.Size = new System.Drawing.Size(292, 33);
             this.newPassTextBox.TabIndex = 32;
+            this.newPassTextBox.UseSystemPasswordChar = true;
+            this.newPassTextBox.Enter += new System.EventHandler(this.newPassTextBox_Enter);
             // 
             // updateProfileBtn
             // 
@@ -477,13 +431,53 @@
             this.updateProfileBtn.ForeColor = System.Drawing.Color.White;
             this.updateProfileBtn.HoverState.Parent = this.updateProfileBtn;
             this.updateProfileBtn.Location = new System.Drawing.Point(290, 413);
-            this.updateProfileBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.updateProfileBtn.Margin = new System.Windows.Forms.Padding(2);
             this.updateProfileBtn.Name = "updateProfileBtn";
             this.updateProfileBtn.ShadowDecoration.Parent = this.updateProfileBtn;
             this.updateProfileBtn.Size = new System.Drawing.Size(189, 41);
             this.updateProfileBtn.TabIndex = 31;
             this.updateProfileBtn.Text = "Update Profile";
             this.updateProfileBtn.Click += new System.EventHandler(this.updateProfileBtn_Click);
+            // 
+            // showCurrentPassBtn
+            // 
+            this.showCurrentPassBtn.BackColor = System.Drawing.Color.Transparent;
+            this.showCurrentPassBtn.FillColor = System.Drawing.Color.Transparent;
+            this.showCurrentPassBtn.Image = ((System.Drawing.Image)(resources.GetObject("showCurrentPassBtn.Image")));
+            this.showCurrentPassBtn.ImageRotate = 0F;
+            this.showCurrentPassBtn.Location = new System.Drawing.Point(690, 261);
+            this.showCurrentPassBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.showCurrentPassBtn.Name = "showCurrentPassBtn";
+            this.showCurrentPassBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.showCurrentPassBtn.ShadowDecoration.Parent = this.showCurrentPassBtn;
+            this.showCurrentPassBtn.Size = new System.Drawing.Size(15, 21);
+            this.showCurrentPassBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.showCurrentPassBtn.TabIndex = 33;
+            this.showCurrentPassBtn.TabStop = false;
+            this.showCurrentPassBtn.UseTransparentBackground = true;
+            this.showCurrentPassBtn.Click += new System.EventHandler(this.showCurrentPassBtn_Click);
+            // 
+            // showNewPassBtn
+            // 
+            this.showNewPassBtn.BackColor = System.Drawing.Color.Transparent;
+            this.showNewPassBtn.FillColor = System.Drawing.Color.Transparent;
+            this.showNewPassBtn.Image = ((System.Drawing.Image)(resources.GetObject("showNewPassBtn.Image")));
+            this.showNewPassBtn.ImageRotate = 0F;
+            this.showNewPassBtn.Location = new System.Drawing.Point(690, 305);
+            this.showNewPassBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.showNewPassBtn.Name = "showNewPassBtn";
+            this.showNewPassBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.showNewPassBtn.ShadowDecoration.Parent = this.showNewPassBtn;
+            this.showNewPassBtn.Size = new System.Drawing.Size(15, 21);
+            this.showNewPassBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.showNewPassBtn.TabIndex = 34;
+            this.showNewPassBtn.TabStop = false;
+            this.showNewPassBtn.UseTransparentBackground = true;
+            this.showNewPassBtn.Click += new System.EventHandler(this.showNewPassBtn_Click);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // EditProfileForm
             // 
@@ -493,7 +487,7 @@
             this.Controls.Add(this.EditPanel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(817, 579);
             this.MinimumSize = new System.Drawing.Size(817, 579);
@@ -507,6 +501,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EditProfilePicture)).EndInit();
             this.EditPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.showCurrentPassBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.showNewPassBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -515,9 +512,6 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button ServicesBtn;
-        private System.Windows.Forms.Button ContactBtn;
-        private System.Windows.Forms.Button AboutUsBtn;
         private System.Windows.Forms.Button ArtisticLounge;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2PictureBox EditProfilePicture;
@@ -532,5 +526,8 @@
         private Guna.UI2.WinForms.Guna2Button updateProfileBtn;
         private Guna.UI2.WinForms.Guna2PictureBox BackToMainForm;
         private Guna.UI2.WinForms.Guna2TextBox newPassTextBox;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox showNewPassBtn;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox showCurrentPassBtn;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

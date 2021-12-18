@@ -133,6 +133,8 @@ namespace Gallery
                  this.Hide();
                  AboutUsForm aboutUsForm = new AboutUsForm();
                  aboutUsForm.mainForm = false;
+                 aboutUsForm.profileForm = false;
+                 aboutUsForm.Psize = this.Size;
                  aboutUsForm.ShowDialog();
                  this.Close();
 
@@ -143,6 +145,8 @@ namespace Gallery
                 this.Hide();
                 ContactForm contactForm = new ContactForm();
                 contactForm.mainForm = false;
+                contactForm.profileForm = false;
+                contactForm.Psize = this.Size;
                 contactForm.ShowDialog();
                 this.Close();
             }
@@ -191,6 +195,9 @@ namespace Gallery
         {
             this.Hide();
             ServiceForm serviceForm = new ServiceForm();
+            serviceForm.mainForm = false;
+            serviceForm.profileForm = false;
+            serviceForm.Psize = this.Size;
             serviceForm.ShowDialog();
             this.Close();
         }
