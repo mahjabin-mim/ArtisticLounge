@@ -32,6 +32,9 @@ namespace Gallery
 
             paymentPanel.BackColor = Color.FromArgb(100, 0, 0, 0);
 
+            backBtn.Cursor = Cursors.Hand;
+            confirmBtn.Cursor = Cursors.Hand;
+
             LoadData();
         }
 
@@ -56,7 +59,7 @@ namespace Gallery
             this.extraCharge.Text = "0.00";
 
             string total = (Convert.ToDouble(this.subTotal.Text) + Convert.ToDouble(this.shipping.Text) + Convert.ToDouble(extraCharge.Text)).ToString();
-            this.totalPrice.Text = total + ".00";
+            this.totalPrice.Text = total + ".00 Tk.";
 
         }
 

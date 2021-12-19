@@ -27,6 +27,9 @@ namespace Gallery
             this.ArtisticLounge.FlatAppearance.MouseOverBackColor = Color.Transparent;
             this.BackColor = Color.FromArgb(138, 175, 227); // form collor
 
+            BackBtn.Cursor = Cursors.Hand;
+            proceedBtn.Cursor = Cursors.Hand;
+
             this.buyArtrightPanel.BackColor = Color.FromArgb(100, 0, 0, 0);
 
             LoadData();

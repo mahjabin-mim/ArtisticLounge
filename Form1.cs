@@ -26,6 +26,10 @@ namespace Gallery
         {
             panel2.Parent = pictureBox1;
             ArtisticLounge.FlatAppearance.MouseOverBackColor = Color.Transparent;
+
+            AboutUsBtn.Cursor = Cursors.Hand;
+            ContactBtn.Cursor = Cursors.Hand;
+            ServicesBtn.Cursor = Cursors.Hand;
         }
 
         private void loginLabel_Click(object sender, EventArgs e)
@@ -132,6 +136,7 @@ namespace Gallery
             {
                  this.Hide();
                  AboutUsForm aboutUsForm = new AboutUsForm();
+                 aboutUsForm.loginForm = true;
                  aboutUsForm.mainForm = false;
                  aboutUsForm.profileForm = false;
                  aboutUsForm.Psize = this.Size;
@@ -144,6 +149,7 @@ namespace Gallery
             {
                 this.Hide();
                 ContactForm contactForm = new ContactForm();
+                contactForm.loginForm = true;
                 contactForm.mainForm = false;
                 contactForm.profileForm = false;
                 contactForm.Psize = this.Size;
@@ -195,6 +201,7 @@ namespace Gallery
         {
             this.Hide();
             ServiceForm serviceForm = new ServiceForm();
+            serviceForm.loginForm = true;
             serviceForm.mainForm = false;
             serviceForm.profileForm = false;
             serviceForm.Psize = this.Size;

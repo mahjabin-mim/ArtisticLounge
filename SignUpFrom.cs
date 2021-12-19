@@ -36,6 +36,10 @@ namespace Gallery
         {
             signupRightPanel.Parent = signupPictureBox;
             ArtisticLounge.FlatAppearance.MouseOverBackColor = Color.Transparent;
+
+            AboutUsBtn.Cursor = Cursors.Hand;
+            ContactBtn.Cursor = Cursors.Hand;
+            ServicesBtn.Cursor = Cursors.Hand;
         }
 
         private void showPassBtn_Click(object sender, EventArgs e)
@@ -126,6 +130,42 @@ namespace Gallery
         public static bool IsValidEmailAddress(string address)
         {
             return new EmailAddressAttribute().IsValid(address);
+        }
+
+        private void AboutUsBtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutUsForm aboutUsForm = new AboutUsForm();
+            aboutUsForm.loginForm = false;
+            aboutUsForm.mainForm = false;
+            aboutUsForm.profileForm = false;
+            aboutUsForm.Psize = this.Size;
+            aboutUsForm.ShowDialog();
+            this.Close();
+        }
+
+        private void ContactBtn_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            ContactForm contactForm = new ContactForm();
+            contactForm.loginForm = false;
+            contactForm.mainForm = false;
+            contactForm.profileForm = false;
+            contactForm.Psize = this.Size;
+            contactForm.ShowDialog();
+            this.Close();
+        }
+
+        private void ServicesBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ServiceForm serviceForm = new ServiceForm();
+            serviceForm.loginForm = false;
+            serviceForm.mainForm = false;
+            serviceForm.profileForm = false;
+            serviceForm.Psize = this.Size;
+            serviceForm.ShowDialog();
+            this.Close();
         }
     }
 }

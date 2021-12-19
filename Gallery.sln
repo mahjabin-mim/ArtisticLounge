@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gallery", "Gallery.csproj", "{A4D4F76F-9A6A-4B83-83D2-A1F9715167C1}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ArtisticLoungeSetup", "..\ArtisticLoungeSetup\ArtisticLoungeSetup.vdproj", "{E88A2F13-1201-4C06-A3A0-BF362BCB5B21}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ArtisticLoungeSetup", "ArtisticLoungeSetup\ArtisticLoungeSetup.vdproj", "{5CB51A15-9EBB-4EE3-A63A-9CD9DBA49212}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{A4D4F76F-9A6A-4B83-83D2-A1F9715167C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4D4F76F-9A6A-4B83-83D2-A1F9715167C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4D4F76F-9A6A-4B83-83D2-A1F9715167C1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E88A2F13-1201-4C06-A3A0-BF362BCB5B21}.Debug|Any CPU.ActiveCfg = Debug
-		{E88A2F13-1201-4C06-A3A0-BF362BCB5B21}.Release|Any CPU.ActiveCfg = Release
+		{5CB51A15-9EBB-4EE3-A63A-9CD9DBA49212}.Debug|Any CPU.ActiveCfg = Debug
+		{5CB51A15-9EBB-4EE3-A63A-9CD9DBA49212}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

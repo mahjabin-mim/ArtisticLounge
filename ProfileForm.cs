@@ -23,6 +23,10 @@ namespace Gallery
             ArtisticLounge.FlatAppearance.MouseOverBackColor = Color.Transparent;
             this.BackColor = Color.FromArgb(138, 175, 227);
 
+            AboutUsBtn.Cursor = Cursors.Hand;
+            ContactBtn.Cursor = Cursors.Hand;
+            ServicesBtn.Cursor = Cursors.Hand;
+
             ProfilePanel.BackColor = Color.FromArgb(100, 0, 0, 0);
 
             userDashFlow.Dock = DockStyle.Fill;
@@ -315,6 +319,7 @@ namespace Gallery
         {
             this.Hide();
             AboutUsForm form = new AboutUsForm();
+            form.loginForm = false;
             form.mainForm = false;
             form.profileForm = true;
             form.Psize = this.Size;
@@ -327,6 +332,7 @@ namespace Gallery
         {
             this.Hide();
             ContactForm form = new ContactForm();
+            form.loginForm = false;
             form.mainForm = false;
             form.profileForm = true;
             form.Psize = this.Size;
@@ -339,6 +345,7 @@ namespace Gallery
         {
             this.Hide();
             ServiceForm form = new ServiceForm();
+            form.loginForm = false;
             form.mainForm = false;
             form.profileForm = true;
             form.Psize = this.Size;

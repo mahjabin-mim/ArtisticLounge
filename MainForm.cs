@@ -46,6 +46,19 @@ namespace Gallery
         private void MainForm_Load(object sender, EventArgs e)
         {
             ArtisticLounge.FlatAppearance.MouseOverBackColor = Color.Transparent;
+
+            PostBtn.Cursor = Cursors.Hand;
+            logoutBtn.Cursor = Cursors.Hand;
+            homeBtn.Cursor = Cursors.Hand;
+            categoryBtn.Cursor = Cursors.Hand;
+            fineArt.Cursor = Cursors.Hand;
+            compositionBtn.Cursor = Cursors.Hand;
+            vectorBtn.Cursor = Cursors.Hand;
+            otherBtn.Cursor = Cursors.Hand;
+            AboutUsBtn.Cursor = Cursors.Hand;
+            ContactBtn.Cursor = Cursors.Hand;
+            ServicesBtn.Cursor = Cursors.Hand;
+
             prevBtn.Parent = sliderBox;
             nextBtn.Parent = sliderBox;
             sliderBox.Image = images[ImageNumber];
@@ -383,6 +396,7 @@ namespace Gallery
         {
             this.Hide();
             AboutUsForm aboutUsForm = new AboutUsForm();
+            aboutUsForm.loginForm = false;
             aboutUsForm.mainForm = true;
             aboutUsForm.profileForm = false;
             aboutUsForm.Psize = this.Size;
@@ -394,6 +408,7 @@ namespace Gallery
         {
             this.Hide();
             ContactForm contactForm = new ContactForm();
+            contactForm.loginForm = false;
             contactForm.mainForm = true;
             contactForm.profileForm = false;
             contactForm.Psize = this.Size;
@@ -405,6 +420,7 @@ namespace Gallery
         {
             this.Hide();
             ServiceForm serviceForm = new ServiceForm();
+            serviceForm.loginForm = false;
             serviceForm.mainForm = true;
             serviceForm.profileForm = false;
             serviceForm.Psize = this.Size;

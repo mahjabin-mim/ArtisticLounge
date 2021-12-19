@@ -15,6 +15,7 @@ namespace Gallery
         public bool mainForm { set; get; }
         public bool profileForm { set; get; }
         public Size Psize { get; set; }
+        public bool loginForm { set; get; }
         public AboutUsForm()
         {
             InitializeComponent();
@@ -45,10 +46,16 @@ namespace Gallery
                 this.Close();
 
             }
-            else
+            else if (loginForm == true)
             {
                 Form1 form1 = new Form1();
                 form1.ShowDialog();
+                this.Close();
+            }
+            else 
+            {
+                SignUpFrom signup = new SignUpFrom();
+                signup.ShowDialog();
                 this.Close();
             }
         }
@@ -57,6 +64,7 @@ namespace Gallery
         {
             this.Hide();
             ContactForm contactForm = new ContactForm();
+            contactForm.loginForm = this.loginForm;
             contactForm.mainForm = this.mainForm;
             contactForm.profileForm = this.profileForm;
             contactForm.Psize = this.Psize;
@@ -79,6 +87,7 @@ namespace Gallery
         {
             this.Hide();
             ServiceForm contactForm = new ServiceForm();
+            contactForm.loginForm = this.loginForm;
             contactForm.mainForm = this.mainForm;
             contactForm.profileForm = this.profileForm;
             contactForm.Psize = this.Psize;

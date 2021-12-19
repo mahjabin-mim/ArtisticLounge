@@ -46,8 +46,9 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(907, 536);
+            this.pictureBox1.Size = new System.Drawing.Size(1199, 629);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -61,8 +62,9 @@
             this.panel1.Controls.Add(this.usersGridView);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(907, 536);
+            this.panel1.Size = new System.Drawing.Size(1199, 629);
             this.panel1.TabIndex = 1;
             // 
             // cancleBtn
@@ -85,11 +87,10 @@
             this.cancleBtn.HoverState.Parent = this.cancleBtn;
             this.cancleBtn.Image = ((System.Drawing.Image)(resources.GetObject("cancleBtn.Image")));
             this.cancleBtn.ImageSize = new System.Drawing.Size(15, 15);
-            this.cancleBtn.Location = new System.Drawing.Point(761, 10);
-            this.cancleBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cancleBtn.Location = new System.Drawing.Point(1015, 12);
             this.cancleBtn.Name = "cancleBtn";
             this.cancleBtn.ShadowDecoration.Parent = this.cancleBtn;
-            this.cancleBtn.Size = new System.Drawing.Size(133, 37);
+            this.cancleBtn.Size = new System.Drawing.Size(167, 45);
             this.cancleBtn.TabIndex = 21;
             this.cancleBtn.Text = "Back";
             this.cancleBtn.Click += new System.EventHandler(this.cancleBtn_Click);
@@ -112,10 +113,9 @@
             this.searchBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.searchBox.HoverState.Parent = this.searchBox;
             this.searchBox.IconLeft = ((System.Drawing.Image)(resources.GetObject("searchBox.IconLeft")));
-            this.searchBox.Location = new System.Drawing.Point(7, 12);
-            this.searchBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchBox.Location = new System.Drawing.Point(9, 15);
             this.searchBox.Name = "searchBox";
-            this.searchBox.Padding = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.searchBox.Padding = new System.Windows.Forms.Padding(11, 10, 11, 10);
             this.searchBox.PasswordChar = '\0';
             this.searchBox.PlaceholderText = "Search...";
             this.searchBox.SelectedText = "";
@@ -123,7 +123,7 @@
             this.searchBox.ShadowDecoration.Enabled = true;
             this.searchBox.ShadowDecoration.Parent = this.searchBox;
             this.searchBox.ShadowDecoration.Shadow = new System.Windows.Forms.Padding(0, 0, 0, 5);
-            this.searchBox.Size = new System.Drawing.Size(612, 31);
+            this.searchBox.Size = new System.Drawing.Size(816, 38);
             this.searchBox.TabIndex = 20;
             this.searchBox.TextChanged += new System.EventHandler(this.searchBox_TextChanged);
             // 
@@ -147,11 +147,10 @@
             this.deleteBtn.HoverState.Parent = this.deleteBtn;
             this.deleteBtn.Image = ((System.Drawing.Image)(resources.GetObject("deleteBtn.Image")));
             this.deleteBtn.ImageSize = new System.Drawing.Size(15, 15);
-            this.deleteBtn.Location = new System.Drawing.Point(625, 10);
-            this.deleteBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.deleteBtn.Location = new System.Drawing.Point(833, 12);
             this.deleteBtn.Name = "deleteBtn";
             this.deleteBtn.ShadowDecoration.Parent = this.deleteBtn;
-            this.deleteBtn.Size = new System.Drawing.Size(133, 37);
+            this.deleteBtn.Size = new System.Drawing.Size(167, 45);
             this.deleteBtn.TabIndex = 19;
             this.deleteBtn.Text = "Delete User";
             this.deleteBtn.Click += new System.EventHandler(this.deleteBtn_Click);
@@ -166,15 +165,16 @@
             this.usersGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.usersGridView.Cursor = System.Windows.Forms.Cursors.Hand;
             this.usersGridView.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.usersGridView.Location = new System.Drawing.Point(0, 74);
-            this.usersGridView.MaximumSize = new System.Drawing.Size(902, 462);
-            this.usersGridView.MinimumSize = new System.Drawing.Size(902, 462);
+            this.usersGridView.Location = new System.Drawing.Point(0, 60);
+            this.usersGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usersGridView.MaximumSize = new System.Drawing.Size(1203, 569);
+            this.usersGridView.MinimumSize = new System.Drawing.Size(1203, 569);
             this.usersGridView.Name = "usersGridView";
             this.usersGridView.ReadOnly = true;
             this.usersGridView.RowHeadersVisible = false;
             this.usersGridView.RowHeadersWidth = 72;
             this.usersGridView.RowTemplate.Height = 100;
-            this.usersGridView.Size = new System.Drawing.Size(902, 462);
+            this.usersGridView.Size = new System.Drawing.Size(1203, 569);
             this.usersGridView.TabIndex = 0;
             this.usersGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.usersGridView_CellClick);
             this.usersGridView.CellMouseEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.usersGridView_CellMouseEnter);
@@ -183,15 +183,16 @@
             // 
             // UsersForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(907, 536);
+            this.ClientSize = new System.Drawing.Size(1199, 629);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(923, 575);
-            this.MinimumSize = new System.Drawing.Size(923, 575);
+            this.MaximumSize = new System.Drawing.Size(1223, 693);
+            this.MinimumSize = new System.Drawing.Size(1223, 693);
             this.Name = "UsersForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UsersForm";
